@@ -1,0 +1,9 @@
+{
+  "name": "Echonflow",
+  "short_name": "Echonflow",
+  "description": "Echonflow connects people building their wellness with the trainers, resorts, and practitioners who guide it.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EFEBDD",
+  "theme_color": "#1B3328"
+}
