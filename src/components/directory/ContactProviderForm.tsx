@@ -5,12 +5,16 @@ import { createClient } from "@/lib/supabase/client";
 import { Input, Textarea } from "@/components/ui/Input";
 import { Button } from "@/components/ui/Button";
 
-export function RetreatLeadForm({
+export function ContactProviderForm({
   seekerId,
+  listingId,
+  businessName,
   defaultName,
   defaultEmail,
 }: {
   seekerId: string;
+  listingId: string;
+  businessName: string;
   defaultName: string;
   defaultEmail: string;
 }) {
@@ -31,6 +35,7 @@ export function RetreatLeadForm({
 
     const { error: insertError } = await supabase.from("leads").insert({
       seeker_id: seekerId,
+      listing_id: listingId,
       name: name.trim(),
       email: email.trim(),
       phone: phone.trim() || null,
@@ -46,13 +51,13 @@ export function RetreatLeadForm({
   }
 
   if (sent) {
-    return <p className="font-body text-moss">Noted — the team will follow up shortly.</p>;
+    return <p className="font-body text-moss">Sent — {businessName} will get back to you.</p>;
   }
 
   return (
-    <form onSubmit={submit} className="max-w-[420px] rounded-md border border-[#DCD6BF] bg-card p-[22px]">
+    <form onSubmit={submit}>
       <p className="mb-3.5 font-body text-[13.5px] text-[#4A4738]">
-        Leave your details and the team will follow up about retreats, 1:1s, and small-group sessions.
+        Reach out to {businessName} directly.
       </p>
       <div className="flex flex-col gap-2.5">
         <Input placeholder="Full name" value={name} onChange={(e) => setName(e.target.value)} required />
@@ -72,7 +77,7 @@ export function RetreatLeadForm({
         />
         {error && <p className="font-body text-[12.5px] text-red-700">{error}</p>}
         <Button type="submit" disabled={loading}>
-          {loading ? "Sending…" : "I'm interested"}
+          {loading ? "Sending…" : "Contact this provider"}
         </Button>
       </div>
     </form>

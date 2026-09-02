@@ -1,48 +1,38 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
-import { ListingForm } from "@/components/provider/ListingForm";
-import { ListingCard } from "@/components/ListingCard";
+import { PROVIDER_TILES } from "@/lib/constants";
 
-export default async function ProviderDashboardPage() {
+export default async function ProviderHubPage() {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-
-  const { data: listings } = await supabase
-    .from("listings")
-    .select("*")
-    .eq("owner_id", user!.id)
-    .order("created_at", { ascending: false });
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("name")
+    .eq("id", user!.id)
+    .single();
+  const firstName = (profile?.name || "there").split(" ")[0];
 
   return (
     <div>
-      <h1 className="mb-1.5 font-display text-[32px] font-medium text-ink">Your provider space</h1>
+      <h1 className="mb-1.5 font-display text-[32px] font-medium text-ink">Welcome, {firstName}</h1>
       <p className="mb-8 font-body text-[14.5px] text-[#4A4738]">
-        List your practice so seekers can find you in the Echonflow directory.
+        Everything you need to run your Echonflow practice, in one place.
       </p>
-
-      <ListingForm ownerId={user!.id} />
-
-      <div className="mb-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-moss">
-        Your listings ({listings?.length ?? 0})
-      </div>
-      {(!listings || listings.length === 0) && (
-        <p className="font-body text-[#8C8770]">Nothing published yet.</p>
-      )}
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4">
-        {listings?.map((l) => (
-          <div key={l.id}>
-            <ListingCard listing={l} href={`/seeker/directory/${l.id}`} />
-            {l.category === "Resort" && (
-              <Link
-                href={`/provider/listings/${l.id}/wrs`}
-                className="mt-2 inline-block font-mono text-[10.5px] uppercase tracking-[0.06em] text-gold"
-              >
-                {l.wrs_score != null ? "Update" : "Take"} WRS™ assessment →
-              </Link>
-            )}
-          </div>
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4">
+        {PROVIDER_TILES.map((t) => (
+          <Link
+            key={t.id}
+            href={t.href}
+            className="block rounded-md border border-[#DCD6BF] bg-card p-5 text-ink"
+          >
+            <div className="mb-2 font-display text-lg font-medium">{t.title}</div>
+            <div className="mb-3 font-body text-[13px] leading-relaxed text-[#4A4738]">{t.note}</div>
+            <div className="font-mono text-[10.5px] uppercase tracking-[0.06em] text-gold">
+              {t.cta} →
+            </div>
+          </Link>
         ))}
       </div>
     </div>

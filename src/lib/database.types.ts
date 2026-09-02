@@ -23,6 +23,8 @@ export interface Database {
           name: string;
           email: string;
           role: UserRole;
+          phone: string | null;
+          service: string | null;
           created_at: string;
         };
         Insert: {
@@ -30,12 +32,16 @@ export interface Database {
           name: string;
           email: string;
           role: UserRole;
+          phone?: string | null;
+          service?: string | null;
           created_at?: string;
         };
         Update: Partial<{
           name: string;
           email: string;
           role: UserRole;
+          phone: string | null;
+          service: string | null;
         }>;
         Relationships: [];
       };
@@ -135,10 +141,11 @@ export interface Database {
         }>;
         Relationships: [];
       };
-      retreat_leads: {
+      leads: {
         Row: {
           id: string;
           seeker_id: string | null;
+          listing_id: string | null;
           name: string;
           email: string;
           phone: string | null;
@@ -148,6 +155,7 @@ export interface Database {
         Insert: {
           id?: string;
           seeker_id?: string | null;
+          listing_id?: string | null;
           name: string;
           email: string;
           phone?: string | null;
@@ -223,6 +231,6 @@ export type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 export type Listing = Database["public"]["Tables"]["listings"]["Row"];
 export type VartaPost = Database["public"]["Tables"]["varta_posts"]["Row"];
 export type EraResponse = Database["public"]["Tables"]["era_responses"]["Row"];
-export type RetreatLead = Database["public"]["Tables"]["retreat_leads"]["Row"];
+export type Lead = Database["public"]["Tables"]["leads"]["Row"];
 export type ModuleQuizProgress = Database["public"]["Tables"]["module_quiz_progress"]["Row"];
 export type Certificate = Database["public"]["Tables"]["certificates"]["Row"];

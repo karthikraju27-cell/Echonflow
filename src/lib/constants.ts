@@ -46,3 +46,20 @@ export const SEEKER_TILES = [
     cta: "Explore retreats",
   },
 ] as const;
+
+export const PROVIDER_TILES = [
+  {
+    id: "listings",
+    href: "/provider/listings",
+    title: "My Listings",
+    note: "Publish your practice, manage listings, and run the WRS™ assessment for resorts.",
+    cta: "Manage listings",
+  },
+  {
+    id: "leads",
+    href: "/provider/leads",
+    title: "Leads / CRM",
+    note: "Everyone who's reached out about your listings, in one place.",
+    cta: "View leads",
+  },
+] as const;

@@ -17,6 +17,8 @@ export function AuthForm({ role }: { role: UserRole }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+  const [service, setService] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
@@ -25,6 +27,12 @@ export function AuthForm({ role }: { role: UserRole }) {
   // signed-in account's actual role, so a static destination per auth page
   // is safe here.
   const destination = role === "provider" ? "/provider" : "/seeker";
+
+  function signUpMetadata() {
+    return role === "provider"
+      ? { name, role, phone: phone.trim() || null, service: service.trim() || null }
+      : { name, role };
+  }
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -37,7 +45,7 @@ export function AuthForm({ role }: { role: UserRole }) {
         email,
         password,
         options: {
-          data: { name, role },
+          data: signUpMetadata(),
           emailRedirectTo: `${window.location.origin}/auth/callback`,
         },
       });
@@ -77,7 +85,7 @@ export function AuthForm({ role }: { role: UserRole }) {
     const { error: otpError } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        data: mode === "sign_up" ? { name, role } : undefined,
+        data: mode === "sign_up" ? signUpMetadata() : undefined,
         emailRedirectTo: `${window.location.origin}/auth/callback`,
       },
     });
@@ -135,6 +143,21 @@ export function AuthForm({ role }: { role: UserRole }) {
         required
         minLength={6}
       />
+      {mode === "sign_up" && role === "provider" && (
+        <>
+          <Input
+            type="tel"
+            placeholder="Phone"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <Input
+            placeholder="What service do you provide?"
+            value={service}
+            onChange={(e) => setService(e.target.value)}
+          />
+        </>
+      )}
 
       {error && <p className="font-body text-[12.5px] text-red-700">{error}</p>}
       {info && <p className="font-body text-[12.5px] text-moss">{info}</p>}
