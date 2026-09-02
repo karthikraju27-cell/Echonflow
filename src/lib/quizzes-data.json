@@ -1,0 +1,1280 @@
+{
+  "passPct": 70,
+  "quizzes": [
+    {
+      "moduleId": "intro-to-wellness",
+      "questions": [
+        {
+          "q": "According to the curriculum, wellness is best described as…",
+          "options": [
+            "A fixed state you reach and then maintain",
+            "The ongoing process of making choices across multiple dimensions of life",
+            "The same thing as being disease-free",
+            "A product you purchase once"
+          ],
+          "correct": 1,
+          "explain": "Wellness is framed as an active, ongoing process — not a finish line."
+        },
+        {
+          "q": "How many dimensions of wellness does the curriculum define?",
+          "options": [
+            "5",
+            "6",
+            "8",
+            "10"
+          ],
+          "correct": 2,
+          "explain": "Physical, emotional, intellectual, social, spiritual, occupational, environmental, and financial."
+        },
+        {
+          "q": "What does the curriculum say about weakness in one wellness dimension?",
+          "options": [
+            "It stays isolated and doesn't affect others",
+            "It tends to spill into other dimensions",
+            "It only matters for physical health",
+            "It's impossible to identify"
+          ],
+          "correct": 1,
+          "explain": "The dimensions interact — strain in one area commonly shows up in others."
+        },
+        {
+          "q": "What's the key difference between healthcare and wellness, per the curriculum?",
+          "options": [
+            "Healthcare treats what's already gone wrong; wellness shapes how often that happens",
+            "They are the same system",
+            "Wellness replaces the need for healthcare",
+            "Healthcare is about daily behavior"
+          ],
+          "correct": 0,
+          "explain": "Healthcare is largely reactive; wellness is the daily-behavior layer that shapes risk beforehand."
+        },
+        {
+          "q": "On the wellness spectrum described in the curriculum, what does “no diagnosis” represent?",
+          "options": [
+            "The finish line",
+            "The starting point",
+            "The neutral midpoint",
+            "A state of thriving"
+          ],
+          "correct": 2,
+          "explain": "Absence of disease sits in the middle of the spectrum — not at either end."
+        },
+        {
+          "q": "According to the curriculum, what's true about detox products?",
+          "options": [
+            "They outperform your liver and kidneys",
+            "They don't out-perform your liver and kidneys' normal function",
+            "They are required for wellness",
+            "They replace the need for sleep"
+          ],
+          "correct": 1,
+          "explain": "Your liver and kidneys already do this job continuously — no product beats that baseline."
+        },
+        {
+          "q": "Which is considered stronger evidence per the curriculum's guide to reading research?",
+          "options": [
+            "A single anecdote",
+            "A press release",
+            "Meta-analyses and randomized controlled trials",
+            "An influencer testimonial"
+          ],
+          "correct": 2,
+          "explain": "Meta-analyses and RCTs sit at the top of the evidence hierarchy the curriculum describes."
+        },
+        {
+          "q": "What does the curriculum recommend before changing any habits?",
+          "options": [
+            "Start all changes immediately",
+            "Observe your current patterns for a week first",
+            "Skip straight to the final module",
+            "Hire a coach immediately"
+          ],
+          "correct": 1,
+          "explain": "A short observation period gives you an honest baseline before you start changing anything."
+        }
+      ]
+    },
+    {
+      "moduleId": "nutrition-fundamentals",
+      "questions": [
+        {
+          "q": "How many calories per gram does fat provide, compared to protein or carbs (4 cal/g each)?",
+          "options": [
+            "4",
+            "9",
+            "7",
+            "2"
+          ],
+          "correct": 1,
+          "explain": "Fat is the most calorie-dense macronutrient at roughly 9 calories per gram."
+        },
+        {
+          "q": "What's the curriculum's default guidance on supplementing micronutrients?",
+          "options": [
+            "Everyone should supplement broadly as a default",
+            "Supplement for identified gaps, not as a blanket default",
+            "Supplements are never necessary",
+            "Only fat-soluble vitamins matter"
+          ],
+          "correct": 1,
+          "explain": "Supplementation is framed as gap-filling, not a default layer on top of a normal diet."
+        },
+        {
+          "q": "Per the curriculum, what accounts for the majority of daily calories burned for most people?",
+          "options": [
+            "Structured exercise",
+            "NEAT (everyday movement)",
+            "Basal metabolic rate",
+            "The thermic effect of food"
+          ],
+          "correct": 2,
+          "explain": "Basal metabolic rate — the energy your body burns just staying alive — is the largest share for most people."
+        },
+        {
+          "q": "What should you check first when reading a nutrition label?",
+          "options": [
+            "Total calories",
+            "Serving size and servings per package",
+            "The brand name",
+            "The color of the packaging"
+          ],
+          "correct": 1,
+          "explain": "Every other number on the label is relative to the stated serving size."
+        },
+        {
+          "q": "Which category of processed food does the curriculum say is actually worth limiting?",
+          "options": [
+            "All processed food without exception",
+            "Minimally processed foods like frozen vegetables",
+            "Ultra-processed food engineered for palatability and overconsumption",
+            "Canned beans"
+          ],
+          "correct": 2,
+          "explain": "The concern is specifically ultra-processed food, not the broad, loosely-defined category of “processed.”"
+        },
+        {
+          "q": "The RDA of 0.8g/kg protein is described in the curriculum as…",
+          "options": [
+            "Optimal for active adults",
+            "The amount needed to prevent deficiency, not necessarily optimal for active adults",
+            "Too much for most people",
+            "Only relevant for athletes"
+          ],
+          "correct": 1,
+          "explain": "It's a deficiency-prevention floor, not a performance or active-lifestyle target."
+        },
+        {
+          "q": "What does pairing carbs with protein or fat do, per the curriculum?",
+          "options": [
+            "Increases the blood sugar spike",
+            "Has no measurable effect",
+            "Blunts the blood sugar spike regardless of the carb's glycemic index",
+            "Only works with high-GI carbs"
+          ],
+          "correct": 2,
+          "explain": "Pairing macronutrients slows digestion and blunts the resulting blood sugar spike."
+        },
+        {
+          "q": "What does the curriculum say about trans fat?",
+          "options": [
+            "It has an established safe intake level",
+            "It has no established safe intake and should be avoided",
+            "It's beneficial in small amounts",
+            "It's the same as saturated fat"
+          ],
+          "correct": 1,
+          "explain": "Unlike other fats, trans fat has no known safe intake threshold."
+        },
+        {
+          "q": "What's described as a more responsive everyday hydration signal than fixed water targets?",
+          "options": [
+            "Body weight",
+            "Urine color",
+            "Hunger level",
+            "Skin temperature"
+          ],
+          "correct": 1,
+          "explain": "Urine color gives real-time feedback that a fixed “8 glasses a day” rule can't."
+        },
+        {
+          "q": "According to the curriculum, what's intermittent fasting's main benefit?",
+          "options": [
+            "A unique metabolic effect no other diet has",
+            "Behavioral simplicity, not a unique metabolic effect",
+            "It works well for everyone",
+            "It's required for weight loss"
+          ],
+          "correct": 1,
+          "explain": "Its main advantage is that the eating-window rule is simple to follow, not a special metabolic edge."
+        }
+      ]
+    },
+    {
+      "moduleId": "movement-fitness",
+      "questions": [
+        {
+          "q": "Per the curriculum, physical inactivity is…",
+          "options": [
+            "Only a concern for older adults",
+            "An independent chronic disease risk factor",
+            "Not linked to disease risk",
+            "Only relevant to athletes"
+          ],
+          "correct": 1,
+          "explain": "Inactivity itself is treated as a standalone risk factor, separate from diet or weight."
+        },
+        {
+          "q": "What's described as one of the strongest predictors of long-term mortality risk in the research cited?",
+          "options": [
+            "Body weight",
+            "VO2 max (cardiorespiratory fitness)",
+            "Resting heart rate alone",
+            "Step count"
+          ],
+          "correct": 1,
+          "explain": "Cardiorespiratory fitness (VO2 max) shows up repeatedly as one of the strongest predictors."
+        },
+        {
+          "q": "Without strength training, age-related muscle loss can begin as early as…",
+          "options": [
+            "Your 60s",
+            "Your 50s",
+            "Your 30s",
+            "Your 20s"
+          ],
+          "correct": 2,
+          "explain": "Sarcopenia can begin surprisingly early — into your 30s — without resistance training."
+        },
+        {
+          "q": "What's the difference between flexibility and mobility, per the curriculum?",
+          "options": [
+            "They're the same thing",
+            "Flexibility is passive range of motion; mobility is controlled, usable range of motion",
+            "Mobility only applies to athletes",
+            "Flexibility requires equipment"
+          ],
+          "correct": 1,
+          "explain": "Flexibility is passive stretch range; mobility is that range under active control."
+        },
+        {
+          "q": "What does the curriculum say is required for continued strength adaptation?",
+          "options": [
+            "Repeating the same routine indefinitely",
+            "Continually increasing demand (progressive overload)",
+            "Resting completely for months",
+            "Only changing exercises, never intensity"
+          ],
+          "correct": 1,
+          "explain": "Progressive overload — gradually increasing demand — is what keeps driving adaptation."
+        },
+        {
+          "q": "Zone 2 training is roughly defined as…",
+          "options": [
+            "90-100% of max heart rate",
+            "60-70% of max heart rate, a conversational pace",
+            "A sprint-only protocol",
+            "Only relevant to elite athletes"
+          ],
+          "correct": 1,
+          "explain": "Zone 2 is an easy, conversational-pace effort — not a high-intensity zone."
+        },
+        {
+          "q": "How many weekly sessions mixing strength and cardio does the curriculum say covers most general health goals?",
+          "options": [
+            "1",
+            "2 to 4",
+            "7",
+            "10 or more"
+          ],
+          "correct": 1,
+          "explain": "A realistic 2-4 sessions a week is framed as sufficient for most general health goals."
+        },
+        {
+          "q": "According to the curriculum, is soreness (DOMS) a reliable signal of workout effectiveness?",
+          "options": [
+            "Yes — more soreness always means a better workout",
+            "No — it reflects normal repair, not workout quality",
+            "Only for beginners",
+            "Only for strength training"
+          ],
+          "correct": 1,
+          "explain": "Soreness reflects the muscle-repair process, not a scorecard for how effective a session was."
+        },
+        {
+          "q": "What drives most injuries, per the curriculum, more than the activity itself?",
+          "options": [
+            "Using free weights",
+            "Rapid increases in training volume",
+            "Training outdoors",
+            "Training in the morning"
+          ],
+          "correct": 1,
+          "explain": "Ramping volume up too quickly is a bigger driver of injury than the activity chosen."
+        },
+        {
+          "q": "How often does the curriculum suggest breaking up long sitting for desk workers?",
+          "options": [
+            "Once a day",
+            "Every 30-60 minutes",
+            "Only during lunch",
+            "Never, as long as you exercise once daily"
+          ],
+          "correct": 1,
+          "explain": "Regular short breaks — roughly every 30-60 minutes — are recommended regardless of daily exercise."
+        }
+      ]
+    },
+    {
+      "moduleId": "sleep-science",
+      "questions": [
+        {
+          "q": "Sleep is described in the curriculum as…",
+          "options": [
+            "A passive shutdown of the body",
+            "Active maintenance — waste clearance, memory consolidation, hormone regulation, immune repair",
+            "Only necessary for the brain",
+            "Optional if you eat well"
+          ],
+          "correct": 1,
+          "explain": "Sleep is framed as active maintenance work across multiple body systems, not a passive pause."
+        },
+        {
+          "q": "Cutting sleep short disproportionately removes which stage?",
+          "options": [
+            "Light sleep",
+            "REM sleep",
+            "All stages equally",
+            "Deep sleep only"
+          ],
+          "correct": 1,
+          "explain": "REM sleep, concentrated later in the night, is disproportionately lost when sleep is cut short."
+        },
+        {
+          "q": "What mainly regulates the circadian rhythm?",
+          "options": [
+            "Food timing",
+            "Light exposure",
+            "Room temperature",
+            "Exercise timing"
+          ],
+          "correct": 1,
+          "explain": "Light exposure is the primary driver that keeps the circadian clock synced."
+        },
+        {
+          "q": "What matters more than most single environmental tweaks, per the curriculum?",
+          "options": [
+            "Mattress firmness",
+            "Consistent sleep and wake timing",
+            "Room color",
+            "Pillow type"
+          ],
+          "correct": 1,
+          "explain": "A consistent sleep/wake schedule outweighs most one-off environmental adjustments."
+        },
+        {
+          "q": "Why can afternoon coffee disrupt nighttime sleep?",
+          "options": [
+            "Caffeine has almost no half-life",
+            "Caffeine's roughly 5-6 hour half-life keeps it active into the night",
+            "Coffee only affects sleep if consumed after 9pm",
+            "It doesn't actually affect sleep"
+          ],
+          "correct": 1,
+          "explain": "Caffeine's long half-life means a meaningful dose is still active many hours later."
+        },
+        {
+          "q": "What's the ideal nap length for boosting alertness without grogginess, per the curriculum?",
+          "options": [
+            "10-20 minutes",
+            "45-60 minutes",
+            "2+ hours",
+            "Naps are never beneficial"
+          ],
+          "correct": 0,
+          "explain": "A short 10-20 minute nap avoids dropping into deep sleep and the grogginess that follows."
+        },
+        {
+          "q": "What does the curriculum say sleep trackers are best used for?",
+          "options": [
+            "Nightly perfectionism",
+            "Coarse trends over time, not nightly precision",
+            "Diagnosing sleep apnea directly",
+            "Replacing a doctor's evaluation"
+          ],
+          "correct": 1,
+          "explain": "Trackers are useful for spotting broad trends, not as precise nightly measurement tools."
+        },
+        {
+          "q": "What should you fix first when resetting a broken sleep schedule?",
+          "options": [
+            "Bedtime",
+            "Wake time, anchored with morning light",
+            "Room temperature",
+            "Caffeine intake only"
+          ],
+          "correct": 1,
+          "explain": "Anchoring a consistent wake time with morning light is the recommended starting lever."
+        }
+      ]
+    },
+    {
+      "moduleId": "mental-emotional-wellness",
+      "questions": [
+        {
+          "q": "The curriculum describes “languishing” as…",
+          "options": [
+            "A severe diagnosis",
+            "A common middle state — not ill, not thriving",
+            "The same as depression",
+            "Something requiring immediate hospitalization"
+          ],
+          "correct": 1,
+          "explain": "Languishing sits between illness and thriving — a common, often unnamed middle state."
+        },
+        {
+          "q": "What's a key difference between stress and anxiety per the curriculum?",
+          "options": [
+            "They're identical",
+            "Stress responds to an identifiable demand and resolves when it passes; anxiety can persist without a clear trigger",
+            "Anxiety always resolves faster",
+            "Stress never resolves"
+          ],
+          "correct": 1,
+          "explain": "Stress is tied to a specific demand; anxiety can linger without one clear cause."
+        },
+        {
+          "q": "What reliably cues the parasympathetic (“rest and digest”) system, per the curriculum?",
+          "options": [
+            "Caffeine",
+            "Slow breathing, nature exposure, and social connection",
+            "Intense exercise only",
+            "Skipping meals"
+          ],
+          "correct": 1,
+          "explain": "Slow breathing, nature, and connection are cited as reliable parasympathetic cues."
+        },
+        {
+          "q": "What does “regulation” mean in the curriculum's framing of emotions?",
+          "options": [
+            "Suppressing emotions entirely",
+            "Experiencing emotions without being overwhelmed by them",
+            "Avoiding emotional situations",
+            "Never feeling negative emotions"
+          ],
+          "correct": 1,
+          "explain": "Regulation means feeling emotions fully without being overwhelmed — not suppressing them."
+        },
+        {
+          "q": "How many weeks of regular mindfulness practice does the curriculum cite as showing measurable effects?",
+          "options": [
+            "1 week",
+            "8 weeks",
+            "52 weeks",
+            "3 days"
+          ],
+          "correct": 1,
+          "explain": "Roughly 8 weeks of consistent practice is the figure cited for measurable effects."
+        },
+        {
+          "q": "What matters more for journaling's benefits, per the curriculum?",
+          "options": [
+            "Length and polish",
+            "Consistency",
+            "Using a specific expensive journal",
+            "Writing only positive thoughts"
+          ],
+          "correct": 1,
+          "explain": "Showing up consistently matters far more than how polished or long each entry is."
+        },
+        {
+          "q": "What did the longest-running study of adult life find to be the strongest predictor of long-term wellbeing?",
+          "options": [
+            "Income",
+            "Relationship quality",
+            "Career success",
+            "Physical fitness"
+          ],
+          "correct": 1,
+          "explain": "The quality of close relationships came out as the strongest predictor in that long-running study."
+        },
+        {
+          "q": "Chronic loneliness carries health risks comparable to…",
+          "options": [
+            "A minor vitamin deficiency",
+            "Smoking or obesity",
+            "Nothing significant",
+            "Common colds"
+          ],
+          "correct": 1,
+          "explain": "The curriculum places chronic loneliness's health risk in the same range as smoking or obesity."
+        },
+        {
+          "q": "What correlates with worse mood more, per the curriculum?",
+          "options": [
+            "Active, connection-based screen use",
+            "Passive scrolling",
+            "Total screen time regardless of type",
+            "Reading e-books"
+          ],
+          "correct": 1,
+          "explain": "Passive scrolling tracks with worse mood more than active, connection-based screen use."
+        },
+        {
+          "q": "What does the curriculum say therapy is commonly used for?",
+          "options": [
+            "Only severe diagnosis or crisis",
+            "Everyday difficulty, not only crisis or severe diagnosis",
+            "Only children",
+            "Only after multiple failed attempts to cope alone"
+          ],
+          "correct": 1,
+          "explain": "Therapy is framed as a tool for everyday difficulty, not something reserved only for crisis."
+        }
+      ]
+    },
+    {
+      "moduleId": "stress-management",
+      "questions": [
+        {
+          "q": "The stress response evolved for…",
+          "options": [
+            "Modern chronic stressors like email",
+            "Acute physical threats",
+            "Long-term financial planning",
+            "Social media use"
+          ],
+          "correct": 1,
+          "explain": "The stress response is an ancient system built for short-term physical threats, not chronic modern stressors."
+        },
+        {
+          "q": "Which type of stress carries the significant health costs per the curriculum?",
+          "options": [
+            "Acute stress",
+            "Chronic, sustained stress",
+            "Neither type matters",
+            "Only stress from exercise"
+          ],
+          "correct": 1,
+          "explain": "It's sustained, chronic stress — not brief acute stress — that drives most of the health cost."
+        },
+        {
+          "q": "What does a slow, extended exhale do, per the curriculum?",
+          "options": [
+            "Activates the sympathetic nervous system",
+            "Activates the vagus nerve, shifting toward a parasympathetic state",
+            "Has no measurable effect",
+            "Increases heart rate"
+          ],
+          "correct": 1,
+          "explain": "A long exhale stimulates the vagus nerve, nudging the body toward calm."
+        },
+        {
+          "q": "What does cognitive reframing target?",
+          "options": [
+            "The event itself",
+            "The interpretation of an event",
+            "Only physical symptoms",
+            "Other people's behavior"
+          ],
+          "correct": 1,
+          "explain": "Reframing works on how an event is interpreted, not the event itself."
+        },
+        {
+          "q": "How does the curriculum describe boundaries?",
+          "options": [
+            "Confrontational statements",
+            "Proactive statements of capacity",
+            "A sign of weakness",
+            "Only relevant at work"
+          ],
+          "correct": 1,
+          "explain": "Boundaries are framed as proactive statements of what you have capacity for, not confrontation."
+        },
+        {
+          "q": "What three components does burnout involve together, per the curriculum?",
+          "options": [
+            "Hunger, fatigue, and irritability",
+            "Exhaustion, cynicism/detachment, and reduced sense of efficacy",
+            "Only physical exhaustion",
+            "Sleep loss alone"
+          ],
+          "correct": 1,
+          "explain": "Burnout is defined by exhaustion, cynicism or detachment, and a reduced sense of efficacy together."
+        },
+        {
+          "q": "What does the curriculum say about passive rest like scrolling?",
+          "options": [
+            "It's the most restorative activity",
+            "It's less restorative than genuinely engaging activities",
+            "It has no downsides",
+            "It's required for recovery"
+          ],
+          "correct": 1,
+          "explain": "Passive rest is less genuinely restorative than activities that actively engage you."
+        },
+        {
+          "q": "What kind of plan is described as more usable in the moment than a general intention?",
+          "options": [
+            "A vague goal",
+            "A specific, written “when X happens, I do Y” plan",
+            "No plan at all",
+            "A plan created during a crisis"
+          ],
+          "correct": 1,
+          "explain": "A specific if-then plan is far easier to actually use in the moment than a vague intention."
+        }
+      ]
+    },
+    {
+      "moduleId": "preventive-health",
+      "questions": [
+        {
+          "q": "Why does screening matter, per the curriculum?",
+          "options": [
+            "It has no real benefit",
+            "It catches conditions when treatment is simplest and most effective",
+            "It replaces the need for treatment",
+            "It's only useful after symptoms appear"
+          ],
+          "correct": 1,
+          "explain": "Screening's value is catching conditions early, when treatment is simplest and works best."
+        },
+        {
+          "q": "What improves how much gets covered in a short annual checkup appointment?",
+          "options": [
+            "Arriving early",
+            "A written list of questions",
+            "Skipping the vitals check",
+            "Bringing a friend"
+          ],
+          "correct": 1,
+          "explain": "A written question list helps make the most of limited appointment time."
+        },
+        {
+          "q": "What matters more than any single lipid panel snapshot, per the curriculum?",
+          "options": [
+            "The exact date of the test",
+            "Trends over years",
+            "The lab that performed it",
+            "Nothing — single results are definitive"
+          ],
+          "correct": 1,
+          "explain": "Trends across multiple tests over years matter more than any one snapshot value."
+        },
+        {
+          "q": "Per current guidance cited in the curriculum, hypertension is commonly defined starting at…",
+          "options": [
+            "90/60 mmHg",
+            "130/80 mmHg",
+            "200/120 mmHg",
+            "110/70 mmHg"
+          ],
+          "correct": 1,
+          "explain": "130/80 mmHg is the threshold cited from current AHA guidance."
+        },
+        {
+          "q": "What can shift cancer screening timelines earlier, per the curriculum?",
+          "options": [
+            "Nothing — they're fixed for everyone",
+            "Family history, especially in a first-degree relative",
+            "Only age",
+            "Diet alone"
+          ],
+          "correct": 1,
+          "explain": "A first-degree relative's history can move recommended screening ages earlier."
+        },
+        {
+          "q": "What does the curriculum say about adult vaccination needs?",
+          "options": [
+            "Childhood vaccination covers everything needed for life",
+            "Several vaccines require adult boosters that childhood vaccination doesn't cover",
+            "Adults never need vaccines",
+            "Only travel requires adult vaccines"
+          ],
+          "correct": 1,
+          "explain": "A number of vaccines need adult boosters — childhood coverage alone isn't the full picture."
+        },
+        {
+          "q": "What is gum disease linked to, per the curriculum?",
+          "options": [
+            "Nothing beyond oral health",
+            "Cardiovascular and diabetes risk",
+            "Only cosmetic concerns",
+            "Vision loss directly"
+          ],
+          "correct": 1,
+          "explain": "Gum disease is linked to broader systemic risks, including cardiovascular and diabetes risk."
+        },
+        {
+          "q": "What does the curriculum call family history?",
+          "options": [
+            "An irrelevant detail",
+            "A free, powerful, and commonly underused preventive care tool",
+            "Only useful for rare diseases",
+            "A replacement for screening"
+          ],
+          "correct": 1,
+          "explain": "Family history is framed as a free, high-value tool most people underuse."
+        },
+        {
+          "q": "Which is more valuable per the curriculum — a basic, regularly updated personal health record, or an elaborate unmaintained one?",
+          "options": [
+            "The elaborate system",
+            "The basic, regularly updated record",
+            "Neither matters",
+            "A record kept only by your doctor"
+          ],
+          "correct": 1,
+          "explain": "A simple record that's actually kept up to date beats an elaborate one that isn't."
+        }
+      ]
+    },
+    {
+      "moduleId": "habit-formation",
+      "questions": [
+        {
+          "q": "What's the four-part habit loop described in the curriculum?",
+          "options": [
+            "Goal, plan, action, reward",
+            "Cue, craving, response, reward",
+            "Trigger, thought, feeling, behavior",
+            "Start, middle, end, review"
+          ],
+          "correct": 1,
+          "explain": "Cue, craving, response, reward is the four-part loop the curriculum builds on."
+        },
+        {
+          "q": "What does the curriculum say about willpower?",
+          "options": [
+            "It's unlimited and doesn't deplete",
+            "It depletes across the day, so relying on it means relying on your weakest state",
+            "It's the most reliable behavior-change tool",
+            "It only affects diet, not other habits"
+          ],
+          "correct": 1,
+          "explain": "Willpower is treated as a depleting resource — a fragile thing to build a whole strategy on."
+        },
+        {
+          "q": "What does “habit stacking” attach a new behavior to?",
+          "options": [
+            "A random cue",
+            "An already-automatic existing behavior",
+            "Nothing — it's a standalone technique",
+            "A calendar reminder only"
+          ],
+          "correct": 1,
+          "explain": "Habit stacking anchors a new behavior right after one you already do automatically."
+        },
+        {
+          "q": "What does the curriculum recommend for unwanted habits?",
+          "options": [
+            "Adding friction to reduce them",
+            "Removing all friction",
+            "Ignoring the environment entirely",
+            "Relying only on willpower"
+          ],
+          "correct": 0,
+          "explain": "Deliberately adding friction makes an unwanted habit harder to fall into."
+        },
+        {
+          "q": "What does the curriculum say about a missed tracking day?",
+          "options": [
+            "It's a failure that ends the habit",
+            "It's data, not a failure",
+            "It should never happen",
+            "It means starting over from scratch"
+          ],
+          "correct": 1,
+          "explain": "A missed day is treated as information to learn from, not a reason to quit."
+        },
+        {
+          "q": "What guideline does the curriculum give for handling a lapse?",
+          "options": [
+            "Never miss twice",
+            "Quit immediately after one miss",
+            "Wait a month before trying again",
+            "Ignore the lapse completely"
+          ],
+          "correct": 0,
+          "explain": "“Never miss twice” keeps one slip from turning into a longer break."
+        },
+        {
+          "q": "What does the “1% better” framework emphasize?",
+          "options": [
+            "Dramatic overhauls",
+            "Small daily improvements that compound over time",
+            "Perfection from day one",
+            "Changing everything at once"
+          ],
+          "correct": 1,
+          "explain": "Small, compounding daily gains — not dramatic overhauls — are the framework's core idea."
+        },
+        {
+          "q": "How many simultaneous new habits does the curriculum recommend as a reasonable ceiling?",
+          "options": [
+            "10 or more",
+            "One to three",
+            "None — one at a time only, ever",
+            "As many as possible"
+          ],
+          "correct": 1,
+          "explain": "One to three at a time is the recommended ceiling for keeping change manageable."
+        }
+      ]
+    },
+    {
+      "moduleId": "womens-health",
+      "questions": [
+        {
+          "q": "What's a normal menstrual cycle length range cited in the curriculum?",
+          "options": [
+            "5-10 days",
+            "Roughly 21-35 days",
+            "Exactly 28 days always",
+            "40-60 days"
+          ],
+          "correct": 1,
+          "explain": "A normal cycle can range roughly 21-35 days — 28 is an average, not a fixed rule."
+        },
+        {
+          "q": "What do reproductive hormones interact closely with, per the curriculum?",
+          "options": [
+            "Nothing else in the body",
+            "Thyroid, cortisol, and insulin",
+            "Only diet",
+            "Only sleep"
+          ],
+          "correct": 1,
+          "explain": "Reproductive hormones interact closely with thyroid, cortisol, and insulin, not in isolation."
+        },
+        {
+          "q": "The fertile window is roughly how many days around ovulation?",
+          "options": [
+            "1 day",
+            "About 6 days",
+            "15 days",
+            "The entire cycle"
+          ],
+          "correct": 1,
+          "explain": "The fertile window spans roughly 6 days, not just the single day of ovulation."
+        },
+        {
+          "q": "What does the curriculum say is often under-supported relative to pregnancy itself?",
+          "options": [
+            "Prenatal vitamins",
+            "Postpartum recovery, including mental health",
+            "Delivery planning",
+            "Nothing — postpartum gets equal support"
+          ],
+          "correct": 1,
+          "explain": "Postpartum recovery, especially mental health, is flagged as commonly under-supported."
+        },
+        {
+          "q": "Menopause is clinically defined as…",
+          "options": [
+            "The first hot flash",
+            "12 months without a period",
+            "Any point after age 40",
+            "The end of perimenopause symptoms"
+          ],
+          "correct": 1,
+          "explain": "Menopause is marked at 12 consecutive months without a period."
+        },
+        {
+          "q": "Why does bone loss accelerate after menopause, per the curriculum?",
+          "options": [
+            "Declining estrogen",
+            "Increased calcium intake",
+            "Reduced screen time",
+            "Increased protein intake"
+          ],
+          "correct": 0,
+          "explain": "Declining estrogen after menopause is the driver of accelerated bone loss."
+        },
+        {
+          "q": "What does the curriculum say about mammograms and Pap/HPV testing?",
+          "options": [
+            "They have weak evidence",
+            "They're well-established programs with strong mortality-reduction evidence",
+            "They're no longer recommended",
+            "They replace the need for self-exams entirely"
+          ],
+          "correct": 1,
+          "explain": "Both are described as well-established screening programs with strong evidence behind them."
+        },
+        {
+          "q": "Which nutrient needs shift meaningfully across reproductive years, pregnancy, and menopause, per the curriculum?",
+          "options": [
+            "Only vitamin C",
+            "Iron, calcium, and folate",
+            "Only fiber",
+            "None — needs stay constant"
+          ],
+          "correct": 1,
+          "explain": "Iron, calcium, and folate needs shift notably across these life stages."
+        }
+      ]
+    },
+    {
+      "moduleId": "mens-health",
+      "questions": [
+        {
+          "q": "What's required to diagnose low testosterone, per the curriculum?",
+          "options": [
+            "Symptoms alone",
+            "Blood testing plus symptoms",
+            "Age alone",
+            "A single symptom like fatigue"
+          ],
+          "correct": 1,
+          "explain": "Diagnosis needs both blood testing and symptoms together, not either alone."
+        },
+        {
+          "q": "How does the curriculum describe the PSA screening decision?",
+          "options": [
+            "A universal default test for all men",
+            "A shared-decision conversation with a doctor",
+            "Unnecessary at any age",
+            "Required annually starting at 18"
+          ],
+          "correct": 1,
+          "explain": "PSA screening is framed as a shared decision made with a doctor, not a blanket default."
+        },
+        {
+          "q": "Men typically face cardiovascular risk how much earlier than women on average, per the curriculum?",
+          "options": [
+            "No difference",
+            "Roughly a decade earlier",
+            "Two decades earlier",
+            "Only after age 70"
+          ],
+          "correct": 1,
+          "explain": "On average, men's cardiovascular risk rises roughly a decade earlier than women's."
+        },
+        {
+          "q": "What does the curriculum say about men and mental health support?",
+          "options": [
+            "Men seek support at equal or higher rates than women",
+            "Men are less likely to seek support despite comparable rates of underlying struggle",
+            "Men rarely struggle with mental health",
+            "It's not addressed in the curriculum"
+          ],
+          "correct": 1,
+          "explain": "Men seek support less often, even though underlying struggle rates are comparable."
+        },
+        {
+          "q": "Male factors contribute to roughly what share of couples' fertility challenges, per the curriculum?",
+          "options": [
+            "Under 5%",
+            "Roughly 40-50%",
+            "100%",
+            "It's never a male factor"
+          ],
+          "correct": 1,
+          "explain": "Male factors are involved in roughly 40-50% of couples' fertility challenges."
+        },
+        {
+          "q": "When does sarcopenia (age-related muscle loss) accelerate, per the curriculum, without resistance training?",
+          "options": [
+            "After age 20",
+            "After roughly age 40",
+            "Never",
+            "Only after age 80"
+          ],
+          "correct": 1,
+          "explain": "Without resistance training, meaningful muscle loss tends to accelerate from around age 40."
+        },
+        {
+          "q": "What three areas round out core preventive priorities for men, per the curriculum?",
+          "options": [
+            "Vision, hearing, and dental only",
+            "Colorectal screening, prostate conversations, and mental health check-ins",
+            "Only cardiovascular screening",
+            "Only cancer screening"
+          ],
+          "correct": 1,
+          "explain": "These three areas are highlighted as core preventive priorities alongside cardiovascular health."
+        }
+      ]
+    },
+    {
+      "moduleId": "healthy-aging-longevity",
+      "questions": [
+        {
+          "q": "What does the strongest longevity evidence support, per the curriculum?",
+          "options": [
+            "Novel supplements",
+            "Unglamorous fundamentals — exercise, sleep, diet, connection, not smoking",
+            "Expensive biohacking protocols",
+            "A single miracle intervention"
+          ],
+          "correct": 1,
+          "explain": "The strongest evidence backs consistent fundamentals, not novel or exotic interventions."
+        },
+        {
+          "q": "What does “healthspan” measure?",
+          "options": [
+            "Total years lived regardless of health",
+            "Years lived in good functional health",
+            "Only years after retirement",
+            "Years spent exercising"
+          ],
+          "correct": 1,
+          "explain": "Healthspan tracks years lived in good functional health, distinct from raw lifespan."
+        },
+        {
+          "q": "What's described as the most effective countermeasure to age-related muscle mass decline?",
+          "options": [
+            "Diet alone",
+            "Strength training",
+            "Avoiding all exercise",
+            "Rest"
+          ],
+          "correct": 1,
+          "explain": "Strength training is the most effective tool against age-related muscle loss."
+        },
+        {
+          "q": "What are the strongest evidence-backed fall-prevention tools, per the curriculum?",
+          "options": [
+            "Leg strength and balance training",
+            "Avoiding all physical activity",
+            "Bed rest",
+            "Vision correction alone"
+          ],
+          "correct": 0,
+          "explain": "Leg strength and balance training have the strongest evidence for preventing falls."
+        },
+        {
+          "q": "What builds cognitive reserve more, per the curriculum?",
+          "options": [
+            "Repeating familiar mental tasks",
+            "Learning genuinely new skills",
+            "Avoiding all mental effort",
+            "Watching TV"
+          ],
+          "correct": 1,
+          "explain": "Genuinely novel learning builds cognitive reserve more than repeating familiar tasks."
+        },
+        {
+          "q": "What's described as among the strongest predictors of all-cause mortality risk?",
+          "options": [
+            "Body weight alone",
+            "VO2 max (cardiorespiratory fitness)",
+            "Resting heart rate alone",
+            "Diet type"
+          ],
+          "correct": 1,
+          "explain": "Cardiorespiratory fitness is again cited as one of the strongest predictors of mortality risk."
+        },
+        {
+          "q": "The longevity effect size of strong social relationships is compared to…",
+          "options": [
+            "A minor vitamin deficiency",
+            "Quitting smoking",
+            "No known risk factor",
+            "Daily vitamin use"
+          ],
+          "correct": 1,
+          "explain": "Strong social ties carry a longevity effect comparable to quitting smoking."
+        },
+        {
+          "q": "Which supplements does the curriculum say have reasonably solid evidence for specific gaps?",
+          "options": [
+            "All trending longevity supplements equally",
+            "Vitamin D, omega-3s, creatine, and protein powder",
+            "None — all supplements are unproven",
+            "Only multivitamins"
+          ],
+          "correct": 1,
+          "explain": "These four are singled out as having reasonably solid evidence for filling specific gaps."
+        },
+        {
+          "q": "What does the evidence actually support, per the curriculum's closing takeaway on longevity?",
+          "options": [
+            "A novel biohacking protocol",
+            "Consistency over decades, not a novel protocol",
+            "A single transformative event",
+            "Genetic testing alone"
+          ],
+          "correct": 1,
+          "explain": "Decades of consistency — not a clever new protocol — is what the evidence actually supports."
+        }
+      ]
+    },
+    {
+      "moduleId": "workplace-digital-wellness",
+      "questions": [
+        {
+          "q": "What matters more than a single “perfect” static posture, per the curriculum?",
+          "options": [
+            "Movement variety",
+            "An expensive chair",
+            "Screen brightness",
+            "Desk color"
+          ],
+          "correct": 0,
+          "explain": "Varying your posture and movement matters more than any single fixed “perfect” position."
+        },
+        {
+          "q": "What does the 20-20-20 rule address?",
+          "options": [
+            "Sleep quality",
+            "Digital eye strain",
+            "Meal timing",
+            "Exercise frequency"
+          ],
+          "correct": 1,
+          "explain": "The 20-20-20 rule is a simple technique for reducing digital eye strain."
+        },
+        {
+          "q": "What does constant availability increase, per the curriculum, even without actual interruptions?",
+          "options": [
+            "Productivity",
+            "Anticipatory stress",
+            "Job satisfaction",
+            "Nothing measurable"
+          ],
+          "correct": 1,
+          "explain": "Just knowing you might be interrupted raises anticipatory stress, whether or not it happens."
+        },
+        {
+          "q": "What outperforms optional wellness perks, per the curriculum?",
+          "options": [
+            "Free snacks",
+            "Structural interventions like flexibility, usable PTO, and manageable workload",
+            "Meditation apps alone",
+            "Nothing outperforms perks"
+          ],
+          "correct": 1,
+          "explain": "Structural changes to workload and flexibility outperform optional add-on perks."
+        },
+        {
+          "q": "What does remote work remove that an office naturally provided, per the curriculum?",
+          "options": [
+            "Nothing",
+            "Natural boundary and social cues",
+            "The need for breaks",
+            "All work stress"
+          ],
+          "correct": 1,
+          "explain": "An office naturally supplies boundary and social cues that remote work removes by default."
+        },
+        {
+          "q": "How does burnout research frame burnout, per the curriculum?",
+          "options": [
+            "An individual resilience failure",
+            "Primarily a workplace design mismatch",
+            "A purely personal choice",
+            "Unrelated to work conditions"
+          ],
+          "correct": 1,
+          "explain": "Burnout is framed primarily as a mismatch in workplace design, not a personal failing."
+        },
+        {
+          "q": "What does team wellness culture follow more, per the curriculum?",
+          "options": [
+            "Written policy alone",
+            "Modeled leadership behavior",
+            "Office decor",
+            "Company size"
+          ],
+          "correct": 1,
+          "explain": "What leaders actually model day to day shapes culture more than the written policy does."
+        }
+      ]
+    },
+    {
+      "moduleId": "personal-wellness-plan",
+      "questions": [
+        {
+          "q": "What's generally more useful to track day-to-day, per the curriculum?",
+          "options": [
+            "Outcome goals",
+            "Process goals",
+            "Neither type of goal",
+            "Only long-term goals"
+          ],
+          "correct": 1,
+          "explain": "Process goals — the actions you control daily — are more useful to track than distant outcomes."
+        },
+        {
+          "q": "What does the curriculum say time and energy are?",
+          "options": [
+            "The same resource",
+            "Both finite resources worth budgeting deliberately, and not the same thing",
+            "Unlimited if you're motivated",
+            "Irrelevant to planning"
+          ],
+          "correct": 1,
+          "explain": "Time and energy are treated as two distinct finite resources, each worth budgeting on its own."
+        },
+        {
+          "q": "How many dimensions does the wellness wheel self-assessment score?",
+          "options": [
+            "3",
+            "5",
+            "8",
+            "12"
+          ],
+          "correct": 2,
+          "explain": "It scores the same eight dimensions introduced back in Module 1."
+        },
+        {
+          "q": "What's described as a reasonable ceiling for simultaneous new habits?",
+          "options": [
+            "Ten",
+            "Three",
+            "One only, ever",
+            "No limit"
+          ],
+          "correct": 1,
+          "explain": "Consistent with the habit-formation module, three is the reasonable ceiling."
+        },
+        {
+          "q": "What's the difference between leading and lagging indicators, per the curriculum?",
+          "options": [
+            "They're the same thing",
+            "Leading indicators are actionable daily process; lagging indicators confirm whether it's working",
+            "Lagging indicators are more actionable",
+            "Neither is useful"
+          ],
+          "correct": 1,
+          "explain": "Leading indicators drive daily action; lagging indicators tell you later whether it worked."
+        },
+        {
+          "q": "What does this curriculum say about its own role, per the final module?",
+          "options": [
+            "It replaces individualized professional guidance",
+            "It builds an informed baseline but doesn't replace individualized professional guidance",
+            "It's a substitute for a doctor",
+            "Professionals are never necessary"
+          ],
+          "correct": 1,
+          "explain": "The curriculum positions itself as a knowledge baseline, explicitly not a replacement for professional care."
+        },
+        {
+          "q": "How often does the curriculum recommend reviewing your wellness plan?",
+          "options": [
+            "Once, at the start only",
+            "Quarterly",
+            "Daily",
+            "Never — set it and forget it"
+          ],
+          "correct": 1,
+          "explain": "A quarterly review cadence is recommended to keep the plan realistic and current."
+        },
+        {
+          "q": "What does the curriculum say a realistic first year looks like?",
+          "options": [
+            "One dramatic transformation",
+            "Building habits in months 1-3, reviewing and expanding in 4-6, layering in prevention in 7-12",
+            "All changes made in week 1",
+            "No structure needed"
+          ],
+          "correct": 1,
+          "explain": "A phased 12-month roadmap — not one big overhaul — is the realistic structure described."
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,8 @@ import {
   trackName,
   estimateMinutes,
 } from "@/lib/modules-data";
+import { findQuiz } from "@/lib/quizzes-data";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function ModuleSyllabusPage({
   params,
@@ -16,6 +18,22 @@ export default async function ModuleSyllabusPage({
   const { moduleId } = await params;
   const m = findModule(moduleId);
   if (!m) notFound();
+
+  const quiz = findQuiz(moduleId);
+  let quizPassed = false;
+  if (quiz) {
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    const { data: progress } = await supabase
+      .from("module_quiz_progress")
+      .select("passed")
+      .eq("seeker_id", user!.id)
+      .eq("module_id", moduleId)
+      .maybeSingle();
+    quizPassed = !!progress?.passed;
+  }
 
   return (
     <div>
@@ -39,8 +57,17 @@ export default async function ModuleSyllabusPage({
         >
           Start Module {m.num}
         </Link>
+        {quiz && (
+          <Link
+            href={`/seeker/modules/${m.id}/quiz`}
+            className="rounded border border-[#C9C3AC] px-[18px] py-[11px] font-mono text-[11.5px] uppercase tracking-[0.06em] text-[#4A4738]"
+          >
+            {quizPassed ? "Retake the module quiz" : "Take the module quiz"}
+          </Link>
+        )}
         <span className="font-mono text-[12px] text-[#8C8770]">
           {m.chapters.length} chapters · {moduleMinutes(m)} min total
+          {quizPassed ? " · Quiz passed" : ""}
         </span>
       </div>
 

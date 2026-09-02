@@ -162,6 +162,51 @@ export interface Database {
         }>;
         Relationships: [];
       };
+      module_quiz_progress: {
+        Row: {
+          id: string;
+          seeker_id: string;
+          module_id: string;
+          passed: boolean;
+          best_score: number;
+          attempts: number;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          seeker_id: string;
+          module_id: string;
+          passed?: boolean;
+          best_score?: number;
+          attempts?: number;
+          updated_at?: string;
+        };
+        Update: Partial<{
+          passed: boolean;
+          best_score: number;
+          attempts: number;
+          updated_at: string;
+        }>;
+        Relationships: [];
+      };
+      certificates: {
+        Row: {
+          id: string;
+          seeker_id: string;
+          name: string;
+          issued_at: string;
+        };
+        Insert: {
+          id?: string;
+          seeker_id: string;
+          name: string;
+          issued_at?: string;
+        };
+        Update: Partial<{
+          name: string;
+        }>;
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;
@@ -179,3 +224,5 @@ export type Listing = Database["public"]["Tables"]["listings"]["Row"];
 export type VartaPost = Database["public"]["Tables"]["varta_posts"]["Row"];
 export type EraResponse = Database["public"]["Tables"]["era_responses"]["Row"];
 export type RetreatLead = Database["public"]["Tables"]["retreat_leads"]["Row"];
+export type ModuleQuizProgress = Database["public"]["Tables"]["module_quiz_progress"]["Row"];
+export type Certificate = Database["public"]["Tables"]["certificates"]["Row"];

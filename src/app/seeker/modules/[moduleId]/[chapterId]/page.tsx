@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findChapter, moduleCode, estimateMinutes, flatChapterList } from "@/lib/modules-data";
+import { findQuiz } from "@/lib/quizzes-data";
 
 export default async function ChapterPage({
   params,
@@ -16,6 +17,8 @@ export default async function ChapterPage({
   const idx = flat.findIndex((x) => x.m.id === m.id && x.c.id === c.id);
   const prev = idx > 0 ? flat[idx - 1] : null;
   const next = idx < flat.length - 1 ? flat[idx + 1] : null;
+  const isLastOfModule = !next || next.m.id !== m.id;
+  const quiz = findQuiz(m.id);
 
   return (
     <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-12">
@@ -125,7 +128,19 @@ export default async function ChapterPage({
           ) : (
             <span />
           )}
-          {next ? (
+          {isLastOfModule ? (
+            <Link
+              href={quiz ? `/seeker/modules/${m.id}/quiz` : `/seeker/modules/${m.id}`}
+              className="ml-auto max-w-[48%] rounded-md border border-[#DCD6BF] bg-card px-4 py-3.5 text-right"
+            >
+              <div className="font-mono text-[10.5px] uppercase tracking-[0.06em] text-[#8C8770]">
+                {quiz ? "Last chapter →" : "Module complete →"}
+              </div>
+              <div className="mt-1.5 font-display text-[15px] font-medium text-ink">
+                {quiz ? "Take the module quiz" : `Back to ${moduleCode(m)} overview`}
+              </div>
+            </Link>
+          ) : next ? (
             <Link
               href={`/seeker/modules/${next.m.id}/${next.c.id}`}
               className="ml-auto max-w-[48%] rounded-md border border-[#DCD6BF] bg-card px-4 py-3.5 text-right"
@@ -138,17 +153,7 @@ export default async function ChapterPage({
               </div>
             </Link>
           ) : (
-            <Link
-              href={`/seeker/modules/${m.id}`}
-              className="ml-auto max-w-[48%] rounded-md border border-[#DCD6BF] bg-card px-4 py-3.5 text-right"
-            >
-              <div className="font-mono text-[10.5px] uppercase tracking-[0.06em] text-[#8C8770]">
-                Module complete →
-              </div>
-              <div className="mt-1.5 font-display text-[15px] font-medium text-ink">
-                Back to {moduleCode(m)} overview
-              </div>
-            </Link>
+            <span />
           )}
         </div>
       </main>
