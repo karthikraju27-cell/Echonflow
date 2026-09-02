@@ -46,22 +46,3 @@ export const SEEKER_TILES = [
     cta: "Explore retreats",
   },
 ] as const;
-
-// TODO(modules): this is a stub list only. Replace with the real 13-module /
-// 116-chapter Echonflow Learn curriculum (Zerodha Varsity-style) once that
-// content is migrated in.
-export const MODULE_LIST = [
-  "Foundations of Wellness",
-  "Sleep Architecture",
-  "Nutrition Fundamentals",
-  "Movement & Mobility",
-  "Stress & the Nervous System",
-  "Breathwork",
-  "Metabolic Health",
-  "Mental Resilience",
-  "Recovery Environments",
-  "Ayurveda & Roots",
-  "Workplace Wellness",
-  "Longevity Basics",
-  "Building Your Practice",
-];
