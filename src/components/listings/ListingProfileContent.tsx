@@ -50,8 +50,11 @@ export function ListingProfileContent({
               <div className="mb-1 font-display text-[40px] font-medium text-ink">
                 {listing.wrs_score}
               </div>
-              <div className="mb-5 font-mono text-[12px] uppercase tracking-[0.08em] text-gold">
+              <div className="mb-1 font-mono text-[12px] uppercase tracking-[0.08em] text-gold">
                 {listing.wrs_tier}
+              </div>
+              <div className="mb-5 font-body text-[11.5px] text-[#8C8770]">
+                Beta scoring — the WRS™ methodology is provisional and not yet final.
               </div>
               {breakdown && (
                 <div className="flex flex-col gap-2.5">

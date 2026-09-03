@@ -128,7 +128,10 @@ export function WrsFlow({ listingId, businessName }: { listingId: string; busine
         Workation Readiness Score (WRS™)
       </div>
       <div className="mb-1 font-display text-[48px] font-medium text-ink">{score}</div>
-      <div className="mb-5 font-mono text-[12px] uppercase tracking-[0.08em] text-gold">{tier}</div>
+      <div className="mb-1 font-mono text-[12px] uppercase tracking-[0.08em] text-gold">{tier}</div>
+      <div className="mb-5 font-body text-[11.5px] text-[#8C8770]">
+        Beta scoring — provisional methodology, not yet final.
+      </div>
       <p className="mb-5 font-body text-sm leading-relaxed text-[#4A4738]">
         Saved to your listing. Seekers will see this on {businessName}&apos;s page. Retake any time as
         the property changes.

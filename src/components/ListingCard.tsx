@@ -9,8 +9,12 @@ export function ListingCard({ listing, href }: { listing: Listing; href?: string
           {listing.category}
         </span>
         {listing.category === "Resort" && listing.wrs_score != null && (
-          <span className="font-mono text-[10px] uppercase tracking-[0.08em] text-gold">
-            WRS™ {listing.wrs_score} · {listing.wrs_tier}
+          <span
+            className="font-mono text-[10px] uppercase tracking-[0.08em] text-gold"
+            title="WRS™ scoring uses a placeholder methodology and is not yet final."
+          >
+            WRS™ {listing.wrs_score} · {listing.wrs_tier}{" "}
+            <span className="text-[#8C8770]">(beta)</span>
           </span>
         )}
       </div>
