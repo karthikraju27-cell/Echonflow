@@ -1,27 +1,30 @@
 import { createClient } from "@/lib/supabase/server";
 import { BackToHub } from "@/components/BackToHub";
 import { EraFlow } from "@/components/era/EraFlow";
+import { EraHistory } from "@/components/era/EraHistory";
+import { ERA_TITLE, ERA_EYEBROW } from "@/lib/era-questions";
 
-// TODO(era): the question set behind this flow is a placeholder — see
-// src/lib/era-questions.ts. Swap in the real spec once provided; the results
-// screen and persistence to `era_responses` are already real.
 export default async function EraPage() {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
+  const { data: responses } = await supabase
+    .from("era_responses")
+    .select("*")
+    .eq("seeker_id", user!.id)
+    .order("created_at", { ascending: false });
+
   return (
     <div>
       <BackToHub />
-      <h1 className="mb-1.5 font-display text-[30px] font-medium text-ink">
-        Energy &amp; Resilience Audit
-      </h1>
-      <p className="mb-7 font-body text-[14.5px] text-[#4A4738]">
-        5 sections, ~15 questions — sleep, stress load, movement, nutrition, and recovery-environment
-        fit.
-      </p>
+      <div className="mb-1.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-moss">
+        {ERA_EYEBROW}
+      </div>
+      <h1 className="mb-7 font-display text-[30px] font-medium text-ink">{ERA_TITLE}</h1>
       <EraFlow seekerId={user!.id} />
+      <EraHistory responses={responses ?? []} />
     </div>
   );
 }

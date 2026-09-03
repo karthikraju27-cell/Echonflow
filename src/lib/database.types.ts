@@ -14,6 +14,8 @@ export type ProviderCategory =
 
 export type VartaType = "reel" | "insight";
 
+export type LeadStatus = "new" | "contacted" | "booked";
+
 export interface Database {
   public: {
     Tables: {
@@ -58,6 +60,7 @@ export interface Database {
           wrs_score: number | null;
           wrs_tier: string | null;
           wrs_breakdown: Record<string, unknown> | null;
+          era_section_tags: string[] | null;
           created_at: string;
         };
         Insert: {
@@ -72,6 +75,7 @@ export interface Database {
           wrs_score?: number | null;
           wrs_tier?: string | null;
           wrs_breakdown?: Record<string, unknown> | null;
+          era_section_tags?: string[] | null;
           created_at?: string;
         };
         Update: Partial<{
@@ -84,6 +88,7 @@ export interface Database {
           wrs_score: number | null;
           wrs_tier: string | null;
           wrs_breakdown: Record<string, unknown> | null;
+          era_section_tags: string[] | null;
         }>;
         Relationships: [];
       };
@@ -126,6 +131,8 @@ export interface Database {
           seeker_id: string;
           answers: Record<string, unknown>;
           score: number | null;
+          section_scores: Record<string, unknown> | null;
+          nudge_sent_at: string | null;
           created_at: string;
         };
         Insert: {
@@ -133,11 +140,15 @@ export interface Database {
           seeker_id: string;
           answers: Record<string, unknown>;
           score?: number | null;
+          section_scores?: Record<string, unknown> | null;
+          nudge_sent_at?: string | null;
           created_at?: string;
         };
         Update: Partial<{
           answers: Record<string, unknown>;
           score: number | null;
+          section_scores: Record<string, unknown> | null;
+          nudge_sent_at: string | null;
         }>;
         Relationships: [];
       };
@@ -150,6 +161,7 @@ export interface Database {
           email: string;
           phone: string | null;
           message: string | null;
+          status: LeadStatus;
           created_at: string;
         };
         Insert: {
@@ -160,6 +172,7 @@ export interface Database {
           email: string;
           phone?: string | null;
           message?: string | null;
+          status?: LeadStatus;
           created_at?: string;
         };
         Update: Partial<{
@@ -167,6 +180,7 @@ export interface Database {
           email: string;
           phone: string | null;
           message: string | null;
+          status: LeadStatus;
         }>;
         Relationships: [];
       };

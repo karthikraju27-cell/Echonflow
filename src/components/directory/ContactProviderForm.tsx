@@ -48,6 +48,20 @@ export function ContactProviderForm({
       return;
     }
     setSent(true);
+
+    fetch("/api/email/new-lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        listingId,
+        leadName: name.trim(),
+        leadEmail: email.trim(),
+        leadPhone: phone.trim() || null,
+        leadMessage: message.trim() || null,
+      }),
+    }).catch(() => {
+      // Best-effort — the lead is already saved either way.
+    });
   }
 
   if (sent) {

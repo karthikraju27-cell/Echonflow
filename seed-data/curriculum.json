@@ -1,0 +1,2907 @@
+[
+  {
+    "id": "intro-to-wellness",
+    "num": 1,
+    "track": "foundations",
+    "title": "Introduction to Wellness",
+    "blurb": "What wellness actually means, why it's not the same as healthcare, and how to build your own point of view before you touch a single habit.",
+    "chapters": [
+      {
+        "id": "what-is-wellness",
+        "num": 1,
+        "title": "What is wellness, really?",
+        "sections": [
+          {
+            "heading": "1.1 A word that means too many things",
+            "paras": [
+              "Open five different wellness apps and you'll get five different definitions — one sells you a ring, one sells you supplements, one sells you a meditation subscription. Somewhere underneath the marketing is a simpler idea: wellness is the ongoing, active process of making choices that move you toward a fuller, more functional life, across more than one dimension at once.",
+              "That last part matters most. Wellness isn't a single number on a scale or a resting heart rate on a watch face. It's a composite — physical, mental, social, and a handful of other dimensions we'll map out in the next chapter — and it's a process, not a state you arrive at and keep forever."
+            ]
+          },
+          {
+            "heading": "1.2 Wellness is not the absence of illness",
+            "paras": [
+              "The World Health Organization made this distinction back in 1948: health is 'a state of complete physical, mental and social well-being, and not merely the absence of disease or infirmity.' You can be free of any diagnosis and still be far from well — chronically under-slept, isolated, running on stress hormones. You can also be managing a chronic condition and still be thriving by most other measures.",
+              "This textbook treats wellness as something you actively build, the way you'd build a skill or a portfolio — through small, compounding, well-informed decisions, not through a single intervention or purchase."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Wellness is multi-dimensional — physical health is only one piece of it.",
+          "It's a continuous process of decisions, not a fixed state or a product you buy.",
+          "Being disease-free and being 'well' are related but different things."
+        ]
+      },
+      {
+        "id": "eight-dimensions",
+        "num": 2,
+        "title": "The eight dimensions of wellness",
+        "sections": [
+          {
+            "heading": "2.1 A model worth borrowing",
+            "paras": [
+              "The most widely used framework — originally developed by psychologist Bill Hettler in the 1970s and expanded since — splits wellness into eight interacting dimensions: physical, emotional, intellectual, social, spiritual, occupational, environmental, and financial.",
+              "You don't need to score perfectly on all eight. Most people are strong in two or three and neglecting the rest, and neglect in one dimension quietly drags down the others — chronic financial stress erodes sleep, which erodes mood, which erodes relationships."
+            ]
+          },
+          {
+            "heading": "2.2 Where the dimensions overlap",
+            "paras": [
+              "The dimensions aren't independent boxes to check; they're more like overlapping circles. Occupational wellness (do you find your work meaningful and sustainable?) bleeds directly into emotional and financial wellness. Environmental wellness (is your physical space and community supportive?) shapes how easy or hard every other dimension is to maintain.",
+              "Through this curriculum, you'll notice most modules sit primarily in one dimension but touch several others — nutrition is physical, but it's also financial (what can you actually afford to eat well) and social (who you eat with)."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The eight dimensions: physical, emotional, intellectual, social, spiritual, occupational, environmental, financial.",
+          "Weakness in one dimension tends to spill into others — they're connected, not independent.",
+          "The goal isn't a perfect score everywhere; it's noticing where you're most neglected."
+        ]
+      },
+      {
+        "id": "wellness-vs-healthcare",
+        "num": 3,
+        "title": "Wellness vs. healthcare: two different systems",
+        "sections": [
+          {
+            "heading": "3.1 Different jobs, different tools",
+            "paras": [
+              "Healthcare is reactive by design — it exists to diagnose and treat disease once something has already gone wrong, using tools built for that job: tests, prescriptions, procedures. Wellness is proactive — it's the daily infrastructure (sleep, movement, food, stress regulation, relationships) that determines how often you need healthcare in the first place, and how well you recover when you do.",
+              "Neither replaces the other. A strong wellness practice won't set a broken bone or treat an infection, and a good doctor can't sleep, exercise, or eat for you between visits."
+            ]
+          },
+          {
+            "heading": "3.2 Why the confusion is expensive",
+            "paras": [
+              "Because both systems use overlapping language — 'health,' 'checkup,' 'treatment' — it's easy to outsource wellness to a doctor's appointment once a year and call it covered. Most of what determines long-term health outcomes (an estimated 60-80% by various public health models) happens in the choices made between appointments, not during them.",
+              "This curriculum sits entirely on the wellness side of that line. When something described here overlaps with a medical concern — a symptom, a lab value, a persistent pain — the right move is always a licensed clinician, not a chapter."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Healthcare treats what's already gone wrong; wellness is the daily practice that shapes how often that happens.",
+          "The two are complementary, not interchangeable.",
+          "Most long-term outcomes are driven by daily behavior between medical visits, not the visits themselves."
+        ]
+      },
+      {
+        "id": "wellness-spectrum",
+        "num": 4,
+        "title": "The wellness spectrum: illness to thriving",
+        "sections": [
+          {
+            "heading": "4.1 A line, not a switch",
+            "paras": [
+              "Picture a horizontal line. On the far left: premature death. Center: a neutral point with no diagnosed illness but no vitality either — surviving, not thriving. On the far right: peak function across the eight dimensions. Most conventional medicine operates on the left half of this line, working to move you from illness back to that neutral center.",
+              "Wellness work operates on the right half — moving you from that neutral center toward genuine vitality. You can be medically 'fine' and still have enormous room to move right on this spectrum."
+            ]
+          },
+          {
+            "heading": "4.2 Using the spectrum honestly",
+            "paras": [
+              "The spectrum is a diagnostic-free way to ask 'where am I, really?' without needing a lab result. It's also a reminder that wellness work doesn't stop once symptoms disappear — the absence of a problem is the midpoint of the journey, not the destination."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The wellness spectrum runs from premature death, through a neutral midpoint, to thriving.",
+          "Medicine mostly operates left of center; wellness work operates right of center.",
+          "'No diagnosis' is the midpoint, not the finish line."
+        ]
+      },
+      {
+        "id": "wellness-pov",
+        "num": 5,
+        "title": "Building your wellness point of view",
+        "sections": [
+          {
+            "heading": "5.1 Four lenses on any wellness question",
+            "paras": [
+              "Before adopting any habit, protocol, or product, it helps to look at it through four lenses: the mechanistic view (what does the body actually do here, biologically), the evidence view (what do controlled studies show, and how strong is that evidence), the personal view (how does your body, history, and context respond), and the outside view (what do people you trust, who have no financial stake, actually do).",
+              "Weighing these four together — rather than defaulting to whichever influencer showed up first — is what separates an informed decision from a trend followed blindly."
+            ]
+          },
+          {
+            "heading": "5.2 Holding a view loosely",
+            "paras": [
+              "A good wellness point of view is a working hypothesis, not a religion. The sleep chapter you read next month might update something in this module. Treat every claim in this curriculum, including this one, as provisional and open to better evidence."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Evaluate wellness claims through mechanism, evidence, personal response, and trusted outside opinion together.",
+          "Hold your conclusions loosely — update them as better evidence arrives."
+        ]
+      },
+      {
+        "id": "wellness-myths",
+        "num": 6,
+        "title": "Common wellness myths, debunked",
+        "sections": [
+          {
+            "heading": "6.1 'Detox' isn't a thing your organs need help with",
+            "paras": [
+              "Your liver and kidneys detoxify your blood continuously, without a juice cleanse's assistance. No peer-reviewed evidence supports commercial 'detox' products removing toxins faster or better than these organs already do on their own in a person with normal organ function."
+            ]
+          },
+          {
+            "heading": "6.2 More sweat doesn't mean more benefit",
+            "paras": [
+              "Sweat is a cooling mechanism, not a measure of workout quality or calories burned. A hard strength session in a cool room can be far more effective than a light walk in a sauna suit that produces buckets of sweat."
+            ]
+          },
+          {
+            "heading": "6.3 There is no single 'best' diet or workout",
+            "paras": [
+              "Adherence — what you'll actually sustain for years — outperforms theoretical optimality almost every time. The best plan is the well-informed one you'll still be doing in five years, not the one that wins an internet argument this week."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Detox products don't out-perform your liver and kidneys' normal function.",
+          "Sweat volume isn't a proxy for exercise effectiveness.",
+          "The 'best' plan is the one you'll sustain, not the theoretically optimal one."
+        ]
+      },
+      {
+        "id": "reading-research",
+        "num": 7,
+        "title": "How to read wellness research (without getting fooled)",
+        "sections": [
+          {
+            "heading": "7.1 Know your study types",
+            "paras": [
+              "Roughly in order of strength: systematic reviews and meta-analyses (combining many studies) sit at the top, then randomized controlled trials, then cohort and observational studies, then case reports, then — at the bottom — anecdote and 'it worked for me.' A single mouse study or a small industry-funded trial should move your confidence a little, not a lot."
+            ]
+          },
+          {
+            "heading": "7.2 Red flags worth knowing",
+            "paras": [
+              "Watch for: a study funded by the company selling the product, a sample size under a few dozen people, results reported only in a press release with no published paper, and correlation presented as causation ('people who eat X live longer' rarely accounts for the dozen other differences between those people)."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Meta-analyses and RCTs are stronger evidence than single studies, anecdotes, or press releases.",
+          "Funding source, sample size, and correlation-vs-causation are the first three things to check."
+        ]
+      },
+      {
+        "id": "personal-practice",
+        "num": 8,
+        "title": "Setting up your personal wellness practice",
+        "sections": [
+          {
+            "heading": "8.1 Start with an audit, not a plan",
+            "paras": [
+              "Before adding anything, spend a week simply noticing: sleep timing, energy through the day, what you actually eat, how often you move, who you talk to. Module 13 gives you a full self-assessment tool — but the instinct to observe before intervening is worth adopting now."
+            ]
+          },
+          {
+            "heading": "8.2 How this curriculum is organized",
+            "paras": [
+              "The modules that follow move roughly from body (nutrition, movement, sleep) to mind (emotional wellness, stress, habits) to life stage and systemic topics (aging, workplace, personal planning). You don't need to go in order — jump to whatever's most relevant, and use the search to find a specific topic fast."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Observe your current patterns for a week before changing anything.",
+          "The curriculum runs body → mind → life-stage & systems, but every module stands alone."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nutrition-fundamentals",
+    "num": 2,
+    "track": "body",
+    "title": "Nutrition Fundamentals",
+    "blurb": "Macronutrients, micronutrients, labels, and the difference between eating well and eating according to the latest trend.",
+    "chapters": [
+      {
+        "id": "macronutrients",
+        "num": 1,
+        "title": "Macronutrients: protein, carbs, fat",
+        "sections": [
+          {
+            "heading": "1.1 The three that provide energy",
+            "paras": [
+              "Everything you eat that provides calories is built from three macronutrients: protein (4 calories per gram), carbohydrate (4 calories per gram), and fat (9 calories per gram). Alcohol technically adds a fourth energy source at 7 calories per gram, but it isn't a nutrient your body needs.",
+              "Each macro does a different job. Protein supplies amino acids for building and repairing tissue. Carbohydrate is the body's preferred quick-access fuel, especially for the brain and during intense exercise. Fat supports hormone production, cell membranes, and the absorption of fat-soluble vitamins (A, D, E, K)."
+            ]
+          },
+          {
+            "heading": "1.2 There is no macro you can eliminate for free",
+            "paras": [
+              "Extremely low-fat and extremely low-carbohydrate diets both work for weight loss in the short term, mostly because they simplify food choices and reduce total calories. But driving any one macro near zero for long periods carries real trade-offs — very low fat intake impairs hormone and vitamin absorption; very low carbohydrate intake can impair high-intensity exercise performance for some people. The starting point for most people is a moderate balance across all three, adjusted from there based on goals and how you feel."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Protein and carbs provide 4 calories/gram; fat provides 9 calories/gram.",
+          "Protein repairs tissue, carbs fuel quick energy, fat supports hormones and vitamin absorption.",
+          "Eliminating a whole macronutrient category has trade-offs — moderation is the default starting point."
+        ]
+      },
+      {
+        "id": "micronutrients",
+        "num": 2,
+        "title": "Micronutrients: vitamins & minerals",
+        "sections": [
+          {
+            "heading": "2.1 Small amounts, large consequences",
+            "paras": [
+              "Vitamins and minerals don't provide calories, but they're required in small amounts for thousands of biochemical reactions — nerve signaling, blood clotting, immune defense, bone formation. Deficiency in even one, like iron or vitamin D, can produce fatigue, poor concentration, or weakened immunity long before it shows up as a diagnosable disease."
+            ]
+          },
+          {
+            "heading": "2.2 Food first, supplements second",
+            "paras": [
+              "A varied diet with different colors of vegetables and fruit, whole grains, legumes, and some animal or fortified plant proteins covers most people's micronutrient needs without supplementation. Supplements are most clearly useful for specific, identified gaps — vitamin D in low-sunlight climates, B12 on a fully plant-based diet, iron with a diagnosed deficiency — rather than as blanket daily insurance."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Micronutrients don't provide energy but are required for core bodily functions in small amounts.",
+          "A varied whole-food diet covers most people's needs.",
+          "Supplement for identified gaps, not as a blanket default."
+        ],
+        "comments": [
+          {
+            "name": "Priya N.",
+            "when": "3 weeks ago",
+            "text": "Is it worth getting a blood panel before starting any supplement, or is that overkill?",
+            "reply": {
+              "name": "Swasthi Primer",
+              "when": "3 weeks ago",
+              "text": "Not overkill — it's the right first step. A basic panel (vitamin D, B12, iron/ferritin, and whatever your doctor recommends) tells you what you actually need instead of guessing."
+            }
+          }
+        ]
+      },
+      {
+        "id": "energy-balance",
+        "num": 3,
+        "title": "Calories, energy balance & metabolism",
+        "sections": [
+          {
+            "heading": "3.1 The balance that governs weight change",
+            "paras": [
+              "Body weight changes according to energy balance: calories consumed versus calories expended. Eat consistently more than you burn and weight trends up; eat consistently less and it trends down. This is a real, well-established principle — but it's also easy to oversimplify, because both sides of that equation are harder to measure and more variable than a single number implies."
+            ]
+          },
+          {
+            "heading": "3.2 Where 'calories out' actually goes",
+            "paras": [
+              "Total energy expenditure breaks down roughly into: basal metabolic rate (60-75%, the energy your body burns at complete rest just to function), the thermic effect of food (about 10%, energy spent digesting what you eat), and physical activity (the remaining, most variable share — both structured exercise and everyday movement like walking, fidgeting, and standing).",
+              "That last, non-exercise category — often called NEAT — varies enormously between individuals and is one of the most underrated levers in energy balance, often larger in effect than an hour at the gym."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Weight change follows energy balance, but both sides of the equation are harder to measure precisely than they sound.",
+          "Basal metabolic rate accounts for the majority of daily calories burned, not exercise.",
+          "Everyday movement (NEAT) is an underrated lever, often larger than structured workouts."
+        ]
+      },
+      {
+        "id": "nutrition-labels",
+        "num": 4,
+        "title": "Reading a nutrition label",
+        "sections": [
+          {
+            "heading": "4.1 Start with the serving size",
+            "paras": [
+              "Every number on a nutrition label is per serving, and serving sizes are often smaller than what people actually eat in one sitting. Before looking at anything else, check the serving size and how many servings are in the package — a 'low calorie' snack can quietly become a high-calorie one if the bag holds three servings and you eat the whole thing."
+            ]
+          },
+          {
+            "heading": "4.2 What actually matters on the label",
+            "paras": [
+              "After serving size, the most useful numbers are: total calories, protein and fiber (both correlate with satiety), added sugar (distinct from naturally occurring sugar in fruit or dairy), and sodium. The ingredient list matters as much as the numbers — ingredients are listed by weight, so the first three tell you what the product mostly is."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Check serving size and servings-per-package before reading any other number.",
+          "Prioritize protein, fiber, added sugar, and sodium over total calories alone.",
+          "The ingredient list — ordered by weight — often tells you more than the nutrition panel."
+        ]
+      },
+      {
+        "id": "whole-vs-processed",
+        "num": 5,
+        "title": "Whole foods vs. processed foods",
+        "sections": [
+          {
+            "heading": "5.1 Processing is a spectrum, not a binary",
+            "paras": [
+              "'Processed' covers everything from frozen vegetables (minimally processed, nutritionally close to fresh) to ultra-processed snack foods engineered for palatability with industrial ingredients rarely found in a home kitchen. Treating all processing as equally bad misses useful, convenient, and nutritious options — canned beans and frozen fish are processed foods and are also excellent choices."
+            ]
+          },
+          {
+            "heading": "5.2 Why ultra-processed foods deserve specific scrutiny",
+            "paras": [
+              "The category worth limiting is ultra-processed food — products engineered to be hyper-palatable and easy to overeat, typically high in refined carbohydrate, added sugar, and unhealthy fat, low in fiber and protein relative to their calories. Building a diet mostly around whole and minimally processed foods, with ultra-processed foods as the exception rather than the default, is a more useful rule than avoiding 'processed food' as a category."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Processing exists on a spectrum — minimally processed foods (frozen, canned) can be excellent choices.",
+          "Ultra-processed food, engineered for palatability and easy overconsumption, is the category worth limiting.",
+          "Aim for whole/minimally-processed as the default, not a blanket ban on all processed food."
+        ]
+      },
+      {
+        "id": "protein-needs",
+        "num": 6,
+        "title": "Protein: how much do you actually need?",
+        "sections": [
+          {
+            "heading": "6.1 The official minimum vs. the practical target",
+            "paras": [
+              "The RDA for protein (0.8g per kg of body weight) is set to prevent deficiency in a sedentary person — it is not an optimal target for most active adults. Research on muscle maintenance and growth generally supports a higher range, roughly 1.2-2.0g per kg of body weight per day, especially for anyone strength training, in a calorie deficit, or over 40 and working to preserve muscle mass.",
+              "For a 70kg (154lb) adult, that's roughly 84-140 grams of protein a day — a wide range that depends on training status, goals, and age."
+            ]
+          },
+          {
+            "heading": "6.2 Distribution matters almost as much as total",
+            "paras": [
+              "Spreading protein across three to four meals, with 25-40g per meal, appears to support muscle protein synthesis better than getting the same daily total in one or two large meals, because the body can only use so much protein for muscle building at once."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The RDA (0.8g/kg) prevents deficiency; active adults generally do better around 1.2-2.0g/kg.",
+          "Protein needs rise with strength training, calorie deficits, and age.",
+          "Spreading protein across meals (25-40g each) is likely better than one large dose."
+        ]
+      },
+      {
+        "id": "carbs-glycemic-index",
+        "num": 7,
+        "title": "Carbohydrates & the glycemic index",
+        "sections": [
+          {
+            "heading": "7.1 Not all carbs behave the same",
+            "paras": [
+              "The glycemic index (GI) ranks how quickly a carbohydrate raises blood sugar compared to pure glucose. White bread and sugary drinks rank high (fast spike); lentils, oats, and most vegetables rank low (slow, steady release), largely because of their fiber content, which slows digestion."
+            ]
+          },
+          {
+            "heading": "7.2 Using GI without overusing it",
+            "paras": [
+              "GI is a useful lens but not the whole picture — it's measured per food in isolation, and eating carbs alongside protein, fat, or fiber blunts the blood sugar response regardless of the food's individual GI. For most people without a diagnosed blood sugar condition, prioritizing whole-food carbohydrate sources (fruit, whole grains, legumes) over refined ones (white flour, added sugar) covers most of the practical benefit without needing to track GI values precisely."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Glycemic index measures how fast a carb raises blood sugar; fiber slows that rise.",
+          "Pairing carbs with protein or fat blunts the blood sugar spike regardless of GI.",
+          "Favor whole-food carb sources over refined ones as the practical default."
+        ]
+      },
+      {
+        "id": "fats-good-bad",
+        "num": 8,
+        "title": "Fats: the good, the bad, and the trans",
+        "sections": [
+          {
+            "heading": "8.1 Unsaturated, saturated, and trans",
+            "paras": [
+              "Unsaturated fats (found in olive oil, nuts, seeds, avocado, fatty fish) are generally associated with better cardiovascular outcomes and are the fats to build a diet around. Saturated fat (found in fatty meat, butter, cheese) isn't the metabolic villain it was portrayed as in the 1990s, but current guidance still recommends keeping it a minority of total fat intake for most people. Trans fat, mostly a byproduct of industrial hydrogenation, is the one category with no established safe intake level and is now banned or heavily restricted in many countries."
+            ]
+          },
+          {
+            "heading": "8.2 Omega-3 and omega-6: the balance question",
+            "paras": [
+              "Both are essential fatty acids the body can't produce on its own. Modern diets, heavy in vegetable oils, tend to be skewed toward omega-6 relative to omega-3. Adding fatty fish, walnuts, flaxseed, or an algae-based supplement is a reasonable way to shift that ratio toward better balance."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Build the diet around unsaturated fats (olive oil, nuts, fish); keep saturated fat a minority share.",
+          "Trans fat has no established safe intake — avoid where possible.",
+          "Most modern diets could use more omega-3 relative to omega-6."
+        ]
+      },
+      {
+        "id": "hydration-electrolytes",
+        "num": 9,
+        "title": "Hydration & electrolytes",
+        "sections": [
+          {
+            "heading": "9.1 The '8 glasses a day' rule is a rough guideline, not a law",
+            "paras": [
+              "Fluid needs vary by body size, activity level, climate, and diet (food itself provides roughly 20% of daily fluid intake). A more reliable everyday signal than a fixed number is urine color — pale yellow generally indicates adequate hydration, dark yellow suggests you need more fluid."
+            ]
+          },
+          {
+            "heading": "9.2 When water alone isn't enough",
+            "paras": [
+              "Electrolytes — sodium, potassium, magnesium — are lost through sweat alongside water, and heavy sweating (intense exercise, hot climates, illness with vomiting or diarrhea) can create an imbalance that plain water doesn't fix and can occasionally worsen. In those situations, a fluid that includes sodium and some carbohydrate helps the body absorb and retain water more effectively than water alone."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Fixed daily water targets are rough guides — urine color is a more responsive everyday signal.",
+          "Heavy sweating requires electrolyte replacement, not just plain water.",
+          "Food itself contributes meaningfully to daily fluid intake."
+        ]
+      },
+      {
+        "id": "meal-timing-if",
+        "num": 10,
+        "title": "Meal timing & intermittent fasting",
+        "sections": [
+          {
+            "heading": "10.1 What intermittent fasting actually changes",
+            "paras": [
+              "Intermittent fasting (commonly 16:8 — an 8-hour eating window — or similar patterns) doesn't have a unique metabolic advantage over any other eating pattern at the same total calorie and protein intake. Its main practical benefit for many people is simplicity: fewer decisions, a natural cap on late-night snacking, and an easier way to hit a calorie target without counting every bite."
+            ]
+          },
+          {
+            "heading": "10.2 Who it doesn't suit",
+            "paras": [
+              "It isn't well suited to everyone — people with a history of disordered eating, those trying to build muscle on a tight schedule (where spreading protein across more meals may help), and anyone who trains early morning and needs pre-workout fuel often do better with a different structure. Like most nutrition tools, it's a means to an end (sustainable calorie and nutrient intake), not an end in itself."
+            ]
+          }
+        ],
+        "takeaways": [
+          "IF's main benefit is behavioral simplicity, not a unique metabolic effect.",
+          "It doesn't suit everyone — particularly those with a disordered eating history or early-morning training needs.",
+          "Choose an eating pattern based on what you'll sustain, not what's trending."
+        ]
+      },
+      {
+        "id": "nutrition-myths",
+        "num": 11,
+        "title": "Nutrition myths & fad diets",
+        "sections": [
+          {
+            "heading": "11.1 'Eating after 8pm makes you fat'",
+            "paras": [
+              "Weight gain is driven by total calorie balance over time, not the clock. Late eating can be a proxy for other things — mindless snacking, a lack of daytime structure — but the timing itself isn't the mechanism."
+            ]
+          },
+          {
+            "heading": "11.2 'Carbs are the enemy' and other one-nutrient villains",
+            "paras": [
+              "Entire countries and cultures have thrived on carbohydrate-heavy traditional diets for generations. Framing any single macronutrient as universally harmful ignores that food quality, total calories, and individual context matter far more than which macro category a food falls into.",
+              "A general pattern worth trusting more than any single diet brand: eat mostly whole foods, get enough protein and fiber, control portions relative to your goals, and be suspicious of any plan that requires buying a proprietary product to follow it."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Meal timing alone doesn't cause weight gain — total intake over time does.",
+          "No single macronutrient is universally 'bad' — quality and total diet matter more.",
+          "Be skeptical of any diet that requires a proprietary product to follow."
+        ]
+      },
+      {
+        "id": "sustainable-eating",
+        "num": 12,
+        "title": "Building a sustainable eating pattern",
+        "sections": [
+          {
+            "heading": "12.1 Optimal on paper, useless in practice",
+            "paras": [
+              "The theoretically perfect diet you can't sustain past six weeks loses to the good-enough diet you can sustain for six years. Sustainability isn't a soft, secondary consideration — for long-term health outcomes, it's arguably the most important variable in the entire equation."
+            ]
+          },
+          {
+            "heading": "12.2 A simple framework to build from",
+            "paras": [
+              "Most whole foods, most of the time. Protein at every meal. Vegetables or fruit at every meal. Enough fiber. Room for the foods you genuinely enjoy, including the ones with no particular nutritional value — restriction that leaves no room for pleasure tends to break down eventually. Build the pattern around your actual life, not an idealized one."
+            ]
+          }
+        ],
+        "takeaways": [
+          "A sustainable good-enough plan beats a theoretically perfect one you abandon.",
+          "Anchor meals around whole foods, protein, and produce — with room for foods you enjoy.",
+          "Design the eating pattern around your real life, not an idealized version of it."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "movement-fitness",
+    "num": 3,
+    "track": "body",
+    "title": "Movement & Fitness",
+    "blurb": "Cardiovascular fitness, strength training, mobility, and how to design a routine you'll still be doing next year.",
+    "chapters": [
+      {
+        "id": "built-to-move",
+        "num": 1,
+        "title": "Why humans are built to move",
+        "sections": [
+          {
+            "heading": "1.1 A body shaped by activity",
+            "paras": [
+              "Human physiology evolved under conditions of regular walking, carrying, climbing, and occasional bursts of intense effort. Nearly every system — cardiovascular, musculoskeletal, metabolic, even cognitive — functions measurably better with regular movement and measurably worse without it. Physical inactivity is now recognized as an independent risk factor for chronic disease, comparable in scale to smoking or poor diet."
+            ]
+          },
+          {
+            "heading": "1.2 Exercise as the closest thing to a universal intervention",
+            "paras": [
+              "No other single intervention touches as many systems at once — mood, sleep quality, insulin sensitivity, bone density, cardiovascular risk, cognitive function, and longevity all move in the same positive direction with regular movement. That breadth is why this module treats movement as foundational infrastructure, not an optional add-on for people who enjoy the gym."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Human physiology evolved for regular activity — most body systems function worse without it.",
+          "Physical inactivity is an independent chronic disease risk factor.",
+          "Exercise affects more systems simultaneously than almost any other single health intervention."
+        ]
+      },
+      {
+        "id": "cardio-basics",
+        "num": 2,
+        "title": "Cardiovascular fitness basics",
+        "sections": [
+          {
+            "heading": "2.1 What cardio actually trains",
+            "paras": [
+              "Cardiovascular exercise trains the heart to pump more blood per beat, increases capillary density in muscles, and improves the body's ability to deliver and use oxygen — measured as VO2 max, one of the strongest predictors of long-term mortality risk in the research literature, independent of weight or other fitness markers."
+            ]
+          },
+          {
+            "heading": "2.2 How much is enough",
+            "paras": [
+              "Public health guidelines generally recommend at least 150 minutes of moderate-intensity cardio a week (or 75 minutes vigorous, or an equivalent mix) — roughly 20-30 minutes most days. That's a floor, not a ceiling; benefits continue to accrue well beyond that minimum, with diminishing but still positive returns."
+            ]
+          }
+        ],
+        "takeaways": [
+          "VO2 max is one of the strongest predictors of long-term mortality risk in research.",
+          "150 minutes/week moderate cardio (or 75 vigorous) is a commonly cited floor, not a ceiling.",
+          "Benefits continue to accrue beyond the minimum recommendation."
+        ]
+      },
+      {
+        "id": "strength-fundamentals",
+        "num": 3,
+        "title": "Strength training fundamentals",
+        "sections": [
+          {
+            "heading": "3.1 Why lifting matters beyond aesthetics",
+            "paras": [
+              "Muscle mass and strength are directly tied to metabolic health, bone density, fall prevention in older age, and functional independence. Strength training is also one of the few interventions shown to meaningfully slow or reverse age-related muscle loss (sarcopenia), which begins as early as your 30s without resistance training."
+            ]
+          },
+          {
+            "heading": "3.2 The basics that cover most people",
+            "paras": [
+              "A well-rounded program hits the major movement patterns — squat, hinge (deadlift-style movements), push, pull, and carry — two to three times a week, with enough load and volume to challenge the muscle (see Progressive Overload, Chapter 5). Bodyweight, resistance bands, dumbbells, or barbells all work; the tool matters far less than consistent, progressive challenge."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Strength training slows age-related muscle loss, which begins as early as your 30s without it.",
+          "Cover squat, hinge, push, pull, and carry patterns two to three times a week.",
+          "Equipment matters less than consistent, progressively challenging training."
+        ]
+      },
+      {
+        "id": "flexibility-mobility",
+        "num": 4,
+        "title": "Flexibility & mobility",
+        "sections": [
+          {
+            "heading": "4.1 Two related but different things",
+            "paras": [
+              "Flexibility is a joint or muscle's passive range of motion (how far it can be stretched). Mobility is your ability to actively control and use that range of motion under load. You can be flexible in a passive stretch and still lack the mobility to use that range functionally — mobility work usually matters more for daily function and injury prevention than flexibility alone."
+            ]
+          },
+          {
+            "heading": "4.2 Where it fits in a routine",
+            "paras": [
+              "Dynamic stretching and mobility drills before training prepare joints for the work ahead; static stretching is more useful after training or on its own, when muscles are already warm. Ten minutes of targeted mobility work a few times a week — hips, ankles, thoracic spine, shoulders — addresses the areas that most commonly limit both strength training form and everyday movement."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Flexibility is passive range of motion; mobility is controlled, usable range of motion.",
+          "Dynamic mobility work fits best before training; static stretching fits best after.",
+          "Hips, ankles, thoracic spine, and shoulders are the most common limiting areas."
+        ]
+      },
+      {
+        "id": "progressive-overload",
+        "num": 5,
+        "title": "Progressive overload explained",
+        "sections": [
+          {
+            "heading": "5.1 The single principle behind all strength gains",
+            "paras": [
+              "Muscles and bones adapt to the demands placed on them — and stop adapting once a demand becomes routine. Progressive overload means gradually increasing the challenge over time: more weight, more reps, more sets, less rest, or better technique at the same load. Without it, a workout that was challenging in month one simply becomes maintenance by month four."
+            ]
+          },
+          {
+            "heading": "5.2 Applying it without overdoing it",
+            "paras": [
+              "Small, consistent increases — adding 2.5-5% more weight or one more rep every week or two — beat large, sporadic jumps, which tend to cause form breakdown or injury. Progress isn't always linear either; deload weeks (reduced volume or intensity) every four to eight weeks help the body recover and keep long-term progress on track."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Adaptation requires continually increasing demand — routine effort stops producing progress.",
+          "Small, consistent increases in weight, reps, or sets beat large sporadic jumps.",
+          "Periodic deload weeks support long-term progress rather than undermining it."
+        ]
+      },
+      {
+        "id": "zone2-training",
+        "num": 6,
+        "title": "Zone 2 training & aerobic base",
+        "sections": [
+          {
+            "heading": "6.1 What 'Zone 2' means",
+            "paras": [
+              "Heart rate training zones split effort into five bands from very light to maximal. Zone 2 — roughly 60-70% of max heart rate, a pace where you can still hold a conversation in full sentences — builds the aerobic base and mitochondrial density that higher-intensity training depends on, without the recovery cost of harder sessions."
+            ]
+          },
+          {
+            "heading": "6.2 Why easy training earns its place",
+            "paras": [
+              "It's counterintuitive, but a large share of a well-designed training week — even for people chasing performance — is spent at this easy, sustainable intensity, with a smaller share at genuinely hard effort. Training everything at a moderate-hard 'grey zone' pace, which is the most common mistake for self-coached exercisers, tends to produce more fatigue and less adaptation than a mix of mostly easy and occasionally very hard."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Zone 2 (roughly 60-70% max heart rate, conversational pace) builds aerobic base efficiently.",
+          "Most effective training weeks are mostly easy effort with occasional hard sessions.",
+          "Training everything at a moderate 'grey zone' pace is a common, counterproductive mistake."
+        ]
+      },
+      {
+        "id": "weekly-split",
+        "num": 7,
+        "title": "Designing a weekly workout split",
+        "sections": [
+          {
+            "heading": "7.1 Start from your actual schedule",
+            "paras": [
+              "The best split is the one that fits the days you'll realistically train, not an idealized 6-day bodybuilder split you'll abandon in three weeks. Two to four sessions a week, combining strength and cardio, covers most goals for most people."
+            ]
+          },
+          {
+            "heading": "7.2 A reasonable default structure",
+            "paras": [
+              "A common, sustainable pattern: two to three full-body or upper/lower strength sessions, one to two cardio sessions (mixing Zone 2 with some higher intensity), and at least one full rest day. Adjust the ratio toward more cardio or more strength based on your specific goals — general health, endurance performance, or muscle and strength gain each shift the emphasis differently."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Design around your realistic schedule, not an idealized program you won't sustain.",
+          "2-4 sessions/week mixing strength and cardio covers most general health goals.",
+          "Shift the strength-to-cardio ratio based on your specific goal."
+        ]
+      },
+      {
+        "id": "recovery-doms",
+        "num": 8,
+        "title": "Recovery, DOMS & rest days",
+        "sections": [
+          {
+            "heading": "8.1 Why muscles get sore",
+            "paras": [
+              "Delayed onset muscle soreness (DOMS), typically peaking 24-72 hours after unfamiliar or intense exercise, comes from microscopic muscle fiber damage and the inflammatory repair process that follows — a normal part of adaptation, not a sign of a good or necessary workout. Soreness is not a reliable indicator of how effective a session was."
+            ]
+          },
+          {
+            "heading": "8.2 What actually speeds recovery",
+            "paras": [
+              "Sleep is the single highest-leverage recovery tool available, ahead of any recovery gadget or supplement. Adequate protein intake, gentle movement (a walk, light cardio) rather than complete inactivity, and simply allowing enough time between hard sessions on the same muscle group (typically 48 hours) round out the fundamentals. Ice baths, massage guns, and compression gear may help a small amount at the margins but shouldn't be relied on to compensate for poor sleep or nutrition."
+            ]
+          }
+        ],
+        "takeaways": [
+          "DOMS reflects normal repair, not workout quality — soreness isn't a reliable effectiveness signal.",
+          "Sleep is the highest-leverage recovery tool, more impactful than recovery gadgets.",
+          "Allow roughly 48 hours between hard sessions targeting the same muscle group."
+        ]
+      },
+      {
+        "id": "injury-prevention",
+        "num": 9,
+        "title": "Injury prevention basics",
+        "sections": [
+          {
+            "heading": "9.1 Most injuries come from doing too much, too soon",
+            "paras": [
+              "The single biggest predictor of exercise injury isn't the activity itself — it's a rapid increase in training volume or intensity without adequate adaptation time. The commonly cited '10% rule' (don't increase weekly volume by more than about 10%) is a rough but useful guardrail, especially for running and other high-impact activities."
+            ]
+          },
+          {
+            "heading": "9.2 Form, warm-up, and listening to real signals",
+            "paras": [
+              "A proper warm-up that raises heart rate and rehearses the movement pattern, technique that prioritizes control over ego-driven weight increases, and treating sharp or joint pain (different from normal muscular fatigue) as a stop signal rather than something to push through are the fundamentals that prevent the majority of avoidable injuries."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Rapid increases in training volume, more than the activity itself, drive most injuries.",
+          "The 10% rule is a useful rough guardrail for increasing training load.",
+          "Sharp or joint pain is a stop signal — distinct from normal muscular fatigue."
+        ]
+      },
+      {
+        "id": "exercise-desk-workers",
+        "num": 10,
+        "title": "Exercise for desk workers",
+        "sections": [
+          {
+            "heading": "10.1 Sitting doesn't cancel a workout, but it does compound",
+            "paras": [
+              "An hour of exercise doesn't fully offset eight-plus hours of sitting — research increasingly points to total sedentary time, independent of exercise, as its own risk factor for cardiovascular and metabolic health. The fix isn't necessarily more exercise; it's breaking up sitting time throughout the day."
+            ]
+          },
+          {
+            "heading": "10.2 Practical adjustments that add up",
+            "paras": [
+              "Standing or walking for phone calls, a two-minute movement break every 30-60 minutes, a short walk after meals (shown to blunt post-meal blood sugar spikes), and prioritizing posterior chain and hip-flexor mobility work to counter hours of hip flexion — these small, repeatable adjustments often matter more than an intense hour at the gym for someone sitting most of the day."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Total sedentary time is an independent risk factor, not fully offset by a daily workout.",
+          "Breaking up sitting every 30-60 minutes matters more than most people assume.",
+          "A short post-meal walk measurably blunts blood sugar spikes."
+        ]
+      },
+      {
+        "id": "trackers-vo2max",
+        "num": 11,
+        "title": "Fitness trackers & VO2 max",
+        "sections": [
+          {
+            "heading": "11.1 What wearables estimate reasonably well",
+            "paras": [
+              "Consumer wearables are generally reliable for step count, resting heart rate trends, and relative sleep patterns over time — useful for spotting trends in your own data. Estimated VO2 max, calorie burn, and sleep stage breakdowns are far less precise, often varying meaningfully between devices measuring the same person at the same time."
+            ]
+          },
+          {
+            "heading": "11.2 Use trends, not single numbers",
+            "paras": [
+              "The most reliable way to use any tracker is to watch your own trend over weeks and months rather than trusting any single day's number as an absolute truth — a rising resting heart rate trend over two weeks is a more useful signal than one morning's calorie burn estimate."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Wearables are more reliable for trends (steps, resting HR) than absolute numbers (calories, VO2 max).",
+          "Different devices can disagree meaningfully on the same metric.",
+          "Track your own trend over weeks, not any single day's reading."
+        ]
+      },
+      {
+        "id": "movement-habit",
+        "num": 12,
+        "title": "Building a movement habit that sticks",
+        "sections": [
+          {
+            "heading": "12.1 Motivation is unreliable — design around it",
+            "paras": [
+              "Motivation fluctuates day to day and predictably fades within a few weeks of starting anything new. Habit and environment design — laying out gym clothes the night before, scheduling training like a fixed appointment, choosing a gym or route that's genuinely convenient — outperform relying on willpower or motivation alone (see Module 8 for the full framework)."
+            ]
+          },
+          {
+            "heading": "12.2 Choose something you don't dread",
+            "paras": [
+              "The 'best' exercise is the one you'll actually do consistently. If you hate running, a rowing machine or cycling might deliver the same cardiovascular benefit without the dread. Enjoyment isn't a luxury add-on to a fitness plan — it's one of the strongest predictors of whether the plan survives past month two."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Motivation predictably fades — environment and scheduling design matter more.",
+          "Choose activities you don't dread; enjoyment predicts long-term adherence.",
+          "Treat training like a fixed appointment rather than something dependent on feeling like it."
+        ],
+        "comments": [
+          {
+            "name": "Devraj S.",
+            "when": "1 month ago",
+            "text": "The 'schedule it like an appointment' tip genuinely changed things for me — I stopped negotiating with myself every morning."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sleep-science",
+    "num": 4,
+    "track": "body",
+    "title": "Sleep Science",
+    "blurb": "Why sleep matters more than almost anything else in this curriculum, and how to actually fix a broken sleep schedule.",
+    "chapters": [
+      {
+        "id": "why-we-sleep",
+        "num": 1,
+        "title": "Why we sleep",
+        "sections": [
+          {
+            "heading": "1.1 Not downtime — active maintenance",
+            "paras": [
+              "Sleep isn't the body powering off; it's an active state where the brain clears metabolic waste (including proteins linked to neurodegenerative disease), consolidates memory, regulates hormones including appetite and stress hormones, and the immune system does much of its repair work. Nearly every physiological system depends on adequate sleep to function normally the next day."
+            ]
+          },
+          {
+            "heading": "1.2 The cost of shortchanging it",
+            "paras": [
+              "Chronic short sleep (consistently under 6-7 hours) is associated with elevated risk across cardiovascular disease, type 2 diabetes, impaired immune function, and mood disorders. Cognitively, even one night of poor sleep measurably impairs reaction time, decision-making, and emotional regulation — effects often underestimated by the person experiencing them."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Sleep is active maintenance — waste clearance, memory consolidation, hormone regulation, immune repair.",
+          "Chronic short sleep is linked to elevated risk across multiple major disease categories.",
+          "People consistently underestimate how much a single bad night impairs their own performance."
+        ]
+      },
+      {
+        "id": "sleep-architecture",
+        "num": 2,
+        "title": "Sleep cycles & architecture",
+        "sections": [
+          {
+            "heading": "2.1 The stages within a night",
+            "paras": [
+              "A night of sleep cycles through roughly 90-minute blocks of light sleep, deep (slow-wave) sleep, and REM sleep, repeating four to six times. Deep sleep — concentrated in the first half of the night — handles most physical restoration. REM sleep — concentrated in the second half — handles emotional processing and much of memory consolidation."
+            ]
+          },
+          {
+            "heading": "2.2 Why cutting sleep short costs disproportionately",
+            "paras": [
+              "Because REM is weighted toward the later cycles, cutting a night short (say, from 8 hours to 6) doesn't just remove two hours evenly — it disproportionately cuts the REM-heavy portion of the night, which is part of why short sleep affects mood and memory more than raw hour-counting alone would suggest."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Sleep cycles through light, deep, and REM stages roughly every 90 minutes.",
+          "Deep sleep (physical restoration) concentrates early in the night; REM (emotional/memory) concentrates later.",
+          "Cutting sleep short disproportionately removes REM sleep, not just an even fraction of every stage."
+        ]
+      },
+      {
+        "id": "circadian-rhythm",
+        "num": 3,
+        "title": "Circadian rhythm 101",
+        "sections": [
+          {
+            "heading": "3.1 Your internal clock",
+            "paras": [
+              "The circadian rhythm is a roughly 24-hour internal clock, run primarily by a cluster of neurons in the brain that responds to light, regulating sleepiness, alertness, body temperature, and hormone release across the day. Misaligning behavior against this clock — shift work, jet lag, staying up much later than your natural rhythm — has measurable metabolic and cognitive costs even when total sleep hours stay the same."
+            ]
+          },
+          {
+            "heading": "3.2 Light is the primary input",
+            "paras": [
+              "Morning sunlight exposure is the single strongest cue for anchoring the circadian clock, helping set a earlier, more consistent sleep onset that night. Bright light in the evening, especially blue-wavelength light from screens, does the opposite — delaying the release of melatonin and pushing the whole cycle later."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Circadian rhythm is a ~24-hour internal clock regulated mainly by light exposure.",
+          "Misaligned timing carries costs even when total sleep hours are unchanged.",
+          "Morning light anchors the clock earlier; evening bright/blue light pushes it later."
+        ]
+      },
+      {
+        "id": "sleep-hygiene",
+        "num": 4,
+        "title": "Sleep hygiene fundamentals",
+        "sections": [
+          {
+            "heading": "4.1 The environment basics",
+            "paras": [
+              "A cool room (around 18-20°C / 65-68°F), dark enough that you can't see your hand in front of your face, and quiet or masked with consistent white noise covers most of the environmental side of sleep hygiene. Body temperature needs to drop slightly to initiate sleep, which is part of why an overly warm room disrupts sleep onset."
+            ]
+          },
+          {
+            "heading": "4.2 The behavioral basics",
+            "paras": [
+              "A consistent sleep and wake time (including weekends, as much as is realistic) does more for sleep quality than almost any single environmental tweak, because it keeps the circadian clock anchored. A wind-down routine of 20-30 minutes without screens, and reserving the bed for sleep (not work or scrolling), help the brain associate the bed specifically with sleep rather than wakeful activity."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Cool, dark, quiet environment supports the body's natural temperature drop needed for sleep onset.",
+          "Consistent sleep/wake timing matters more than most single environmental tweaks.",
+          "Reserving the bed for sleep only strengthens the brain's bed-sleep association."
+        ],
+        "comments": [
+          {
+            "name": "Farah I.",
+            "when": "6 days ago",
+            "text": "Dropped my room temp by two degrees and it made a bigger difference than I expected. Cheapest fix in this whole module."
+          }
+        ]
+      },
+      {
+        "id": "sleep-disruptors",
+        "num": 5,
+        "title": "Common sleep disruptors",
+        "sections": [
+          {
+            "heading": "5.1 The usual suspects",
+            "paras": [
+              "Caffeine has a half-life of roughly 5-6 hours, meaning a 3pm coffee can still have a quarter of its effect in your system at 10pm. Alcohol, despite feeling sedating, fragments sleep architecture and suppresses REM sleep in the second half of the night. Late, heavy meals close to bedtime can disrupt sleep via digestion and reflux; irregular exercise timing, particularly intense evening workouts, can delay sleep onset for some people."
+            ]
+          },
+          {
+            "heading": "5.2 The less obvious ones",
+            "paras": [
+              "Stress and an overactive mind at bedtime are among the most common disruptors reported, often addressed more effectively with a wind-down journaling practice (see Module 5) than with any product. Untreated sleep disorders — sleep apnea in particular, which is under-diagnosed and often missed because the person isn't aware they're waking repeatedly — are worth ruling out with a doctor if sleep quality stays poor despite good habits."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Caffeine's ~5-6 hour half-life means afternoon coffee can still disrupt nighttime sleep.",
+          "Alcohol feels sedating but fragments sleep and suppresses REM.",
+          "Persistent poor sleep despite good habits warrants screening for sleep apnea or another disorder."
+        ]
+      },
+      {
+        "id": "naps",
+        "num": 6,
+        "title": "Naps: when they help, when they hurt",
+        "sections": [
+          {
+            "heading": "6.1 The 20-minute rule",
+            "paras": [
+              "A short nap (10-20 minutes) taken in the early-to-mid afternoon can improve alertness and mood without leaving you groggy, because it avoids dropping into deep sleep. Naps longer than 30 minutes risk sleep inertia — that groggy, disoriented feeling from being woken mid-deep-sleep — and naps too close to bedtime or too late in the day can delay nighttime sleep onset."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Short naps (10-20 min) in early-to-mid afternoon boost alertness without grogginess.",
+          "Naps over 30 minutes risk sleep inertia from waking mid-deep-sleep.",
+          "Late-day naps can delay nighttime sleep onset."
+        ]
+      },
+      {
+        "id": "sleep-trackers",
+        "num": 7,
+        "title": "Sleep trackers & what the data means",
+        "sections": [
+          {
+            "heading": "7.1 What they get right and wrong",
+            "paras": [
+              "Consumer sleep trackers are reasonably good at estimating total sleep time and time awake, using movement and heart rate patterns. They're considerably less accurate at distinguishing specific sleep stages (light, deep, REM) compared to clinical polysomnography, the gold-standard lab measurement — stage estimates should be read as rough approximations, not precise diagnostics."
+            ]
+          },
+          {
+            "heading": "7.2 Avoiding 'orthosomnia'",
+            "paras": [
+              "A growing pattern, sometimes called orthosomnia, is anxiety about sleep caused by obsessing over tracker data itself — checking a 'sleep score' compulsively can paradoxically worsen sleep through the stress of monitoring it. Trackers are most useful as a coarse trend tool, not a nightly report card to be optimized to perfection."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Trackers estimate total sleep and wake time reasonably well; sleep-stage detail is much less precise.",
+          "Compulsively checking sleep scores can itself create sleep-disrupting anxiety (orthosomnia).",
+          "Use tracker data for coarse trends, not nightly perfectionism."
+        ]
+      },
+      {
+        "id": "fixing-sleep-schedule",
+        "num": 8,
+        "title": "Fixing a broken sleep schedule",
+        "sections": [
+          {
+            "heading": "8.1 Anchor the wake time first",
+            "paras": [
+              "Counterintuitively, the fastest way to fix a shifted sleep schedule is to fix your wake time first (and get morning light immediately after), not your bedtime. Bedtime naturally follows once the body has accumulated enough 'sleep pressure' during a consistently long wake period — trying to force an earlier bedtime before the wake time is anchored usually just produces time lying awake."
+            ]
+          },
+          {
+            "heading": "8.2 A realistic reset plan",
+            "paras": [
+              "Pick a wake time you can hold for two weeks straight, including weekends. Get outside within 30 minutes of waking. Avoid caffeine after early afternoon and alcohol close to bedtime during the reset. Expect bedtime to gradually shift earlier on its own over 7-10 days as sleep pressure and the circadian clock realign — resist the urge to force it faster with sleep aids as a first resort."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Fix wake time (and get morning light) first — bedtime follows naturally.",
+          "A consistent wake time held for two weeks is more effective than forcing an early bedtime directly.",
+          "Expect a realistic reset to take 7-10 days, not one night."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mental-emotional-wellness",
+    "num": 5,
+    "track": "mind",
+    "title": "Mental & Emotional Wellness",
+    "blurb": "The nervous system, emotional regulation, mindfulness, relationships, and knowing when it's time to bring in a professional.",
+    "chapters": [
+      {
+        "id": "what-is-mental-wellness",
+        "num": 1,
+        "title": "What is mental wellness?",
+        "sections": [
+          {
+            "heading": "1.1 More than the absence of a diagnosis",
+            "paras": [
+              "Mental wellness is the capacity to think clearly, feel and regulate a full range of emotions, cope with normal life stress, maintain relationships, and function in daily life — it exists on a spectrum, the same way physical wellness does, and it's entirely possible to have no diagnosable condition and still be languishing rather than thriving.",
+              "Positive psychology researcher Corey Keyes calls that middle state 'languishing' — not ill, but not well either — and it's likely the most common mental state among adults without a diagnosis, which is exactly why mental wellness deserves attention independent of mental illness."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Mental wellness is a spectrum, not simply the presence or absence of a diagnosis.",
+          "'Languishing' — not ill, not thriving — is a common, often unaddressed middle state.",
+          "You don't need a diagnosis to benefit from mental wellness practices."
+        ]
+      },
+      {
+        "id": "stress-vs-anxiety",
+        "num": 2,
+        "title": "Understanding stress vs. anxiety",
+        "sections": [
+          {
+            "heading": "2.1 Two related but distinct experiences",
+            "paras": [
+              "Stress is a response to an identifiable external demand — a deadline, a conflict, a life change — that typically resolves once the demand passes. Anxiety is a persistent sense of worry or threat that can occur without a clear, present trigger, and doesn't necessarily resolve when circumstances improve. Some stress is a normal, even useful, part of engaging with a challenging life; persistent anxiety that interferes with daily function is a different category worth discussing with a professional."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Stress responds to an identifiable external demand and typically resolves when it passes.",
+          "Anxiety can persist without a clear present trigger and doesn't reliably resolve on its own.",
+          "Persistent anxiety interfering with daily life is worth discussing with a professional."
+        ]
+      },
+      {
+        "id": "nervous-system-basics",
+        "num": 3,
+        "title": "The nervous system: fight, flight, rest, digest",
+        "sections": [
+          {
+            "heading": "3.1 Two branches, one balance",
+            "paras": [
+              "The autonomic nervous system runs largely on two branches: sympathetic (fight-or-flight — heart rate up, digestion down, muscles primed) and parasympathetic (rest-and-digest — heart rate down, recovery and digestion active). Both are necessary; the sympathetic branch isn't the enemy, it's what lets you react to a real threat or rise to a real challenge."
+            ]
+          },
+          {
+            "heading": "3.2 The modern imbalance",
+            "paras": [
+              "The problem for most people isn't that the sympathetic branch activates — it's that modern life rarely gives a clear signal to switch back to parasympathetic afterward, leaving the body in a low-grade activated state for hours or days. Practices like slow breathing, time in nature, and physical touch or connection are some of the most reliable ways to actively cue the parasympathetic system back on, rather than waiting for it to happen on its own."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Sympathetic (fight-or-flight) and parasympathetic (rest-and-digest) are both necessary, not opposites to eliminate.",
+          "Modern life often fails to signal a clear return to the parasympathetic state.",
+          "Slow breathing, nature exposure, and connection reliably cue the parasympathetic system on."
+        ]
+      },
+      {
+        "id": "emotional-regulation",
+        "num": 4,
+        "title": "Emotional regulation basics",
+        "sections": [
+          {
+            "heading": "4.1 Regulation isn't suppression",
+            "paras": [
+              "Emotional regulation doesn't mean not feeling difficult emotions — it means experiencing them without being overwhelmed or controlled by them. Suppression (pushing feelings down without processing them) tends to backfire, showing up later as irritability, physical tension, or the same feeling resurfacing with more intensity."
+            ]
+          },
+          {
+            "heading": "4.2 A simple technique: name it to tame it",
+            "paras": [
+              "Research by psychologist Matthew Lieberman found that simply labeling an emotion accurately ('I'm feeling anxious about this meeting,' rather than a vague sense of unease) measurably reduces activity in the brain's threat-response center. Naming the emotion specifically — rather than pushing it away or being consumed by it — is one of the simplest, most evidence-backed regulation tools available."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Regulation means experiencing emotions without being overwhelmed, not suppressing them.",
+          "Suppressed emotions tend to resurface later with more intensity.",
+          "Accurately naming an emotion measurably reduces the brain's threat response."
+        ]
+      },
+      {
+        "id": "mindfulness-meditation",
+        "num": 5,
+        "title": "Mindfulness & meditation fundamentals",
+        "sections": [
+          {
+            "heading": "5.1 What mindfulness actually is",
+            "paras": [
+              "Mindfulness is the practice of paying attention to the present moment without judgment — noticing thoughts, sensations, and emotions as they arise rather than being pulled fully into them or fighting them. Meditation is a formal practice for training that skill; mindfulness itself can be applied informally to any activity, from eating to walking to a difficult conversation."
+            ]
+          },
+          {
+            "heading": "5.2 What the evidence actually supports",
+            "paras": [
+              "Regular meditation practice (studies commonly use 8-week programs, 10-20 minutes a day) is associated with reduced stress and anxiety symptoms, improved attention, and structural changes in brain regions related to emotional regulation. It's not a cure-all, and the effect sizes in research are moderate, not miraculous — but for the time investment, it's one of the better-evidenced practices in this curriculum.",
+              "Starting small (5 minutes) with a simple breath-focused practice beats an ambitious 30-minute daily goal that gets abandoned after four days."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Mindfulness is present-moment, non-judgmental attention; meditation is formal practice of that skill.",
+          "8 weeks of regular practice shows measurable, moderate effects on stress and attention.",
+          "Start with a small, sustainable daily practice rather than an ambitious one you'll abandon."
+        ],
+        "comments": [
+          {
+            "name": "Ananya R.",
+            "when": "2 months ago",
+            "text": "Started with just 5 minutes using a free timer app, no subscription needed. Didn't expect it to actually help with my afternoon irritability but it has."
+          }
+        ]
+      },
+      {
+        "id": "journaling",
+        "num": 6,
+        "title": "Journaling for mental clarity",
+        "sections": [
+          {
+            "heading": "6.1 Why writing changes how you process",
+            "paras": [
+              "Putting a swirling thought into written words forces a level of structure and specificity that thinking alone rarely achieves — this is part of why 'expressive writing' research (pioneered by psychologist James Pennebaker) shows measurable benefits for stress and even physical health markers after just a few sessions of writing about a difficult experience."
+            ]
+          },
+          {
+            "heading": "6.2 Simple formats that work",
+            "paras": [
+              "You don't need an elaborate practice: a nightly brain-dump of whatever's unresolved, a gratitude list of three specific things, or a simple prompt like 'what's on my mind right now?' each take under five minutes and cover most of the documented benefit. Consistency matters more than length or eloquence."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Expressive writing about difficult experiences shows measurable stress and health benefits.",
+          "Simple formats (brain-dump, gratitude list, open prompt) capture most of the benefit.",
+          "Consistency matters more than length or polish."
+        ]
+      },
+      {
+        "id": "healthy-relationships",
+        "num": 7,
+        "title": "Building healthy relationships",
+        "sections": [
+          {
+            "heading": "7.1 The strongest predictor researchers have found",
+            "paras": [
+              "The Harvard Study of Adult Development, running continuously since 1938, is one of the longest-running studies of human life ever conducted. Its clearest, most consistent finding across more than 80 years: the quality of a person's close relationships is the strongest predictor of long-term happiness and health — stronger than wealth, fame, or career achievement."
+            ]
+          },
+          {
+            "heading": "7.2 What quality relationships actually require",
+            "paras": [
+              "Quality isn't about the number of relationships — it's about depth, trust, and the sense that you can show up honestly. Active ingredients that research repeatedly points to: consistent time investment, genuine curiosity about the other person, repair after conflict rather than avoidance of it, and being reliably present during hard moments, not just good ones."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The longest-running study of adult life found relationship quality is the strongest predictor of long-term wellbeing.",
+          "Depth and trust matter more than the number of relationships.",
+          "Consistent time, curiosity, and conflict repair are the active ingredients of quality relationships."
+        ]
+      },
+      {
+        "id": "loneliness-connection",
+        "num": 8,
+        "title": "Loneliness & social connection",
+        "sections": [
+          {
+            "heading": "8.1 A measurable health risk, not just a feeling",
+            "paras": [
+              "Chronic loneliness has been linked in research to health risks comparable to smoking or obesity — it's associated with elevated inflammation, poorer cardiovascular outcomes, and increased mortality risk. It's important to note loneliness is about perceived isolation, not literal alone time — a person can feel lonely in a crowded room, or content living alone."
+            ]
+          },
+          {
+            "heading": "8.2 Rebuilding connection deliberately",
+            "paras": [
+              "Because modern life often removes the built-in social structures earlier generations had by default (extended family nearby, closer-knit neighborhoods, religious or community institutions), connection often has to be actively built rather than assumed. Regular, low-stakes recurring contact — a standing weekly call, a consistent class or group activity — tends to build connection more reliably than occasional big gestures."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Chronic loneliness carries health risks comparable to smoking or obesity.",
+          "Loneliness is about perceived isolation, not literal time spent alone.",
+          "Regular, low-stakes recurring contact builds connection more reliably than occasional big gestures."
+        ]
+      },
+      {
+        "id": "digital-wellbeing",
+        "num": 9,
+        "title": "Digital wellbeing & screen time",
+        "sections": [
+          {
+            "heading": "9.1 It's not just the hours — it's the mode",
+            "paras": [
+              "Research on screen time and wellbeing is more nuanced than 'screens are bad' — passive scrolling and social comparison correlate with worse mood outcomes, while screen time spent on active connection (video calls with people you care about) or learning shows much weaker or even neutral effects. How you use the time matters as much as how much."
+            ]
+          },
+          {
+            "heading": "9.2 Practical boundaries worth setting",
+            "paras": [
+              "A phone-free first and last 30 minutes of the day, notifications trimmed to what genuinely needs real-time attention, and app-specific time limits on the platforms you personally find hardest to put down tend to be more sustainable than an all-or-nothing digital detox."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Passive scrolling correlates with worse mood more than active, connection-based screen use.",
+          "How screens are used matters as much as total hours.",
+          "Targeted boundaries (phone-free windows, trimmed notifications) beat all-or-nothing detoxes."
+        ]
+      },
+      {
+        "id": "when-to-seek-support",
+        "num": 10,
+        "title": "When to seek professional support",
+        "sections": [
+          {
+            "heading": "10.1 Signals worth acting on",
+            "paras": [
+              "It's time to consider professional support when difficulties last more than a couple of weeks with no improvement, when they interfere with work, relationships, or daily function, when coping strategies that used to help stop working, or when you notice yourself withdrawing from things and people you normally care about."
+            ]
+          },
+          {
+            "heading": "10.2 Support doesn't have to mean crisis",
+            "paras": [
+              "One of the most persistent myths is that therapy or counseling is only for a crisis or severe diagnosis. In practice, a large share of people in therapy are there for everyday difficulty — a hard transition, relationship friction, general stress — not necessarily a clinical disorder. Seeking support earlier, before things become a crisis, is generally more effective, not a sign that things have gotten 'bad enough.'"
+            ]
+          }
+        ],
+        "takeaways": [
+          "Persistent difficulty, functional interference, or withdrawal are signals worth acting on.",
+          "Therapy is commonly used for everyday difficulty, not only crisis or severe diagnosis.",
+          "Seeking support earlier tends to be more effective than waiting for a breaking point."
+        ]
+      },
+      {
+        "id": "therapy-101",
+        "num": 11,
+        "title": "Therapy 101: what to expect",
+        "sections": [
+          {
+            "heading": "11.1 The main approaches, briefly",
+            "paras": [
+              "Cognitive Behavioral Therapy (CBT) focuses on the links between thoughts, feelings, and behaviors, often with structured exercises between sessions. Psychodynamic therapy explores patterns rooted in past experience and relationships. Other approaches — ACT, DBT, EMDR, and more — suit different needs; a good therapist or an initial consultation can help match the approach to the person, and it's common to try more than one before finding a good fit."
+            ]
+          },
+          {
+            "heading": "11.2 The first few sessions",
+            "paras": [
+              "Early sessions are usually focused on history-taking and building rapport rather than immediate deep work — feeling unsure after one session is normal, not a sign it's not working. Fit with the specific therapist as a person matters as much as their specific approach or credentials; it's reasonable to try a different therapist if the fit doesn't feel right after a handful of sessions."
+            ]
+          }
+        ],
+        "takeaways": [
+          "CBT, psychodynamic, ACT, DBT, and EMDR are among the common approaches, suited to different needs.",
+          "Early sessions focus on rapport and history — feeling unsure initially is normal.",
+          "Fit with the individual therapist matters as much as the specific approach."
+        ]
+      },
+      {
+        "id": "emotional-resilience",
+        "num": 12,
+        "title": "Building emotional resilience",
+        "sections": [
+          {
+            "heading": "12.1 Resilience is a skill, not a trait",
+            "paras": [
+              "Resilience isn't a fixed personality trait some people have and others don't — psychological research consistently frames it as a set of learnable skills and habits: cognitive flexibility (finding more than one way to interpret a setback), a support network you actually use, a sense of purpose or meaning, and a track record of having gotten through hard things before."
+            ]
+          },
+          {
+            "heading": "12.2 Building it before you need it",
+            "paras": [
+              "Like physical fitness, resilience is easier to build during calmer periods than to construct from scratch in the middle of a crisis. The practices across this module — regulation, mindfulness, journaling, connection — function as resilience infrastructure, built in advance of the moments that will actually test it."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Resilience is a learnable set of skills and habits, not a fixed personality trait.",
+          "Cognitive flexibility, an active support network, and a sense of purpose all contribute.",
+          "Build resilience during calm periods, not from scratch during a crisis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "stress-management",
+    "num": 6,
+    "track": "mind",
+    "title": "Stress Management & Resilience",
+    "blurb": "The stress response explained, practical breathwork and reframing techniques, and how to spot burnout before it takes hold.",
+    "chapters": [
+      {
+        "id": "stress-response",
+        "num": 1,
+        "title": "The stress response explained",
+        "sections": [
+          {
+            "heading": "1.1 An ancient system, a modern mismatch",
+            "paras": [
+              "The stress response evolved to handle acute physical threats — a burst of cortisol and adrenaline, elevated heart rate, sharpened focus, all optimized for a short, intense burst of action. Modern stressors (a stream of emails, financial pressure, a difficult relationship) trigger the same biological response, but rarely offer the physical resolution — running, fighting, or otherwise discharging the activation — that the system evolved for."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The stress response evolved for acute physical threats, not modern chronic stressors.",
+          "Modern stress rarely offers the physical resolution the response evolved to expect."
+        ]
+      },
+      {
+        "id": "acute-vs-chronic",
+        "num": 2,
+        "title": "Acute vs. chronic stress",
+        "sections": [
+          {
+            "heading": "2.1 Different durations, different consequences",
+            "paras": [
+              "Acute stress — short, intense, resolving within hours or days — is generally well-tolerated and can even improve performance and resilience (a phenomenon researchers call 'stress inoculation'). Chronic stress — sustained activation over weeks, months, or years — is where the real health costs accumulate: elevated blood pressure, disrupted sleep, impaired immune function, and increased risk for depression and anxiety."
+            ]
+          },
+          {
+            "heading": "2.2 The hidden middle category",
+            "paras": [
+              "A less-discussed category is repeated acute stress without adequate recovery between episodes — individually manageable stressors stacked too close together to fully resolve. This pattern can produce chronic-stress-like effects even when no single stressor would qualify as chronic on its own, which is why recovery time between demands matters as much as the demands themselves."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Acute stress is generally well-tolerated and can build resilience.",
+          "Chronic, sustained stress carries the significant health costs.",
+          "Stacked acute stressors without recovery time can mimic chronic stress effects."
+        ]
+      },
+      {
+        "id": "breathwork",
+        "num": 3,
+        "title": "Breathwork fundamentals",
+        "sections": [
+          {
+            "heading": "3.1 The fastest lever you have",
+            "paras": [
+              "Breathing is one of the only autonomic functions you can consciously control, which makes it a direct, fast-acting lever on the nervous system. Slow, extended exhales in particular activate the vagus nerve and shift the body toward the parasympathetic (rest-and-digest) state within minutes."
+            ]
+          },
+          {
+            "heading": "3.2 A technique worth learning",
+            "paras": [
+              "Physiological sighing — a double inhale through the nose followed by a long, slow exhale through the mouth, repeated a few times — has been shown in research from Stanford's Huberman Lab to reduce measures of physiological stress faster than other common breathing techniques. Box breathing (inhale 4, hold 4, exhale 4, hold 4, repeated) is another widely used, easy-to-learn option."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Breathing is a directly controllable lever on the autonomic nervous system.",
+          "Slow, extended exhales activate the vagus nerve and shift toward parasympathetic state.",
+          "Physiological sighing and box breathing are two evidence-informed, easy-to-learn techniques."
+        ]
+      },
+      {
+        "id": "cognitive-reframing",
+        "num": 4,
+        "title": "Cognitive reframing techniques",
+        "sections": [
+          {
+            "heading": "4.1 The thought isn't always the fact",
+            "paras": [
+              "Cognitive reframing, a core CBT technique, starts from the premise that a situation itself doesn't cause distress directly — the interpretation of that situation does. The same event (a critical email from a boss) can produce panic, indifference, or motivation depending entirely on the story attached to it."
+            ]
+          },
+          {
+            "heading": "4.2 A simple three-step reframe",
+            "paras": [
+              "Identify the automatic thought ('I'm going to get fired'). Question it against the actual evidence ('has one critical email ever led to that before?'). Generate a more balanced alternative ('this is feedback on one project, not a verdict on my job'). This isn't about forced positivity — it's about matching the interpretation to the actual evidence rather than the worst-case story the mind defaults to under stress."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Reframing targets the interpretation of an event, not the event itself.",
+          "Identify the automatic thought, question it against evidence, generate a balanced alternative.",
+          "The goal is accuracy, not forced positivity."
+        ]
+      },
+      {
+        "id": "boundaries",
+        "num": 5,
+        "title": "Boundaries & saying no",
+        "sections": [
+          {
+            "heading": "5.1 Boundaries as stress prevention, not conflict",
+            "paras": [
+              "A boundary is simply a clear statement of what you will and won't do, communicated in advance rather than discovered through resentment after the fact. Chronic overcommitment — saying yes by default to avoid short-term discomfort — is one of the most common, self-inflicted sources of ongoing stress, and one of the most fixable."
+            ]
+          },
+          {
+            "heading": "5.2 Saying no without over-explaining",
+            "paras": [
+              "A boundary doesn't require an elaborate justification — 'I can't take that on right now' is a complete sentence. Over-explaining often invites negotiation; a brief, clear, non-apologetic no, offered consistently, tends to be respected more than a long justification offered defensively."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Boundaries are proactive statements of capacity, not confrontations.",
+          "Default overcommitment is a common, fixable source of chronic stress.",
+          "A brief, clear no is generally more effective and respected than an over-explained one."
+        ]
+      },
+      {
+        "id": "burnout-signs",
+        "num": 6,
+        "title": "Burnout: recognizing the signs",
+        "sections": [
+          {
+            "heading": "6.1 Three dimensions, not just tiredness",
+            "paras": [
+              "The World Health Organization defines burnout, in occupational contexts, along three dimensions: exhaustion (depleted energy), cynicism or detachment (increased mental distance from one's work or role), and reduced professional efficacy (a sense of ineffectiveness or lack of accomplishment). Tiredness alone, without the cynicism and efficacy components, is more likely ordinary fatigue than full burnout."
+            ]
+          },
+          {
+            "heading": "6.2 Why it's often missed until late",
+            "paras": [
+              "Burnout tends to build gradually and is often rationalized ('everyone's this busy,' 'it'll ease up next month') until it reaches a point of real functional impairment. Catching the early signs — dread before a normal workday, a growing sense of cynicism about work that used to feel meaningful, physical symptoms like headaches or GI issues with no other cause — allows for intervention before a full breakdown."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Burnout involves exhaustion, cynicism/detachment, and reduced sense of efficacy together.",
+          "Tiredness alone is more likely ordinary fatigue than full burnout.",
+          "Early signs are commonly rationalized away — catching them early matters."
+        ],
+        "comments": [
+          {
+            "name": "Meera T.",
+            "when": "2 weeks ago",
+            "text": "The three-dimension breakdown helped me realize I was cynical, not just tired. Different problem, different fix.",
+            "reply": {
+              "name": "Swasthi Primer",
+              "when": "2 weeks ago",
+              "text": "Exactly right — and that distinction usually points toward Module 12's material on workload and structural fixes, not just more rest."
+            }
+          }
+        ]
+      },
+      {
+        "id": "recovery-practices",
+        "num": 7,
+        "title": "Recovery practices that actually work",
+        "sections": [
+          {
+            "heading": "7.1 Passive rest isn't the same as active recovery",
+            "paras": [
+              "Scrolling on a couch for two hours often doesn't feel restorative because passive, low-engagement rest doesn't reliably down-regulate stress hormones. Active recovery — genuinely absorbing activities (a hobby, time in nature, physical movement, real conversation) — tends to produce a stronger sense of restoration than passive screen time, even in the same amount of time."
+            ]
+          },
+          {
+            "heading": "7.2 Micro-recovery across the day",
+            "paras": [
+              "Recovery doesn't require a vacation to be effective. Brief, deliberate breaks throughout the day — a five-minute walk outside, a few minutes of slow breathing between meetings, stepping fully away from screens at lunch — accumulate meaningfully and prevent the kind of stress build-up that a single weekend off can't fully undo."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Passive rest (scrolling) is less restorative than genuinely engaging activities.",
+          "Active recovery down-regulates stress hormones more effectively than passive rest.",
+          "Small, frequent recovery breaks across the day add up more than occasional long breaks."
+        ]
+      },
+      {
+        "id": "stress-toolkit",
+        "num": 8,
+        "title": "Building a personal stress toolkit",
+        "sections": [
+          {
+            "heading": "8.1 Match the tool to the timeframe",
+            "paras": [
+              "Different tools work at different timescales: breathwork for an acute spike in the next five minutes, a short walk or reframe for the next hour, boundary-setting and workload review for the coming week, and therapy or a structural life change for a chronic, months-long pattern. Trying to use a five-minute tool to fix a chronic problem — or a structural change for a five-minute spike — is a common mismatch."
+            ]
+          },
+          {
+            "heading": "8.2 Write your toolkit down before you need it",
+            "paras": [
+              "A written, specific plan — 'when I notice X, I'll do Y' — is far more likely to actually get used in a stressful moment than a general intention to 'handle stress better.' Building this toolkit during a calm moment, and revisiting it periodically, is more effective than trying to design a coping strategy for the first time while already overwhelmed."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Different stress tools suit different timescales — match the tool to the problem's duration.",
+          "A specific, written 'when X happens, I do Y' plan is more usable in the moment than a general intention.",
+          "Build the toolkit in a calm moment, not in the middle of a crisis."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "preventive-health",
+    "num": 7,
+    "track": "body",
+    "title": "Preventive Health & Screenings",
+    "blurb": "Check-ups, blood work, screenings by age, and building a personal health record — the wellness-side complement to healthcare.",
+    "chapters": [
+      {
+        "id": "why-prevention",
+        "num": 1,
+        "title": "Why prevention beats treatment",
+        "sections": [
+          {
+            "heading": "1.1 The economics and biology of catching things early",
+            "paras": [
+              "Most chronic diseases — cardiovascular disease, type 2 diabetes, many cancers — develop gradually over years before producing noticeable symptoms. Screening exists specifically to find these conditions in that silent window, when intervention is simplest, cheapest, and most effective. By the time symptoms appear, treatment options are often more invasive and outcomes less favorable."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Most chronic disease develops silently over years before symptoms appear.",
+          "Screening catches conditions in the window when treatment is simplest and most effective."
+        ]
+      },
+      {
+        "id": "annual-checkups",
+        "num": 2,
+        "title": "Annual check-ups: what to expect",
+        "sections": [
+          {
+            "heading": "2.1 What a standard visit typically covers",
+            "paras": [
+              "A general annual check-up typically includes blood pressure, weight and BMI, a review of family and personal medical history, basic blood work (discussed next chapter), and a conversation about any new symptoms or concerns. It's also the appropriate place to raise anything you've been putting off mentioning — a persistent symptom, a lifestyle question, a screening you're due for."
+            ]
+          },
+          {
+            "heading": "2.2 Coming prepared",
+            "paras": [
+              "A short written list of questions or symptoms, brought in advance, meaningfully improves how much gets covered in a typically brief appointment. Knowing your family history (see Chapter 8) ahead of time also helps your doctor recommend the right screenings for your specific risk profile rather than only generic, age-based defaults."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Annual check-ups cover vitals, history review, basic blood work, and any new concerns.",
+          "A written list of questions improves how much gets covered in a short appointment.",
+          "Knowing your family history helps tailor screenings beyond generic age-based defaults."
+        ]
+      },
+      {
+        "id": "reading-blood-work",
+        "num": 3,
+        "title": "Blood work basics: reading a lipid panel",
+        "sections": [
+          {
+            "heading": "3.1 The core numbers",
+            "paras": [
+              "A standard lipid panel reports total cholesterol, LDL ('bad' cholesterol, which contributes to arterial plaque), HDL ('good' cholesterol, which helps clear it), and triglycerides (a type of fat in the blood linked to diet and metabolic health). General reference ranges: LDL under 100 mg/dL is typically considered optimal, HDL above 40 (men) or 50 (women) mg/dL is favorable, and triglycerides under 150 mg/dL is typical — though your doctor's interpretation, based on your full risk profile, matters more than any single number in isolation."
+            ]
+          },
+          {
+            "heading": "3.2 Context beats a single result",
+            "paras": [
+              "A single lipid panel is a snapshot, not a verdict — trends over multiple years, combined with other risk factors (blood pressure, family history, smoking status, activity level), give a far more accurate risk picture than one isolated result. This chapter is meant to help you understand what you're looking at, not to replace your doctor's interpretation of it."
+            ]
+          }
+        ],
+        "takeaways": [
+          "A lipid panel reports total cholesterol, LDL, HDL, and triglycerides.",
+          "General reference ranges exist, but interpretation depends on full individual risk context.",
+          "Trends over years matter more than any single snapshot result."
+        ]
+      },
+      {
+        "id": "blood-pressure-cv-risk",
+        "num": 4,
+        "title": "Blood pressure & cardiovascular risk",
+        "sections": [
+          {
+            "heading": "4.1 Why it's called the 'silent' risk factor",
+            "paras": [
+              "High blood pressure typically produces no symptoms at all, even at levels that meaningfully raise cardiovascular risk — which is why regular measurement matters regardless of how you feel. General categories: normal is under 120/80 mmHg, elevated is 120-129/under 80, and hypertension begins at 130/80 or above, per current American Heart Association guidelines — though guidelines vary somewhat by country and organization."
+            ]
+          },
+          {
+            "heading": "4.2 Lifestyle levers that move the number",
+            "paras": [
+              "Sodium reduction, regular aerobic exercise, weight management, limiting alcohol, and stress management (Module 6) all have research support for lowering blood pressure, often meaningfully, before or alongside medication. For many people with mild elevation, lifestyle change is the first-line approach a doctor will recommend."
+            ]
+          }
+        ],
+        "takeaways": [
+          "High blood pressure is typically symptomless, making regular measurement important.",
+          "Hypertension is commonly defined starting at 130/80 mmHg per current AHA guidance.",
+          "Sodium reduction, exercise, weight management, and stress reduction all have evidence for lowering blood pressure."
+        ],
+        "comments": [
+          {
+            "name": "Arjun M.",
+            "when": "1 month ago",
+            "text": "Had no idea it was this symptomless. Got a home cuff after reading this, glad I checked."
+          }
+        ]
+      },
+      {
+        "id": "cancer-screenings",
+        "num": 5,
+        "title": "Cancer screenings by age",
+        "sections": [
+          {
+            "heading": "5.1 General screening patterns",
+            "paras": [
+              "Screening recommendations vary by country, sex, and individual risk factors, but common patterns include: breast cancer screening (mammograms) typically starting in the 40s, cervical cancer screening (Pap smears) starting in the 20s, colorectal screening typically starting around 45-50, and skin checks for anyone with significant sun exposure history or family history of skin cancer."
+            ]
+          },
+          {
+            "heading": "5.2 Family history changes the timeline",
+            "paras": [
+              "These are general population guidelines — a family history of a specific cancer, particularly in a first-degree relative or at a young age, often means screening should start earlier and more frequently than the standard timeline. This is a conversation to have directly with a doctor, using your specific family history, rather than relying on generic age markers alone."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Screening timelines vary by cancer type, sex, and country — general patterns exist but aren't universal.",
+          "Family history, especially in a first-degree relative, can shift screening earlier.",
+          "This overview is a starting point for a conversation with a doctor, not a personal recommendation."
+        ]
+      },
+      {
+        "id": "adult-vaccinations",
+        "num": 6,
+        "title": "Vaccinations for adults",
+        "sections": [
+          {
+            "heading": "6.1 Vaccination doesn't stop at childhood",
+            "paras": [
+              "Adult vaccination is one of the most under-utilized preventive tools — many adults assume their childhood vaccination schedule covers them for life, when several vaccines require boosters or are specifically recommended later in life: annual influenza, a tetanus/diphtheria booster roughly every 10 years, and age- or risk-based recommendations for shingles, pneumococcal disease, and others."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Several vaccines require adult boosters that childhood vaccination doesn't cover.",
+          "Recommendations are often age- or risk-based rather than universal — worth reviewing with a doctor."
+        ]
+      },
+      {
+        "id": "dental-vision-health",
+        "num": 7,
+        "title": "Dental & vision health",
+        "sections": [
+          {
+            "heading": "7.1 More connected to the rest of the body than they seem",
+            "paras": [
+              "Gum disease has documented links to cardiovascular disease and diabetes risk, and routine dental visits catch far more than cavities — they're often where early signs of other systemic conditions first appear. A standard recommendation is a dental check-up every six months, though frequency can reasonably vary based on individual oral health history."
+            ]
+          },
+          {
+            "heading": "7.2 Vision as an easily-deferred check",
+            "paras": [
+              "Annual or biennial eye exams catch not just vision changes but early signs of conditions like glaucoma, diabetic retinopathy, and hypertension-related changes in the retina — often before any other symptom appears. Vision checks are among the most commonly deferred preventive visits, largely because gradual vision changes are easy to adapt to without noticing."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Gum disease is linked to cardiovascular and diabetes risk — dental visits catch more than cavities.",
+          "Eye exams can catch early signs of glaucoma, diabetic retinopathy, and hypertension-related changes.",
+          "Vision checks are commonly deferred because gradual changes are easy to adapt to unnoticed."
+        ]
+      },
+      {
+        "id": "family-history-genetic-risk",
+        "num": 8,
+        "title": "Family history & genetic risk",
+        "sections": [
+          {
+            "heading": "8.1 The most underused screening tool",
+            "paras": [
+              "A detailed family health history — covering parents, siblings, and grandparents, including the age conditions were diagnosed — is one of the most powerful, and most neglected, tools for personalizing your own preventive care. It's free, requires no lab test, and directly informs which screenings should start earlier for you specifically."
+            ]
+          },
+          {
+            "heading": "8.2 What to actually record",
+            "paras": [
+              "Worth documenting for each close relative: major diagnoses (heart disease, cancer, diabetes, mental health conditions), the age at diagnosis, and cause of death if applicable. Age at diagnosis matters especially — a parent diagnosed with heart disease at 50 carries different implications for your own screening timeline than one diagnosed at 80."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Family history is a free, powerful, and commonly underused preventive care tool.",
+          "Document major diagnoses and age at diagnosis for close relatives.",
+          "Age at diagnosis matters as much as the diagnosis itself for assessing your own risk timeline."
+        ]
+      },
+      {
+        "id": "personal-health-record",
+        "num": 9,
+        "title": "Building your personal health record",
+        "sections": [
+          {
+            "heading": "9.1 Why a single record matters",
+            "paras": [
+              "Medical information scattered across different clinics, apps, and memory makes it easy for a new doctor to miss something a previous one already knew. A simple personal health record — medications, allergies, past diagnoses, family history, and recent screening results, kept in one place you control — closes that gap and speeds up every future appointment."
+            ]
+          },
+          {
+            "heading": "9.2 Keeping it simple",
+            "paras": [
+              "This doesn't need to be sophisticated — a document or note on your phone, updated after each appointment, covers most of the benefit. The goal is having the information available and accurate when you need it, not building an elaborate system you won't maintain."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Scattered medical information across providers creates real gaps in care.",
+          "A simple, self-maintained record of medications, allergies, and history closes that gap.",
+          "A basic note updated regularly beats an elaborate system that doesn't get maintained."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "habit-formation",
+    "num": 8,
+    "track": "foundations",
+    "title": "Habit Formation & Behavior Change",
+    "blurb": "The actual mechanics of how habits form, why willpower fails, and how to design a 90-day plan you'll stick to.",
+    "chapters": [
+      {
+        "id": "habit-loop",
+        "num": 1,
+        "title": "The habit loop: cue, craving, response, reward",
+        "sections": [
+          {
+            "heading": "1.1 The four-part mechanism",
+            "paras": [
+              "Behavioral research, popularized by writers like Charles Duhigg and James Clear, describes habits as a loop: a cue triggers a craving, which drives a response, which delivers a reward — and the reward reinforces the cue-response link, making the loop more automatic each time it repeats. Nearly every habit, good or bad, follows this same basic structure."
+            ]
+          },
+          {
+            "heading": "1.2 Why this framework is useful",
+            "paras": [
+              "Once you can identify the specific cue and reward driving an existing habit, you can either keep the loop and change the response (same cue, same reward, healthier action) or design a brand-new loop from scratch by deliberately choosing a cue and a reward for a new behavior you want to build."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Habits follow a cue → craving → response → reward loop.",
+          "Identifying the specific cue and reward of an existing habit is the first step to changing it.",
+          "New habits can be built by deliberately designing a cue and reward, not just willing the behavior."
+        ]
+      },
+      {
+        "id": "willpower-myth",
+        "num": 2,
+        "title": "Why willpower isn't the answer",
+        "sections": [
+          {
+            "heading": "2.1 A finite, unreliable resource",
+            "paras": [
+              "Willpower behaves less like a fixed trait and more like a depletable resource across a day — decision fatigue is real, which is part of why healthy intentions set in the morning so often collapse by evening. Relying on willpower as the primary strategy for behavior change means relying on your weakest, most depleted state to hold the line."
+            ]
+          },
+          {
+            "heading": "2.2 Design beats discipline",
+            "paras": [
+              "People who appear to have more self-control in research studies often simply structure their environment to need less of it — not keeping tempting food in the house, automating savings before it can be spent, laying out gym clothes the night before. Removing the decision removes the willpower requirement entirely."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Willpower depletes across the day — relying on it means relying on your weakest state.",
+          "People with apparently strong self-control often just need less of it, through environment design.",
+          "Removing the decision point is more reliable than trying to out-discipline temptation."
+        ]
+      },
+      {
+        "id": "habit-stacking",
+        "num": 3,
+        "title": "Habit stacking & implementation intentions",
+        "sections": [
+          {
+            "heading": "3.1 Attach new habits to existing ones",
+            "paras": [
+              "Habit stacking uses an already-automatic behavior as the cue for a new one: 'after I pour my morning coffee, I will write down three priorities for the day.' Because the first behavior is already automatic, it becomes a reliable trigger that doesn't depend on remembering or willpower."
+            ]
+          },
+          {
+            "heading": "3.2 Implementation intentions",
+            "paras": [
+              "A well-studied related technique: forming a specific 'if X, then Y' plan in advance rather than a vague intention. 'I will exercise more' rarely survives contact with a busy week; 'if it's 7am on a weekday, then I will do 20 minutes of movement before checking my phone' is specific enough to actually follow, and research shows this format meaningfully improves follow-through."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Habit stacking attaches a new behavior to an already-automatic one as its trigger.",
+          "Implementation intentions ('if X, then Y') outperform vague goals in research on follow-through.",
+          "Specificity — exact time, place, and trigger — is what makes a plan usable."
+        ]
+      },
+      {
+        "id": "environment-design",
+        "num": 4,
+        "title": "Environment design for better habits",
+        "sections": [
+          {
+            "heading": "4.1 Friction is a powerful lever",
+            "paras": [
+              "Small amounts of friction have an outsized effect on behavior — research on this, including work by behavioral economist Brian Wansink, found that moving candy from a desktop to a drawer just six feet away cut consumption meaningfully, even though the effort difference was trivial in absolute terms. Adding friction to a habit you want less of, and removing friction from one you want more of, is often more effective than relying on motivation."
+            ]
+          },
+          {
+            "heading": "4.2 Practical applications",
+            "paras": [
+              "Want more of a habit: keep the workout clothes visible, the book on the pillow, the water bottle on the desk. Want less of one: log out of the app, keep junk food out of the house entirely rather than 'just in the pantry,' put the phone in another room while working. The environment does the enforcing so willpower doesn't have to."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Small friction changes have an outsized effect on behavior, even when the effort difference is trivial.",
+          "Add friction to reduce unwanted habits; remove friction to support wanted ones.",
+          "A well-designed environment enforces behavior so willpower doesn't have to."
+        ]
+      },
+      {
+        "id": "tracking-progress",
+        "num": 5,
+        "title": "Tracking progress without obsessing",
+        "sections": [
+          {
+            "heading": "5.1 Why tracking works",
+            "paras": [
+              "Simply recording a behavior — even a basic checkmark on a calendar — increases the likelihood of repeating it, a well-documented effect sometimes called 'the mere measurement effect.' Visible streaks and progress also provide their own small reward, reinforcing the habit loop discussed in Chapter 1."
+            ]
+          },
+          {
+            "heading": "5.2 Where tracking goes wrong",
+            "paras": [
+              "Tracking becomes counterproductive when it turns into obsessive checking, when a single missed day feels like total failure ('I broke the streak, so why bother now'), or when the metric itself becomes more important than the underlying goal it was meant to represent. A missed day is data, not a verdict — the aim is a good trend over months, not an unbroken streak."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Recording a behavior, even simply, increases the likelihood of repeating it.",
+          "Obsessive tracking or all-or-nothing streak thinking undermines the benefit.",
+          "A missed day is data, not a failure — aim for a good long-term trend."
+        ]
+      },
+      {
+        "id": "relapse-setbacks",
+        "num": 6,
+        "title": "Dealing with relapse & setbacks",
+        "sections": [
+          {
+            "heading": "6.1 Setbacks are part of the normal process",
+            "paras": [
+              "Behavior change research (the Transtheoretical Model, developed by Prochaska and DiClemente) treats relapse as a normal, expected stage in the change process, not evidence that change has failed — most people cycle through a habit multiple times before it sticks permanently."
+            ]
+          },
+          {
+            "heading": "6.2 The 'never miss twice' rule",
+            "paras": [
+              "One missed day rarely derails a habit on its own; what derails it is a missed day turning into a missed week through discouragement. A simple, practical rule — never miss the same habit two days in a row — keeps a single lapse from spiraling, and shifts the goal from perfection to fast recovery."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Relapse is a normal, expected stage in behavior change, not a sign of failure.",
+          "Most habits are adopted only after multiple attempts, not on the first try.",
+          "'Never miss twice' prevents a single lapse from becoming a full collapse."
+        ]
+      },
+      {
+        "id": "1-percent-better",
+        "num": 7,
+        "title": "The 1% better framework",
+        "sections": [
+          {
+            "heading": "7.1 Compounding, not overnight transformation",
+            "paras": [
+              "A 1% improvement each day compounds to roughly 37 times better over a year — a useful mental model even though real habits don't literally compound with mathematical precision. The core idea holds regardless: small, consistent, boring improvements outperform occasional dramatic overhauls that are hard to sustain."
+            ]
+          },
+          {
+            "heading": "7.2 Applying it to a new habit",
+            "paras": [
+              "Rather than an ambitious overhaul (a completely new diet, a daily hour at the gym, starting tomorrow), a 1%-better approach starts smaller than feels significant: one extra vegetable a day, five minutes of movement, one earlier bedtime — small enough that the main obstacle (motivation, willpower, time) barely applies, then builds from that stable base."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Small daily improvements compound dramatically over time as a mental model.",
+          "Consistent small changes outperform dramatic overhauls that are hard to sustain.",
+          "Start smaller than feels significant, then build from a stable base."
+        ]
+      },
+      {
+        "id": "90-day-plan",
+        "num": 8,
+        "title": "Designing your 90-day wellness plan",
+        "sections": [
+          {
+            "heading": "8.1 Why 90 days",
+            "paras": [
+              "Ninety days is long enough for a new behavior to become genuinely automatic (research suggests habit automaticity typically forms somewhere between two and eight months, depending on the behavior's complexity) but short enough to stay a concrete, motivating target rather than an abstract lifelong resolution."
+            ]
+          },
+          {
+            "heading": "8.2 A simple structure to follow",
+            "paras": [
+              "Choose no more than one to three habits to build simultaneously — trying to overhaul everything at once is one of the most common and reliable ways behavior change fails. For each: define the specific cue, the exact behavior, and how you'll track it. Review at the 30 and 60 day marks, adjusting rather than abandoning what isn't quite working. Module 13 builds this into a full personal wellness plan."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Habit automaticity typically forms over roughly two to eight months, making 90 days a reasonable milestone.",
+          "Limit to one to three simultaneous habits — overhauling everything at once commonly fails.",
+          "Define cue, behavior, and tracking method for each habit, then review and adjust at 30/60 days."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "womens-health",
+    "num": 9,
+    "track": "life",
+    "title": "Women's Health",
+    "blurb": "The menstrual cycle, hormonal health, fertility, pregnancy, menopause, and nutrition needs across every life stage.",
+    "chapters": [
+      {
+        "id": "menstrual-cycle",
+        "num": 1,
+        "title": "The menstrual cycle explained",
+        "sections": [
+          {
+            "heading": "1.1 More than 'that time of the month'",
+            "paras": [
+              "The menstrual cycle is a roughly month-long hormonal cycle with four phases — menstrual, follicular, ovulatory, and luteal — driven by shifting levels of estrogen and progesterone. These hormones affect far more than reproduction: energy levels, mood, body temperature, and even strength training performance can shift meaningfully across the cycle."
+            ]
+          },
+          {
+            "heading": "1.2 What counts as 'normal' has a range",
+            "paras": [
+              "A 'typical' cycle is often cited as 28 days, but a normal range spans roughly 21-35 days, and some variation cycle-to-cycle is expected rather than a red flag. Worth flagging with a doctor: cycles consistently outside that range, extremely heavy or painful periods that interfere with daily function, or a cycle that stops unexpectedly outside of pregnancy or menopause."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The cycle has four hormonal phases affecting far more than just reproduction.",
+          "A normal cycle length ranges roughly 21-35 days — some variation is expected.",
+          "Consistently irregular, extremely heavy, or unexpectedly absent cycles are worth a doctor's visit."
+        ]
+      },
+      {
+        "id": "hormonal-health-basics",
+        "num": 2,
+        "title": "Hormonal health basics",
+        "sections": [
+          {
+            "heading": "2.1 The key players",
+            "paras": [
+              "Estrogen and progesterone are the primary reproductive hormones, but thyroid hormone, cortisol, and insulin all interact with them — which is part of why stress, sleep, and diet (covered elsewhere in this curriculum) can noticeably affect cycle regularity and symptoms, not just reproductive-specific factors."
+            ]
+          },
+          {
+            "heading": "2.2 Common signals worth not ignoring",
+            "paras": [
+              "Symptoms like persistent fatigue, unexplained weight changes, mood shifts beyond typical premenstrual symptoms, or hair and skin changes can sometimes point to a hormonal imbalance (thyroid conditions and PCOS are among the more common causes) — worth raising with a doctor rather than attributing to stress by default."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Reproductive hormones interact closely with thyroid, cortisol, and insulin.",
+          "Sleep, stress, and diet all measurably influence hormonal and cycle health.",
+          "Persistent, unusual symptoms are worth a doctor's evaluation rather than default attribution to stress."
+        ]
+      },
+      {
+        "id": "fertility-reproductive",
+        "num": 3,
+        "title": "Fertility & reproductive wellness",
+        "sections": [
+          {
+            "heading": "3.1 The fertility window",
+            "paras": [
+              "Fertility is highest in the days leading up to and including ovulation, generally understood as roughly a 6-day window each cycle — sperm can survive several days, while the egg is viable for about 24 hours after release. Cycle tracking (apps, basal body temperature, or cervical mucus changes) is a common way to identify this window, whether the goal is conceiving or avoiding it."
+            ]
+          },
+          {
+            "heading": "3.2 Age and fertility, in context",
+            "paras": [
+              "Fertility gradually declines with age starting in the late 20s to early 30s, with a steeper decline generally after 35 — but this is a population-level trend with wide individual variation, not a precise personal deadline. Anyone with specific fertility questions or concerns is best served by a conversation with a reproductive health specialist, given how individual the picture is."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The fertile window is roughly 6 days around ovulation each cycle.",
+          "Fertility gradually declines with age, more steeply after 35, though individual variation is wide.",
+          "Specific fertility concerns are best addressed directly with a reproductive health specialist."
+        ]
+      },
+      {
+        "id": "pregnancy-postpartum",
+        "num": 4,
+        "title": "Pregnancy & postpartum wellness",
+        "sections": [
+          {
+            "heading": "4.1 Wellness fundamentals shift, not disappear",
+            "paras": [
+              "Nutrition, movement, and sleep remain foundational during pregnancy, but specifics change — increased needs for folate, iron, and certain other nutrients, modified (not eliminated) exercise guidance, and closer medical monitoring throughout. This curriculum's general modules provide useful background, but pregnancy-specific guidance should always come from an OB-GYN or midwife tracking the individual pregnancy."
+            ]
+          },
+          {
+            "heading": "4.2 The postpartum period deserves more attention than it gets",
+            "paras": [
+              "Recovery after childbirth — physical healing, hormonal shifts, sleep deprivation, and significant mental health risk (postpartum depression and anxiety affect a meaningful share of new parents) — is often under-supported compared to the pregnancy itself. Screening for postpartum mood changes, and having a support plan in place before birth rather than improvising after, are both worth prioritizing."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Pregnancy shifts specific nutrition, exercise, and monitoring needs — always guided by an OB-GYN or midwife.",
+          "Postpartum recovery, including mental health, is often under-supported relative to pregnancy itself.",
+          "A support plan set up before birth is more effective than improvising one after."
+        ]
+      },
+      {
+        "id": "perimenopause-menopause",
+        "num": 5,
+        "title": "Perimenopause & menopause",
+        "sections": [
+          {
+            "heading": "5.1 A transition, not a single event",
+            "paras": [
+              "Perimenopause — the transition leading up to menopause, marked by declining and increasingly erratic estrogen and progesterone — can last several years and typically begins in a woman's 40s, sometimes earlier. Menopause itself is technically defined as 12 consecutive months without a period, with the average age around 51 in most populations studied."
+            ]
+          },
+          {
+            "heading": "5.2 Common symptoms and what helps",
+            "paras": [
+              "Hot flashes, sleep disruption, mood changes, and changes in bone and cardiovascular risk are among the most common effects of this hormonal shift. Management options range from lifestyle adjustments (sleep hygiene, exercise, stress management) to hormone therapy, which for many women is a safe and effective option worth discussing with a doctor rather than avoiding by default based on outdated information."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Perimenopause can last years before menopause, defined as 12 months without a period.",
+          "Common effects include hot flashes, sleep disruption, mood changes, and shifting bone/cardiovascular risk.",
+          "Hormone therapy is a legitimate, often safe option worth a direct conversation with a doctor."
+        ],
+        "comments": [
+          {
+            "name": "Sunita G.",
+            "when": "3 weeks ago",
+            "text": "Appreciate that this didn't treat HRT like a scary word. My doctor and I had a much better conversation after I read this."
+          }
+        ]
+      },
+      {
+        "id": "bone-health-osteoporosis",
+        "num": 6,
+        "title": "Bone health & osteoporosis risk",
+        "sections": [
+          {
+            "heading": "6.1 A risk that rises sharply after menopause",
+            "paras": [
+              "Estrogen plays a protective role in maintaining bone density, and its decline after menopause accelerates bone loss — women lose bone density faster than men in the years immediately following menopause, which is part of why osteoporosis is significantly more common in women, especially post-menopause."
+            ]
+          },
+          {
+            "heading": "6.2 What actually protects bone density",
+            "paras": [
+              "Weight-bearing and resistance exercise (Module 3), adequate calcium and vitamin D intake, and avoiding smoking are the primary modifiable levers. A bone density scan (DEXA), typically recommended starting around age 65 or earlier with risk factors, is the standard screening tool — worth discussing timing with a doctor based on personal and family history."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Bone loss accelerates after menopause due to declining estrogen.",
+          "Weight-bearing exercise, calcium, vitamin D, and not smoking are the main modifiable protections.",
+          "DEXA bone density scans are typically recommended starting around 65, or earlier with risk factors."
+        ]
+      },
+      {
+        "id": "breast-cervical-screening",
+        "num": 7,
+        "title": "Breast & cervical health screening",
+        "sections": [
+          {
+            "heading": "7.1 Two of the most established screening programs",
+            "paras": [
+              "Mammograms (breast cancer screening) and Pap smears combined with HPV testing (cervical cancer screening) are among the most well-established, evidence-backed cancer screening programs in medicine, credited with substantial reductions in mortality from both cancers since becoming widespread. Specific starting ages and intervals vary by guideline and country — this is worth confirming with a doctor based on current local guidance and personal risk factors."
+            ]
+          },
+          {
+            "heading": "7.2 Self-awareness between screenings",
+            "paras": [
+              "Between scheduled screenings, general familiarity with what's normal for your own body — so that a genuine change (a lump, unusual discharge, persistent pain) stands out — remains a reasonable practice, though it's a complement to, not a replacement for, scheduled clinical screening."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Mammograms and Pap/HPV testing are well-established programs with strong mortality-reduction evidence.",
+          "Specific timelines vary by guideline and personal risk — confirm current guidance with a doctor.",
+          "General self-awareness complements, but doesn't replace, scheduled clinical screening."
+        ]
+      },
+      {
+        "id": "nutrition-life-stages-women",
+        "num": 8,
+        "title": "Nutrition needs across life stages",
+        "sections": [
+          {
+            "heading": "8.1 Needs that shift with each stage",
+            "paras": [
+              "Iron needs are elevated during reproductive years due to menstrual blood loss, drop after menopause, and rise again in pregnancy alongside folate. Calcium and vitamin D needs increase notably after menopause as bone loss accelerates. These aren't one-size-fits-all numbers — they shift meaningfully across a woman's life stages in ways general nutrition advice often glosses over."
+            ]
+          },
+          {
+            "heading": "8.2 Building this into the general framework",
+            "paras": [
+              "The Nutrition Fundamentals module (Module 2) still applies as the foundation — whole foods, adequate protein, balanced macronutrients — but layering in stage-specific attention to iron, calcium, vitamin D, and folate, adjusted with a doctor or dietitian as life stage changes, closes the gap that generic nutrition advice leaves open."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Iron, calcium, and folate needs shift meaningfully across reproductive years, pregnancy, and menopause.",
+          "Generic nutrition advice often misses these life-stage-specific adjustments.",
+          "Layer stage-specific needs onto the general nutrition foundation, adjusted with a professional as life stage changes."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mens-health",
+    "num": 10,
+    "track": "life",
+    "title": "Men's Health",
+    "blurb": "Testosterone, prostate health, cardiovascular risk, and the mental health conversation men are least likely to have.",
+    "chapters": [
+      {
+        "id": "testosterone-hormonal-health",
+        "num": 1,
+        "title": "Testosterone & hormonal health",
+        "sections": [
+          {
+            "heading": "1.1 What testosterone actually does",
+            "paras": [
+              "Testosterone influences muscle mass, bone density, libido, mood, and energy levels, and it naturally declines gradually with age — roughly 1% per year starting around the 30s for many men, though the rate and clinical significance vary widely between individuals."
+            ]
+          },
+          {
+            "heading": "1.2 Separating normal decline from a treatable condition",
+            "paras": [
+              "Low testosterone (hypogonadism) as a diagnosable condition is different from the normal, gradual age-related decline, and is confirmed through blood testing alongside symptoms — not through symptoms or a supplement marketing claim alone. Sleep, body composition, and stress (all covered elsewhere in this curriculum) meaningfully affect testosterone levels and are worth addressing before or alongside any conversation about testing or treatment."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Testosterone naturally declines gradually with age for most men.",
+          "Diagnosable low testosterone requires blood testing plus symptoms, not symptoms alone.",
+          "Sleep, body composition, and stress meaningfully influence testosterone levels."
+        ]
+      },
+      {
+        "id": "prostate-health",
+        "num": 2,
+        "title": "Prostate health basics",
+        "sections": [
+          {
+            "heading": "2.1 A gland that becomes more relevant with age",
+            "paras": [
+              "The prostate commonly enlarges with age (benign prostatic hyperplasia, or BPH), which can cause urinary symptoms — frequent urination, weak stream, waking at night to urinate — that are usually benign but worth discussing with a doctor since some overlap with more serious conditions."
+            ]
+          },
+          {
+            "heading": "2.2 Screening conversation, not a default test",
+            "paras": [
+              "Prostate cancer screening (via PSA blood test) is a more nuanced conversation than most other cancer screenings, because current guidelines generally recommend a shared decision between patient and doctor — weighing family history, risk factors, and screening trade-offs — rather than a universal default starting at a specific age. This is worth an explicit conversation with a doctor rather than either avoiding or assuming automatic testing."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Benign prostate enlargement is common with age and usually not serious, but symptoms warrant evaluation.",
+          "PSA screening is a shared-decision conversation with a doctor, not a universal default test.",
+          "Family history and individual risk factors should shape the screening decision."
+        ]
+      },
+      {
+        "id": "cv-risk-men",
+        "num": 3,
+        "title": "Cardiovascular risk in men",
+        "sections": [
+          {
+            "heading": "3.1 Higher risk, often earlier",
+            "paras": [
+              "Men generally face cardiovascular disease risk about a decade earlier than women on average, a gap partly attributed to estrogen's protective cardiovascular effects before menopause. This makes the preventive fundamentals — blood pressure, lipid panels, and cardiovascular exercise (all covered in Modules 3 and 7) — worth prioritizing earlier rather than waiting until symptoms or an older age."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Men typically face cardiovascular risk roughly a decade earlier than women on average.",
+          "Prioritizing blood pressure, lipid screening, and cardio fitness earlier is a reasonable response to that gap."
+        ]
+      },
+      {
+        "id": "mens-mental-health",
+        "num": 4,
+        "title": "Mental health & the silence problem",
+        "sections": [
+          {
+            "heading": "4.1 A documented gap between struggle and help-seeking",
+            "paras": [
+              "Men experience depression, anxiety, and stress at meaningful rates but are consistently less likely than women to seek professional mental health support, and are significantly overrepresented in suicide statistics in most countries studied — a gap researchers attribute partly to social norms around emotional expression and help-seeking, not a difference in underlying prevalence of distress."
+            ]
+          },
+          {
+            "heading": "4.2 Symptoms that can look different",
+            "paras": [
+              "Depression and anxiety in men can present less as visible sadness and more as irritability, anger, risk-taking, overworking, or physical symptoms — which sometimes means both the person experiencing it and people around them miss what's actually going on. Module 5's material on mental wellness and when to seek support applies fully here, and is worth revisiting specifically through this lens."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Men are less likely to seek mental health support despite comparable rates of underlying struggle.",
+          "Men are significantly overrepresented in suicide statistics in most studied countries.",
+          "Depression and anxiety can present as irritability, risk-taking, or physical symptoms rather than visible sadness."
+        ],
+        "comments": [
+          {
+            "name": "Rohan K.",
+            "when": "5 weeks ago",
+            "text": "This chapter put words to something I'd never really named in myself. Booked a first therapy session after reading this."
+          }
+        ]
+      },
+      {
+        "id": "mens-fertility",
+        "num": 5,
+        "title": "Fertility & reproductive health",
+        "sections": [
+          {
+            "heading": "5.1 An often-overlooked half of the fertility conversation",
+            "paras": [
+              "Male factors contribute to roughly 40-50% of fertility challenges in couples trying to conceive, yet fertility evaluation and conversation is still disproportionately framed around women. Sperm health is measurably affected by lifestyle factors — smoking, excessive alcohol, heat exposure, certain medications, and body weight among them — many of which are modifiable."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Male factors contribute to roughly 40-50% of couples' fertility challenges.",
+          "Sperm health is affected by modifiable lifestyle factors including smoking, alcohol, and heat exposure."
+        ]
+      },
+      {
+        "id": "muscle-health-aging-men",
+        "num": 6,
+        "title": "Fitness & muscle health with age",
+        "sections": [
+          {
+            "heading": "6.1 Why strength training matters more, not less, with age",
+            "paras": [
+              "Sarcopenia — age-related muscle loss — accelerates after roughly age 40 without intervention, and is directly tied to metabolic health, fall risk, and functional independence later in life. Strength training remains one of the few interventions shown to meaningfully counteract this decline at any age it's started."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Age-related muscle loss (sarcopenia) accelerates after roughly 40 without resistance training.",
+          "Strength training counteracts this decline meaningfully, regardless of the age it's started."
+        ]
+      },
+      {
+        "id": "preventive-screenings-men",
+        "num": 7,
+        "title": "Preventive screenings for men",
+        "sections": [
+          {
+            "heading": "7.1 A practical checklist",
+            "paras": [
+              "Building on Module 7's general preventive framework, men-specific priorities typically include: blood pressure and lipid panels starting earlier given elevated cardiovascular risk, colorectal screening starting around 45-50 (earlier with family history), a shared conversation about prostate screening as risk factors warrant, and regular mental health check-ins given the help-seeking gap discussed in Chapter 4. As with all screening guidance in this curriculum, specific timing should be confirmed directly with a doctor."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Cardiovascular screening often warrants earlier attention given men's elevated average risk.",
+          "Colorectal screening, prostate conversations, and mental health check-ins round out the core priorities.",
+          "Confirm specific screening timing directly with a doctor based on individual risk."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "healthy-aging-longevity",
+    "num": 11,
+    "track": "life",
+    "title": "Healthy Aging & Longevity",
+    "blurb": "What the longevity research actually supports, and how to build a lifestyle aimed at healthspan, not just lifespan.",
+    "chapters": [
+      {
+        "id": "longevity-research",
+        "num": 1,
+        "title": "What the longevity research actually says",
+        "sections": [
+          {
+            "heading": "1.1 Separating evidence from supplement marketing",
+            "paras": [
+              "Longevity has become a heavily marketed category, but the interventions with the strongest actual evidence are unglamorous and already covered elsewhere in this curriculum: not smoking, regular exercise (particularly strength training and cardiovascular fitness), adequate sleep, a whole-food-based diet, and strong social connection. Most novel longevity supplements and expensive interventions have far weaker evidence than these fundamentals, despite far more marketing spend."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The strongest longevity evidence supports unglamorous fundamentals: exercise, sleep, diet, connection, not smoking.",
+          "Most trendy longevity supplements have weaker evidence than these basics, despite heavier marketing."
+        ]
+      },
+      {
+        "id": "healthspan-vs-lifespan",
+        "num": 2,
+        "title": "Healthspan vs. lifespan",
+        "sections": [
+          {
+            "heading": "2.1 A crucial distinction",
+            "paras": [
+              "Lifespan is simply how long you live. Healthspan is how long you live in good functional health — free of significant disease or disability. The gap between the two is often larger than people expect; global health data generally shows a meaningful number of years, on average, spent in declining health before death.",
+              "This module, and this curriculum broadly, optimizes for healthspan — the years you're actually able to enjoy — over lifespan as a number in isolation."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Lifespan measures total years lived; healthspan measures years lived in good functional health.",
+          "There's often a meaningful gap between the two, spent in declining health.",
+          "This curriculum prioritizes extending healthspan, not just raw lifespan."
+        ]
+      },
+      {
+        "id": "sarcopenia-prevention",
+        "num": 3,
+        "title": "Muscle mass & sarcopenia prevention",
+        "sections": [
+          {
+            "heading": "3.1 The most modifiable driver of independence in older age",
+            "paras": [
+              "Without intervention, adults lose roughly 3-8% of muscle mass per decade after 30, accelerating further after 60 — a process directly linked to fall risk, frailty, and loss of functional independence. Strength training is the single most effective countermeasure identified in the research, more effective than diet alone (though adequate protein, per Module 2, supports the same goal)."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Muscle mass declines roughly 3-8% per decade after 30 without intervention, accelerating after 60.",
+          "Strength training is the most effective countermeasure, more effective than diet alone.",
+          "Muscle mass is directly linked to fall risk and functional independence in older age."
+        ]
+      },
+      {
+        "id": "bone-density-falls",
+        "num": 4,
+        "title": "Bone density & fall prevention",
+        "sections": [
+          {
+            "heading": "4.1 Falls are a leading cause of injury in older adults",
+            "paras": [
+              "A fall that would be a minor stumble at 30 can cause a hip fracture at 75, and hip fractures in older adults carry a notably elevated mortality risk in the following year — which is why fall prevention deserves attention well before it becomes an urgent issue."
+            ]
+          },
+          {
+            "heading": "4.2 What actually reduces fall risk",
+            "paras": [
+              "Strength training (particularly leg strength), balance-specific exercise (single-leg stands, tai chi, yoga), vision checks, reviewing medications that affect balance, and removing home hazards (loose rugs, poor lighting) are the evidence-backed fall prevention levers — most of them addressable years before a fall risk becomes acute."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Falls carry disproportionately serious consequences, including elevated mortality risk, in older adults.",
+          "Leg strength and balance training are the strongest evidence-backed prevention tools.",
+          "Vision checks, medication review, and home hazard removal round out effective prevention."
+        ]
+      },
+      {
+        "id": "cognitive-health-aging",
+        "num": 5,
+        "title": "Cognitive health & brain aging",
+        "sections": [
+          {
+            "heading": "5.1 What actually protects cognitive function",
+            "paras": [
+              "The strongest evidence for protecting long-term cognitive function points to the same fundamentals that protect cardiovascular health — regular aerobic exercise (which increases blood flow and even brain volume in some studies), quality sleep, and managing blood pressure and blood sugar — rather than any single 'brain training' app or supplement."
+            ]
+          },
+          {
+            "heading": "5.2 The role of continued learning and connection",
+            "paras": [
+              "Cognitive reserve — the brain's resilience against age-related decline — appears to benefit from ongoing mental engagement (learning new skills, not just repeating familiar ones) and social connection, which independently correlates with lower dementia risk in longitudinal research."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Cardiovascular health fundamentals — exercise, sleep, blood pressure control — also protect cognitive function.",
+          "Learning genuinely new skills builds cognitive reserve more than repeating familiar mental tasks.",
+          "Social connection independently correlates with lower dementia risk."
+        ]
+      },
+      {
+        "id": "cv-longevity",
+        "num": 6,
+        "title": "Cardiovascular longevity",
+        "sections": [
+          {
+            "heading": "6.1 The system that predicts the most",
+            "paras": [
+              "Cardiovascular fitness (VO2 max) is among the strongest single predictors of all-cause mortality risk identified in longevity research — stronger, in some large cohort studies, than many individual disease diagnoses. This is a direct extension of Module 3's cardiovascular fitness material, worth re-emphasizing here specifically through a longevity lens."
+            ]
+          }
+        ],
+        "takeaways": [
+          "VO2 max is among the strongest predictors of all-cause mortality risk in longevity research.",
+          "Cardiovascular fitness deserves priority as a longevity-specific investment, not just a general fitness goal."
+        ]
+      },
+      {
+        "id": "social-connection-longevity",
+        "num": 7,
+        "title": "Social connection as a longevity factor",
+        "sections": [
+          {
+            "heading": "7.1 A factor as strong as some clinical risk factors",
+            "paras": [
+              "A large meta-analysis by Julianne Holt-Lunstad found that strong social relationships were associated with a 50% increased likelihood of survival over a given period — an effect size comparable to quitting smoking and larger than several well-known clinical risk factors like physical inactivity or obesity."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Strong social relationships are associated with meaningfully increased survival likelihood in meta-analysis.",
+          "The effect size is comparable to quitting smoking — larger than some well-known clinical risk factors."
+        ]
+      },
+      {
+        "id": "supplements-proven-hype",
+        "num": 8,
+        "title": "Supplements: what's proven, what's hype",
+        "sections": [
+          {
+            "heading": "8.1 A short list with reasonable evidence",
+            "paras": [
+              "Vitamin D (especially with low sun exposure), omega-3s (especially with low fatty fish intake), creatine (for muscle and, increasingly, some cognitive research), and protein powder (as a convenient way to hit protein targets, not a special substance) have reasonably solid evidence behind them for specific, identifiable gaps."
+            ]
+          },
+          {
+            "heading": "8.2 A much longer list without strong evidence",
+            "paras": [
+              "Most trending longevity compounds — many marketed heavily online — have thin human evidence, often based on animal studies or small short-term trials, at prices that don't reflect that uncertainty. A reasonable default: prioritize the fundamentals covered throughout this module first, and treat any new supplement claim with the evidence-reading tools from Module 1, Chapter 7."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Vitamin D, omega-3s, creatine, and protein powder have reasonably solid evidence for specific gaps.",
+          "Most trending longevity supplements have thin human evidence relative to their marketing and price.",
+          "Prioritize lifestyle fundamentals before chasing novel supplement claims."
+        ]
+      },
+      {
+        "id": "longevity-lifestyle",
+        "num": 9,
+        "title": "Building a longevity-focused lifestyle",
+        "sections": [
+          {
+            "heading": "9.1 Pulling the module together",
+            "paras": [
+              "The recurring theme across this module is that longevity interventions with real evidence overlap almost entirely with the rest of this curriculum: strength and cardiovascular training, sleep, whole-food nutrition, stress management, and social connection. There is no separate 'longevity protocol' hiding behind a paywall — it's the fundamentals, applied consistently, for decades."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Evidence-backed longevity practices overlap almost entirely with general wellness fundamentals.",
+          "Consistency over decades, not a novel protocol, is what the evidence actually supports."
+        ],
+        "comments": [
+          {
+            "name": "Kabir V.",
+            "when": "4 days ago",
+            "text": "Was hoping for a secret protocol and got 'do the boring stuff for 30 years' instead. Annoyingly, that's probably correct."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "workplace-digital-wellness",
+    "num": 12,
+    "track": "systems",
+    "title": "Workplace & Digital Wellness",
+    "blurb": "Ergonomics, screen fatigue, work-life boundaries, and building a culture where wellness isn't a perk bolted onto burnout.",
+    "chapters": [
+      {
+        "id": "ergonomics-101",
+        "num": 1,
+        "title": "Ergonomics 101",
+        "sections": [
+          {
+            "heading": "1.1 The setup basics",
+            "paras": [
+              "A reasonably ergonomic desk setup: monitor top at or slightly below eye level roughly an arm's length away, elbows near 90 degrees with wrists neutral (not bent up or down) while typing, feet flat on the floor or a footrest, and lower back supported. Small, consistent adjustments prevent the cumulative strain that builds silently over months of a poor setup."
+            ]
+          },
+          {
+            "heading": "1.2 The best posture is your next one",
+            "paras": [
+              "No single 'perfect' static posture, held for eight hours, is actually healthy — research increasingly supports the idea that movement variety matters more than any one ideal position. Alternating between sitting and standing, and simply changing position periodically, outperforms finding the theoretically perfect chair and never moving from it."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Monitor height, elbow angle, and back support are the core ergonomic basics worth getting right.",
+          "No static posture is healthy held all day — movement variety matters more than the 'perfect' position.",
+          "Alternating sitting and standing beats an ideal but unchanging setup."
+        ]
+      },
+      {
+        "id": "screen-fatigue",
+        "num": 2,
+        "title": "Managing screen time & digital fatigue",
+        "sections": [
+          {
+            "heading": "2.1 The 20-20-20 rule",
+            "paras": [
+              "Every 20 minutes, look at something roughly 20 feet away for at least 20 seconds — a simple, widely recommended rule that reduces digital eye strain by giving the eye's focusing muscles a periodic break from sustained near-focus work."
+            ]
+          },
+          {
+            "heading": "2.2 Beyond the eyes: cognitive fatigue",
+            "paras": [
+              "Digital fatigue isn't purely visual — constant context-switching between tabs, notifications, and messages produces measurable cognitive fatigue distinct from eye strain. Batching communication checks (email, chat) into set windows rather than checking continuously reduces this switching cost meaningfully."
+            ]
+          }
+        ],
+        "takeaways": [
+          "The 20-20-20 rule reduces digital eye strain through periodic focus breaks.",
+          "Constant tab and notification switching produces cognitive fatigue distinct from visual strain.",
+          "Batching communication checks into set windows reduces switching costs."
+        ]
+      },
+      {
+        "id": "work-life-boundaries",
+        "num": 3,
+        "title": "Work-life boundaries",
+        "sections": [
+          {
+            "heading": "3.1 Why 'always available' backfires",
+            "paras": [
+              "Research on availability expectations consistently finds that being reachable at all hours doesn't improve output — it increases anticipatory stress (the low-grade tension of expecting an interruption) even during the hours nothing actually happens, and erodes the recovery time genuinely needed for sustained performance."
+            ]
+          },
+          {
+            "heading": "3.2 Boundaries that hold up in practice",
+            "paras": [
+              "Clear working hours communicated proactively (not just assumed), notification settings that actually respect those hours rather than a manual willpower-based opt-out, and a genuine end-of-day transition ritual — even a two-minute one — help create a real, felt separation rather than a boundary that exists only in principle."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Constant availability increases anticipatory stress even without actual interruptions.",
+          "Boundaries need to be communicated proactively and technically enforced, not just willed.",
+          "A brief end-of-day transition ritual helps create a felt separation between work and rest."
+        ]
+      },
+      {
+        "id": "workplace-wellness-programs",
+        "num": 4,
+        "title": "Wellness programs at work",
+        "sections": [
+          {
+            "heading": "4.1 What tends to actually work",
+            "paras": [
+              "Research on workplace wellness programs shows mixed results overall, but the interventions with the strongest evidence tend to be structural — genuine schedule flexibility, adequate paid time off that people are actually encouraged to use, manageable workloads — rather than optional add-ons like a single yoga class or a wellness app subscription layered on top of an otherwise unsustainable workload."
+            ]
+          },
+          {
+            "heading": "4.2 A useful test",
+            "paras": [
+              "A reasonable way to evaluate any workplace wellness initiative: does it address root causes (workload, autonomy, psychological safety) or does it treat symptoms while leaving the underlying causes untouched? A meditation app doesn't fix a chronically understaffed team — it just gives people one more tool to individually cope with a structural problem."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Structural interventions (flexibility, usable PTO, manageable workload) outperform optional wellness perks.",
+          "Evaluate wellness programs by whether they address root causes or just help people cope with them.",
+          "A wellness perk layered on an unsustainable workload doesn't fix the underlying problem."
+        ]
+      },
+      {
+        "id": "remote-work-wellbeing",
+        "num": 5,
+        "title": "Remote work wellbeing",
+        "sections": [
+          {
+            "heading": "5.1 Flexibility's double edge",
+            "paras": [
+              "Remote work removes commute time and offers genuine schedule flexibility, both linked to improved wellbeing in research — but it also removes the natural boundary a commute or office departure used to provide, and can increase isolation for people who relied on in-office interaction for most of their social contact."
+            ]
+          },
+          {
+            "heading": "5.2 Building in what the office used to provide automatically",
+            "paras": [
+              "A deliberate, physical transition ritual at the start and end of the workday (even a short walk) helps replace what a commute used to signal automatically. Actively scheduling social contact — coffee chats, co-working sessions, in-person meetups when possible — helps counter the isolation risk that comes with fewer incidental interactions."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Remote work improves wellbeing on average but removes natural boundary and social cues an office provided.",
+          "A deliberate start/end-of-day ritual helps replace what a commute signaled automatically.",
+          "Actively scheduling social contact counters remote work's isolation risk."
+        ]
+      },
+      {
+        "id": "burnout-prevention-scale",
+        "num": 6,
+        "title": "Burnout prevention at scale",
+        "sections": [
+          {
+            "heading": "6.1 An organizational problem, not just an individual one",
+            "paras": [
+              "Christina Maslach, the researcher who developed the standard burnout measurement tool, has argued for decades that burnout is fundamentally a workplace design problem — mismatches in workload, control, reward, community, fairness, and values — not simply an individual resilience deficit to be solved with personal coping tools alone."
+            ]
+          },
+          {
+            "heading": "6.2 What organizations can actually do",
+            "paras": [
+              "Realistic workload expectations, genuine autonomy over how work gets done, recognition that matches actual contribution, and psychological safety to raise concerns without retaliation address burnout's actual drivers far more effectively than any wellness stipend, because they address the mismatches Maslach's framework identifies directly."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Burnout research frames it primarily as a workplace design mismatch, not an individual resilience failure.",
+          "Workload, control, reward, community, fairness, and values are the six identified mismatch areas.",
+          "Structural fixes to these mismatches outperform individual coping tools alone."
+        ]
+      },
+      {
+        "id": "wellness-team-culture",
+        "num": 7,
+        "title": "Building a wellness-friendly team culture",
+        "sections": [
+          {
+            "heading": "7.1 Culture is what leaders model, not what's written down",
+            "paras": [
+              "A stated policy of respecting boundaries means little if a manager routinely sends late-night messages, or if the team's most visibly 'successful' member never takes real time off — people follow the modeled behavior of leadership and high-status peers far more than the written policy, regardless of what the handbook says."
+            ]
+          },
+          {
+            "heading": "7.2 Small, consistent signals that compound",
+            "paras": [
+              "Leaders taking their own vacation fully offline, normalizing saying 'I don't have capacity for that right now,' and checking in on wellbeing as a routine part of one-on-ones rather than only during a crisis are small, repeatable signals that shift a team's actual norms over time far more than a one-off wellness initiative."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Team culture follows modeled leadership behavior more than written policy.",
+          "Leaders visibly protecting their own time off and boundaries sets the real norm.",
+          "Routine, small wellbeing check-ins outperform occasional one-off wellness initiatives."
+        ],
+        "comments": [
+          {
+            "name": "Neha P.",
+            "when": "2 months ago",
+            "text": "Forwarded this chapter to our team lead. The 'culture is modeled, not written' line landed better than any policy doc we have."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "personal-wellness-plan",
+    "num": 13,
+    "track": "foundations",
+    "title": "Building Your Personal Wellness Plan",
+    "blurb": "Turning everything in this curriculum into a concrete, personal 12-month plan — goal-setting, self-assessment, and knowing when to bring in help.",
+    "chapters": [
+      {
+        "id": "goal-setting-frameworks",
+        "num": 1,
+        "title": "Wellness goal-setting frameworks",
+        "sections": [
+          {
+            "heading": "1.1 Outcome goals vs. process goals",
+            "paras": [
+              "An outcome goal ('lose 5kg', 'sleep 8 hours a night') defines the destination but says nothing about the daily behavior that gets you there. A process goal ('walk 20 minutes after dinner', 'lights off by 10:30pm') defines the controllable daily action. Process goals are generally the more useful ones to actually track day-to-day, with the outcome goal held loosely in the background as the reason the process matters."
+            ]
+          },
+          {
+            "heading": "1.2 Making goals specific enough to act on",
+            "paras": [
+              "'Eat healthier' is nearly impossible to act on directly because it isn't specific. 'Add a vegetable to dinner five nights a week' is specific enough to know, on any given evening, whether you did it or not. Specificity is what separates a goal you can actually track from an intention that quietly fades."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Outcome goals define the destination; process goals define the trackable daily action.",
+          "Process goals are generally more useful to track day-to-day than outcome goals alone.",
+          "Specific enough to know whether you did it today is the bar a good goal needs to clear."
+        ]
+      },
+      {
+        "id": "budgeting-time-energy",
+        "num": 2,
+        "title": "Budgeting your time & energy like a resource",
+        "sections": [
+          {
+            "heading": "2.1 Time and energy are both finite, and not identical",
+            "paras": [
+              "A financial budget tracks money in and out; a wellness budget can do the same for time and energy. Two people can have identical free time and very different energy available for wellness activities depending on sleep, stress, and workload — which is why an ambitious plan that ignores energy, not just time, often fails even when the schedule technically allows for it."
+            ]
+          },
+          {
+            "heading": "2.2 A simple weekly audit",
+            "paras": [
+              "For one week, note roughly how time is spent in broad categories (work, sleep, screens, movement, connection, chores) and rate energy at a few points in the day. This single week of data usually reveals more about where a realistic wellness plan should fit than any amount of aspirational planning without it."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Time and energy are both finite resources worth budgeting deliberately, and they aren't the same thing.",
+          "Plans that account for energy, not just scheduled time, are more realistic.",
+          "A one-week time-and-energy audit reveals more than aspirational planning alone."
+        ]
+      },
+      {
+        "id": "wellness-wheel-assessment",
+        "num": 3,
+        "title": "The wellness wheel self-assessment",
+        "sections": [
+          {
+            "heading": "3.1 Scoring yourself across the eight dimensions",
+            "paras": [
+              "Revisiting Module 1's eight dimensions of wellness (physical, emotional, intellectual, social, spiritual, occupational, environmental, financial), rate your current satisfaction in each from 1-10. Plotted on a wheel, the result is rarely even — most people find one or two dimensions dragging noticeably behind the rest."
+            ]
+          },
+          {
+            "heading": "3.2 Using the result honestly",
+            "paras": [
+              "The lowest-scoring dimension isn't necessarily the one to fix first — sometimes a low score in one area (financial stress, for instance) is actually driving low scores elsewhere (sleep, relationships), making it the highest-leverage place to start even if it isn't the most obviously 'wellness' category. Look for the dimension that, if improved, would most likely lift the others with it."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Score each of the eight wellness dimensions from 1-10 to find where you're most neglected.",
+          "Results are rarely even — most people have one or two clearly lagging dimensions.",
+          "Target the dimension most likely to lift others, not necessarily just the lowest score."
+        ]
+      },
+      {
+        "id": "first-three-habits",
+        "num": 4,
+        "title": "Choosing your first three habits",
+        "sections": [
+          {
+            "heading": "4.1 Why three, not ten",
+            "paras": [
+              "Module 8 covered why limiting simultaneous new habits improves success rates. In practice, three is a reasonable ceiling for most people starting a new plan — enough to make real progress across more than one dimension, few enough to actually sustain attention and willpower across all of them at once."
+            ]
+          },
+          {
+            "heading": "4.2 A simple selection method",
+            "paras": [
+              "From your wellness wheel results, pick one habit each from up to three lagging dimensions, prioritizing whichever feels both meaningful and genuinely achievable this month — not the most ambitious option, but the one you can actually see yourself doing on a bad day, not just a good one."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Three simultaneous new habits is a reasonable ceiling for sustained follow-through.",
+          "Draw from your lowest-scoring wellness wheel dimensions to select them.",
+          "Choose habits achievable on a bad day, not just an ideal one."
+        ]
+      },
+      {
+        "id": "tracking-what-matters",
+        "num": 5,
+        "title": "Tracking what matters (without a spreadsheet obsession)",
+        "sections": [
+          {
+            "heading": "5.1 Lagging vs. leading indicators",
+            "paras": [
+              "A leading indicator (did I do the process goal today) is something you can act on immediately. A lagging indicator (weight, resting heart rate, mood over a month) tells you whether the leading indicators are actually working, but reacting to daily noise in a lagging indicator usually leads to frustration rather than useful adjustment."
+            ]
+          },
+          {
+            "heading": "5.2 A minimal tracking setup",
+            "paras": [
+              "A simple weekly checklist of your three chosen habits, reviewed once a week rather than checked obsessively daily, captures most of the benefit of tracking (per Module 8's mere-measurement effect) without tipping into the obsessive checking that can undermine the practice."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Leading indicators (daily process) are actionable; lagging indicators (outcomes) confirm whether it's working.",
+          "Reacting to daily noise in lagging indicators usually causes frustration, not useful adjustment.",
+          "A simple weekly review of a short checklist captures most of tracking's benefit without obsession."
+        ]
+      },
+      {
+        "id": "when-to-bring-in-professionals",
+        "num": 6,
+        "title": "When to bring in professionals (doctor, therapist, coach, trainer)",
+        "sections": [
+          {
+            "heading": "6.1 A quick reference across specialties",
+            "paras": [
+              "Doctor: screenings, symptoms, anything involving diagnosis or medication. Therapist or counselor: persistent emotional difficulty, relationship patterns, processing a hard life event. Registered dietitian: complex nutrition needs, medical conditions requiring dietary management, disordered eating patterns. Certified trainer or physical therapist: technique correction, injury history, or a genuinely personalized program beyond general guidance."
+            ]
+          },
+          {
+            "heading": "6.2 This curriculum's honest limit",
+            "paras": [
+              "Everything in this curriculum is designed to build a well-informed baseline — enough to ask better questions and make sense of professional advice, not to replace it. The most valuable use of the material here is often what it helps you notice about your own situation early enough to bring to the right professional, before something small becomes something larger."
+            ]
+          }
+        ],
+        "takeaways": [
+          "Different concerns map to different professionals — doctor, therapist, dietitian, trainer or physical therapist.",
+          "This curriculum builds an informed baseline; it doesn't replace individualized professional guidance.",
+          "Its greatest value is often helping you notice something early enough to bring to the right professional."
+        ]
+      },
+      {
+        "id": "revisiting-adjusting-plan",
+        "num": 7,
+        "title": "Revisiting & adjusting your plan",
+        "sections": [
+          {
+            "heading": "7.1 Plans should update, not just be abandoned",
+            "paras": [
+              "A wellness plan that never changes either means it was perfectly designed on the first attempt (unlikely) or that it stopped being followed and nobody adjusted it accordingly. A quarterly review — what worked, what didn't, what changed in life circumstances — keeps the plan a living document rather than a one-time exercise gathering dust."
+            ]
+          },
+          {
+            "heading": "7.2 What to actually ask at each review",
+            "paras": [
+              "Is each habit still happening consistently? Has it become automatic enough to add a new one, per Module 8's guidance? Has anything in your life circumstances changed enough to warrant a different priority? Answering these honestly, even briefly, prevents a plan from quietly becoming irrelevant to your actual life."
+            ]
+          }
+        ],
+        "takeaways": [
+          "A wellness plan that never gets revisited has usually either succeeded completely or silently lapsed.",
+          "A quarterly review keeps the plan a living document rather than a one-time exercise.",
+          "Check consistency, readiness for a new habit, and whether life circumstances have shifted priorities."
+        ]
+      },
+      {
+        "id": "12-month-roadmap",
+        "num": 8,
+        "title": "Your first 12-month wellness roadmap",
+        "sections": [
+          {
+            "heading": "8.1 A realistic shape for the year",
+            "paras": [
+              "Months 1-3: establish your first one to three habits from Chapter 4, using the tracking approach from Chapter 5. Months 4-6: review and adjust (Chapter 7), and — once the first habits feel automatic — consider adding one or two more from your wellness wheel's next-lowest dimension. Months 7-12: layer in the preventive health fundamentals from Module 7 if not already in place (a check-up, a screening you're due for), and revisit the full wellness wheel assessment to see how the picture has shifted."
+            ]
+          },
+          {
+            "heading": "8.2 Closing note",
+            "paras": [
+              "None of this curriculum requires perfection, a subscription, or a single dramatic transformation. It requires roughly what any real skill requires — informed, unglamorous, repeated practice, adjusted as you learn what actually works for your specific life. That's the entire model this curriculum has tried to teach, one module at a time."
+            ]
+          }
+        ],
+        "takeaways": [
+          "A realistic first year builds habits in months 1-3, reviews and expands in 4-6, and layers in prevention in 7-12.",
+          "Reassess the full wellness wheel near the year mark to see how the picture has genuinely shifted.",
+          "Consistent, unglamorous, adjusted practice — not a single transformation — is the model this curriculum teaches."
+        ],
+        "comments": [
+          {
+            "name": "Ishaan D.",
+            "when": "1 week ago",
+            "text": "Went through all 13 modules over two months. This closing chapter is the right note to end on — no fireworks, just a plan I can actually run.",
+            "reply": {
+              "name": "Swasthi Primer",
+              "when": "6 days ago",
+              "text": "That's exactly the outcome we're hoping for. Good luck with the first quarter — come back and adjust as you learn what sticks."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

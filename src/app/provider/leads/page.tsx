@@ -1,5 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { BackToHub } from "@/components/BackToHub";
+import { LeadStatusControl } from "@/components/provider/LeadStatusControl";
 
 export default async function ProviderLeadsPage() {
   const supabase = await createClient();
@@ -52,8 +53,11 @@ export default async function ProviderLeadsPage() {
                 })}
               </div>
             </div>
-            <div className="mt-1 font-mono text-[10.5px] uppercase tracking-[0.05em] text-moss">
-              {lead.listing_id ? listingNameById[lead.listing_id] : "General inquiry"}
+            <div className="mt-1 flex flex-wrap items-center justify-between gap-2">
+              <div className="font-mono text-[10.5px] uppercase tracking-[0.05em] text-moss">
+                {lead.listing_id ? listingNameById[lead.listing_id] : "General inquiry"}
+              </div>
+              <LeadStatusControl leadId={lead.id} status={lead.status} />
             </div>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-body text-[13px] text-[#4A4738]">
               <a href={`mailto:${lead.email}`} className="text-moss">

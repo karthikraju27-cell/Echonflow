@@ -1,0 +1,28 @@
+{
+  "ORG_TIERS": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "range": "Up to 25 people",
+      "price": "₹35,000 – ₹50,000"
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "range": "26–75 people",
+      "price": "₹75,000 – ₹1,25,000"
+    },
+    {
+      "id": "custom",
+      "name": "Custom",
+      "range": "75+ people",
+      "price": "Custom quote"
+    }
+  ],
+  "ORG_INCLUDES": [
+    "The full Energy & Resilience Audit for every team member",
+    "One aggregate team report for leadership — individual answers are never shared with the employer",
+    "One live 60–90 minute workshop, scheduled with your team",
+    "30 days of full curriculum access for every participant"
+  ]
+}
