@@ -27,6 +27,7 @@ export interface Database {
           role: UserRole;
           phone: string | null;
           service: string | null;
+          public_profile: boolean;
           created_at: string;
         };
         Insert: {
@@ -36,6 +37,7 @@ export interface Database {
           role: UserRole;
           phone?: string | null;
           service?: string | null;
+          public_profile?: boolean;
           created_at?: string;
         };
         Update: Partial<{
@@ -44,6 +46,7 @@ export interface Database {
           role: UserRole;
           phone: string | null;
           service: string | null;
+          public_profile: boolean;
         }>;
         Relationships: [];
       };

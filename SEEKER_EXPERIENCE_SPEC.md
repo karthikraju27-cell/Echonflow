@@ -48,3 +48,22 @@ Do #2 before #3 — the earlier version of this doc had them the other way, whic
 ---
 
 *Verified directly against the connected repo, not inferred from the live site's behavior or a summary of it. File references above are exact — anyone picking this up (Claude Code included) can jump straight to the named files.*
+
+## 9. New north star: "LinkedIn for wellness" — public profiles + discovery
+
+Karthik's framing for where this goes: a LinkedIn for wellness. Scoped deliberately to profiles + discovery, not a social graph — no follow/connect/personalized-feed system, at least not yet. Checked against the real repo what that framing needs on top of the gaps above.
+
+**Most of the LinkedIn mechanics already exist here, just not named that way:**
+- Feed → Vārtā, already real
+- Credentials → the quiz + certificate system, already real
+- Discovery/matching → ERA + directory, already scoped in gaps #2–#3 above
+
+**What's actually missing, and it's structural, not cosmetic:** every page in this app lives under `/seeker/*` or `/provider/*`, and `src/proxy.ts` redirects ANY signed-out visitor hitting those paths straight to `/`. That means even a finished provider listing page (`/seeker/directory/[id]`) is invisible to Google, can't be shared as a link to a friend, can't be posted anywhere — the exact opposite of how a LinkedIn profile works, where the whole point is that it's public and indexable. This is the one new gap this framing surfaces that nothing above caught, because it wasn't in scope until now.
+
+**What to build:**
+- A new, genuinely public route namespace — e.g. `/p/provider/[id]` and `/p/seeker/[id]` — outside the `/seeker` and `/provider` matcher in `proxy.ts`, so it's never gated by the session check.
+- **Provider public profile:** business name, category, location, description, WRS™ score/tier (once real, or labeled provisional per gap #5), and a "Connect" CTA into the `leads` table — this can accept a signed-out visitor's inquiry too; the existing RLS policy (`retreat_leads: anyone can insert`, carried over to `leads`) already allows it, no schema change needed there.
+- **Seeker public profile (opt-in, off by default):** name and certificates earned (`certificates` table) only — never raw ERA answers or scores. The privacy promise already made ("your answers are yours") holds; a seeker explicitly toggles their profile public, same spirit as a LinkedIn profile being something you choose to put your name on, not a default exposure of private data.
+- Both profile types need a share-friendly URL and basic Open Graph tags (title/description/image) so a shared link actually previews well — small addition, real payoff for word-of-mouth growth.
+
+**Where this sits in the build order:** after gap #2 (real ERA content) — a public profile is far more worth having once certificates and real audit-informed focus areas exist to show on it — but before gaps #6–#8, since public/shareable pages are themselves a growth lever worth having sooner rather than later.

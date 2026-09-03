@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { EraFlow } from "@/components/era/EraFlow";
+import { PublicHeader } from "@/components/PublicHeader";
 import { ERA_TITLE, ERA_EYEBROW, ERA_INTRO } from "@/lib/era-questions";
 
 export const metadata = {
@@ -17,22 +17,19 @@ export default async function PublicEraPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
+  let hubHref: string | undefined;
+  if (user) {
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("role")
+      .eq("id", user.id)
+      .single();
+    hubHref = profile?.role === "provider" ? "/provider" : "/seeker";
+  }
+
   return (
     <div className="min-h-screen bg-mist">
-      <div className="flex items-center justify-between border-b border-[#DCD6BF] px-6 py-4">
-        <Link href="/" className="font-mono text-[13px] tracking-[0.1em] text-forest">
-          echonflow
-        </Link>
-        {user ? (
-          <Link href="/seeker" className="font-mono text-[11.5px] uppercase text-moss">
-            Your hub →
-          </Link>
-        ) : (
-          <Link href="/auth/seeker" className="font-mono text-[11.5px] uppercase text-moss">
-            Sign in
-          </Link>
-        )}
-      </div>
+      <PublicHeader hubHref={hubHref} />
       <div className="mx-auto max-w-[1020px] px-6 pb-20 pt-9">
         <div className="mb-1.5 font-mono text-[10.5px] uppercase tracking-[0.1em] text-moss">
           {ERA_EYEBROW}

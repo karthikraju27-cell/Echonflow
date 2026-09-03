@@ -1,18 +1,14 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@/lib/supabase/server";
 import { createServiceClient } from "@/lib/supabase/service";
 import { sendEmail, newLeadEmailHtml, leadConfirmationEmailHtml } from "@/lib/email";
 
-export async function POST(request: Request) {
-  // Basic anti-abuse: this only fires from the signed-in seeker directory
-  // flow, so require a session (doesn't need to match leadEmail exactly,
-  // since the form allows editing the pre-filled address).
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: "Not signed in" }, { status: 401 });
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// No auth requirement here on purpose — this now also fires from the fully
+// public /p/provider/[id] profile page, where a signed-out visitor's
+// inquiry is an intentional, supported case (the leads insert policy
+// already allows it). Basic payload validation is the anti-abuse floor.
+export async function POST(request: Request) {
   const body = await request.json();
   const { listingId, leadName, leadEmail, leadPhone, leadMessage } = body as {
     listingId: string;
@@ -22,7 +18,7 @@ export async function POST(request: Request) {
     leadMessage: string | null;
   };
 
-  if (!listingId || !leadName || !leadEmail) {
+  if (!listingId || !leadName || !leadEmail || !EMAIL_RE.test(leadEmail)) {
     return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
   }
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { SEEKER_TILES } from "@/lib/constants";
+import { PublicProfileToggle } from "@/components/seeker/PublicProfileToggle";
 
 export default async function SeekerHubPage() {
   const supabase = await createClient();
@@ -9,7 +10,7 @@ export default async function SeekerHubPage() {
   } = await supabase.auth.getUser();
   const { data: profile } = await supabase
     .from("profiles")
-    .select("name")
+    .select("name, public_profile")
     .eq("id", user!.id)
     .single();
   const firstName = (profile?.name || "there").split(" ")[0];
@@ -20,6 +21,7 @@ export default async function SeekerHubPage() {
       <p className="mb-8 font-body text-[14.5px] text-[#4A4738]">
         Everything you need to build your wellness, in one place.
       </p>
+      <PublicProfileToggle seekerId={user!.id} initialValue={profile?.public_profile ?? false} />
       <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4">
         {SEEKER_TILES.map((t) => (
           <Link

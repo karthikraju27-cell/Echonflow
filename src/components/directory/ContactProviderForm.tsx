@@ -9,14 +9,14 @@ export function ContactProviderForm({
   seekerId,
   listingId,
   businessName,
-  defaultName,
-  defaultEmail,
+  defaultName = "",
+  defaultEmail = "",
 }: {
-  seekerId: string;
+  seekerId?: string;
   listingId: string;
   businessName: string;
-  defaultName: string;
-  defaultEmail: string;
+  defaultName?: string;
+  defaultEmail?: string;
 }) {
   const supabase = createClient();
   const [name, setName] = useState(defaultName);
@@ -34,7 +34,7 @@ export function ContactProviderForm({
     setError(null);
 
     const { error: insertError } = await supabase.from("leads").insert({
-      seeker_id: seekerId,
+      seeker_id: seekerId ?? null,
       listing_id: listingId,
       name: name.trim(),
       email: email.trim(),
