@@ -19,12 +19,14 @@ export function EraResults({
   scores,
   overall,
   seekerId,
+  orgSlug,
   actions,
 }: {
   answers: Record<string, EraAnswer>;
   scores: Record<string, number | null>;
   overall: number;
   seekerId?: string;
+  orgSlug?: string;
   actions: ReactNode;
 }) {
   const band = bandFor(overall);
@@ -93,7 +95,7 @@ export function EraResults({
             Create a free account to save this and get matched to providers.
           </p>
           <Link
-            href="/auth/seeker"
+            href={orgSlug ? `/auth/seeker?org=${encodeURIComponent(orgSlug)}` : "/auth/seeker"}
             className="inline-block rounded bg-forest px-[18px] py-[11px] font-mono text-[11.5px] uppercase tracking-[0.06em] text-mist"
           >
             Create free account →

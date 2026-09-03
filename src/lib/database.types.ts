@@ -19,6 +19,28 @@ export type LeadStatus = "new" | "contacted" | "booked";
 export interface Database {
   public: {
     Tables: {
+      companies: {
+        Row: {
+          id: string;
+          slug: string;
+          name: string;
+          min_report_threshold: number;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          slug: string;
+          name: string;
+          min_report_threshold?: number;
+          created_at?: string;
+        };
+        Update: Partial<{
+          slug: string;
+          name: string;
+          min_report_threshold: number;
+        }>;
+        Relationships: [];
+      };
       profiles: {
         Row: {
           id: string;
@@ -28,6 +50,7 @@ export interface Database {
           phone: string | null;
           service: string | null;
           public_profile: boolean;
+          company_id: string | null;
           created_at: string;
         };
         Insert: {
@@ -38,6 +61,7 @@ export interface Database {
           phone?: string | null;
           service?: string | null;
           public_profile?: boolean;
+          company_id?: string | null;
           created_at?: string;
         };
         Update: Partial<{
@@ -47,6 +71,7 @@ export interface Database {
           phone: string | null;
           service: string | null;
           public_profile: boolean;
+          company_id: string | null;
         }>;
         Relationships: [];
       };
@@ -136,6 +161,7 @@ export interface Database {
           score: number | null;
           section_scores: Record<string, unknown> | null;
           nudge_sent_at: string | null;
+          company_id: string | null;
           created_at: string;
         };
         Insert: {
@@ -145,6 +171,7 @@ export interface Database {
           score?: number | null;
           section_scores?: Record<string, unknown> | null;
           nudge_sent_at?: string | null;
+          company_id?: string | null;
           created_at?: string;
         };
         Update: Partial<{
@@ -152,6 +179,7 @@ export interface Database {
           score: number | null;
           section_scores: Record<string, unknown> | null;
           nudge_sent_at: string | null;
+          company_id: string | null;
         }>;
         Relationships: [];
       };
@@ -244,6 +272,7 @@ export interface Database {
   };
 }
 
+export type Company = Database["public"]["Tables"]["companies"]["Row"];
 export type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 export type Listing = Database["public"]["Tables"]["listings"]["Row"];
 export type VartaPost = Database["public"]["Tables"]["varta_posts"]["Row"];

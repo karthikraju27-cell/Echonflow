@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/Input";
 
 type Mode = "sign_in" | "sign_up";
 
-export function AuthForm({ role }: { role: UserRole }) {
+export function AuthForm({ role, companyId }: { role: UserRole; companyId?: string }) {
   const router = useRouter();
   const supabase = createClient();
 
@@ -33,7 +33,7 @@ export function AuthForm({ role }: { role: UserRole }) {
   function signUpMetadata() {
     return role === "provider"
       ? { name, role, phone: phone.trim() || null, service: service.trim() || null }
-      : { name, role };
+      : { name, role, company_id: companyId ?? null };
   }
 
   async function handleSubmit(e: FormEvent) {

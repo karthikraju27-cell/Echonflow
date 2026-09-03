@@ -14,6 +14,15 @@ export default async function EraPage() {
     .select("id", { count: "exact", head: true })
     .eq("seeker_id", user!.id);
 
+  // Whatever company (if any) is already on this seeker's profile — a
+  // retake here should keep stamping era_responses.company_id, not just
+  // the first attempt taken via /era?org=.
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("company_id")
+    .eq("id", user!.id)
+    .single();
+
   return (
     <div>
       <BackToHub />
@@ -21,7 +30,11 @@ export default async function EraPage() {
         {ERA_EYEBROW}
       </div>
       <h1 className="mb-7 font-display text-[30px] font-medium text-ink">{ERA_TITLE}</h1>
-      <EraFlow seekerId={user!.id} hasHistory={(count ?? 0) > 0} />
+      <EraFlow
+        seekerId={user!.id}
+        companyId={profile?.company_id ?? undefined}
+        hasHistory={(count ?? 0) > 0}
+      />
     </div>
   );
 }

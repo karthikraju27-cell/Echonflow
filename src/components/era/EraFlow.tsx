@@ -59,9 +59,13 @@ function clearSavedProgress() {
 
 export function EraFlow({
   seekerId,
+  companyId,
+  orgSlug,
   hasHistory = false,
 }: {
   seekerId?: string;
+  companyId?: string;
+  orgSlug?: string;
   hasHistory?: boolean;
 }) {
   const router = useRouter();
@@ -128,7 +132,17 @@ export function EraFlow({
         answers,
         score: overall,
         section_scores: scores,
+        company_id: companyId ?? null,
       });
+      if (companyId) {
+        // Only backfills a profile that has no company_id yet — never
+        // overwrites one already set (e.g. from a different pilot).
+        await supabase
+          .from("profiles")
+          .update({ company_id: companyId })
+          .eq("id", seekerId)
+          .is("company_id", null);
+      }
       router.refresh();
 
       const band = bandFor(overall);
@@ -353,6 +367,7 @@ export function EraFlow({
       scores={scores}
       overall={overall}
       seekerId={seekerId}
+      orgSlug={orgSlug}
       actions={
         <div className="flex flex-wrap items-center gap-2.5">
           <Link
