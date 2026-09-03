@@ -103,6 +103,14 @@ export function EraFlow({
   const section = ERA_SECTIONS.find((s) => s.id === question?.sectionId);
   const answered = question ? isAnswered(question, answers[question.id]) : false;
 
+  // An org-linked visit (?org=<slug>, e.g. a pilot's onboarding link) only
+  // ever gets counted in that company's report if the response is actually
+  // saved — which only happens for a signed-in seeker. An anonymous
+  // completion here is never persisted at all, so gate results behind
+  // account creation rather than silently losing the response. The
+  // general public /era link (no org) stays fully anonymous.
+  const requiresSignupToSeeResults = !seekerId && !!orgSlug;
+
   function setSingleAnswer(value: number) {
     setAnswers((prev) => ({ ...prev, [question.id]: value }));
   }
@@ -164,6 +172,14 @@ export function EraFlow({
     clearSavedProgress();
   }
 
+  function goToSignup() {
+    // Progress is already autosaved to localStorage on every answer change
+    // (see the effect above) and deliberately left in place here — signing
+    // up and landing back on /seeker/era resumes right at this last,
+    // already-answered question, one click from finish().
+    router.push(`/auth/seeker?org=${encodeURIComponent(orgSlug!)}`);
+  }
+
   function retake() {
     setAnswers({});
     setStep(0);
@@ -182,8 +198,9 @@ export function EraFlow({
         </p>
         {!seekerId && (
           <p className="mb-5 font-body text-[13px] text-[#8C8770]">
-            You don&apos;t need an account to take this — you can create one afterward to save
-            your results and get matched to providers.
+            {requiresSignupToSeeResults
+              ? "This link needs a free account to show your results at the end — it takes under a minute, and your individual answers are never shared with your employer."
+              : "You don't need an account to take this — you can create one afterward to save your results and get matched to providers."}
           </p>
         )}
         <div className="flex flex-wrap items-center gap-4">
@@ -341,8 +358,16 @@ export function EraFlow({
               Next →
             </Button>
           ) : (
-            <Button type="button" disabled={!answered || saving} onClick={finish}>
-              {saving ? "Scoring…" : "See your results"}
+            <Button
+              type="button"
+              disabled={!answered || saving}
+              onClick={requiresSignupToSeeResults ? goToSignup : finish}
+            >
+              {requiresSignupToSeeResults
+                ? "Create free account to see results →"
+                : saving
+                  ? "Scoring…"
+                  : "See your results"}
             </Button>
           )}
         </div>
