@@ -1,9 +1,14 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 
 export function PublicHeader({ hubHref }: { hubHref?: string }) {
   return (
     <div className="flex items-center justify-between border-b border-[#DCD6BF] px-6 py-4">
-      <Link href="/" className="font-mono text-[13px] tracking-[0.1em] text-forest">
+      <Link
+        href="/"
+        className="flex items-center gap-2 font-mono text-[13px] tracking-[0.1em] text-forest"
+      >
+        <BrandMark size={20} />
         echonflow
       </Link>
       {hubHref ? (

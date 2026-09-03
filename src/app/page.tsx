@@ -1,5 +1,6 @@
 import { Butterflies } from "@/components/landing/Butterflies";
 import { ChoiceCard } from "@/components/landing/ChoiceCard";
+import { BrandMark } from "@/components/BrandMark";
 
 export default function LandingPage() {
   return (
@@ -20,6 +21,7 @@ export default function LandingPage() {
       <Butterflies />
 
       <div className="relative z-10 mx-auto max-w-[980px] px-6 pb-20 pt-[clamp(60px,10vh,120px)] text-center">
+        <BrandMark size={44} variant="dark" className="mx-auto mb-4" />
         <div className="mb-[22px] font-mono text-[11px] uppercase tracking-[0.3em] text-gold">
           echonflow
         </div>
