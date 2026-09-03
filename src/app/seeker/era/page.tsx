@@ -1,7 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { BackToHub } from "@/components/BackToHub";
 import { EraFlow } from "@/components/era/EraFlow";
-import { EraHistory } from "@/components/era/EraHistory";
 import { ERA_TITLE, ERA_EYEBROW } from "@/lib/era-questions";
 
 export default async function EraPage() {
@@ -10,11 +9,10 @@ export default async function EraPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const { data: responses } = await supabase
+  const { count } = await supabase
     .from("era_responses")
-    .select("*")
-    .eq("seeker_id", user!.id)
-    .order("created_at", { ascending: false });
+    .select("id", { count: "exact", head: true })
+    .eq("seeker_id", user!.id);
 
   return (
     <div>
@@ -23,8 +21,7 @@ export default async function EraPage() {
         {ERA_EYEBROW}
       </div>
       <h1 className="mb-7 font-display text-[30px] font-medium text-ink">{ERA_TITLE}</h1>
-      <EraFlow seekerId={user!.id} />
-      <EraHistory responses={responses ?? []} />
+      <EraFlow seekerId={user!.id} hasHistory={(count ?? 0) > 0} />
     </div>
   );
 }

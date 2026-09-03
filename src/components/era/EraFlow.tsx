@@ -11,12 +11,10 @@ import {
   sectionScores as computeSectionScores,
   overallScore as computeOverallScore,
   bandFor,
-  priorityTrack as computePriorityTrack,
-  retreatInterest as computeRetreatInterest,
-  buildRecommendations,
   type EraAnswer,
   type MultiAnswer,
 } from "@/lib/era-questions";
+import { EraResults } from "@/components/era/EraResults";
 import { Button } from "@/components/ui/Button";
 
 type Stage = "intro" | "question" | "results";
@@ -59,7 +57,13 @@ function clearSavedProgress() {
   }
 }
 
-export function EraFlow({ seekerId }: { seekerId?: string }) {
+export function EraFlow({
+  seekerId,
+  hasHistory = false,
+}: {
+  seekerId?: string;
+  hasHistory?: boolean;
+}) {
   const router = useRouter();
   const supabase = createClient();
   const [stage, setStage] = useState<Stage>("intro");
@@ -168,7 +172,17 @@ export function EraFlow({ seekerId }: { seekerId?: string }) {
             your results and get matched to providers.
           </p>
         )}
-        <Button onClick={() => setStage("question")}>Start audit</Button>
+        <div className="flex flex-wrap items-center gap-4">
+          <Button onClick={() => setStage("question")}>Start audit</Button>
+          {seekerId && hasHistory && (
+            <Link
+              href="/seeker/era/history"
+              className="font-mono text-[11px] uppercase tracking-[0.05em] text-moss"
+            >
+              View past results →
+            </Link>
+          )}
+        </div>
       </div>
     );
   }
@@ -332,132 +346,34 @@ export function EraFlow({ seekerId }: { seekerId?: string }) {
   // results
   const scores = computeSectionScores(answers);
   const overall = computeOverallScore(scores);
-  const band = bandFor(overall);
-  const track = computePriorityTrack(answers);
-  const hasRetreatInterest = computeRetreatInterest(answers);
-  const recs = buildRecommendations(scores, track, hasRetreatInterest);
-  const weakestSectionId = Object.entries(scores)
-    .filter((entry): entry is [string, number] => entry[1] !== null)
-    .sort((a, b) => a[1] - b[1])[0]?.[0];
-  const weakestSectionName = ERA_SECTIONS.find((s) => s.id === weakestSectionId)?.name;
 
   return (
-    <div className="max-w-[720px]">
-      <div className="mb-8 flex flex-wrap items-center gap-6">
-        <div className="font-display text-[56px] font-medium leading-none text-ink">
-          {overall}
-          <span className="text-[28px] text-[#8C8770]">%</span>
-        </div>
-        <div>
-          <h1 className="font-display text-[26px] font-medium text-ink">{band.name}</h1>
-          <p className="mt-1.5 max-w-[52ch] font-body text-[14.5px] text-[#4A4738]">
-            {band.copy}
-          </p>
-        </div>
-      </div>
-
-      <div className="mb-8 rounded-md border border-[#DCD6BF] bg-card p-[24px]">
-        <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.06em] text-moss">
-          Breakdown by area
-        </div>
-        <div className="flex flex-col gap-4">
-          {ERA_SECTIONS.map((s) => {
-            const v = scores[s.id] ?? 0;
-            return (
-              <div key={s.id}>
-                <div className="mb-1.5 flex justify-between font-body text-[13.5px] text-[#4A4738]">
-                  <span>{s.name}</span>
-                  <span className="font-mono">{v}%</span>
-                </div>
-                <div className="h-1.5 w-full rounded-full bg-[#DCD6BF]">
-                  <div className="h-1.5 rounded-full bg-moss" style={{ width: `${v}%` }} />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {seekerId && weakestSectionId && (
-        <div className="mb-8 rounded-md border border-[#DCD6BF] bg-card p-[22px]">
-          <p className="mb-3.5 font-body text-[14px] text-ink">
-            {weakestSectionName} scored lowest — see providers matched to that.
-          </p>
+    <EraResults
+      answers={answers}
+      scores={scores}
+      overall={overall}
+      seekerId={seekerId}
+      actions={
+        <div className="flex flex-wrap items-center gap-2.5">
           <Link
-            href={`/seeker/directory?section=${weakestSectionId}`}
-            className="inline-block rounded bg-forest px-[18px] py-[11px] font-mono text-[11.5px] uppercase tracking-[0.06em] text-mist"
+            href="/seeker/modules"
+            className="rounded bg-forest px-[18px] py-[11px] font-mono text-[11.5px] uppercase tracking-[0.06em] text-mist"
           >
-            See matched providers →
+            Explore the full curriculum
           </Link>
-        </div>
-      )}
-
-      {!seekerId && (
-        <div className="mb-8 rounded-md border border-[#DCD6BF] bg-[#F6E9D2] p-[22px]">
-          <p className="mb-3.5 font-body text-[14px] text-ink">
-            Create a free account to save this and get matched to providers.
-          </p>
-          <Link
-            href="/auth/seeker"
-            className="inline-block rounded bg-forest px-[18px] py-[11px] font-mono text-[11.5px] uppercase tracking-[0.06em] text-mist"
-          >
-            Create free account →
-          </Link>
-        </div>
-      )}
-
-      <p className="mb-8 max-w-[64ch] font-body text-[12.5px] text-[#8C8770]">
-        Your individual answers are yours — never shared with an employer, full stop.
-      </p>
-
-      <h2 className="mb-4 font-display text-[22px] font-medium text-ink">Where to start</h2>
-      <div className="mb-9 grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4">
-        {recs.map((r, i) =>
-          r.retreat ? (
+          <Button type="button" variant="outline" onClick={retake}>
+            Retake the audit
+          </Button>
+          {seekerId && (
             <Link
-              key={i}
-              href="/seeker/retreats"
-              className="flex flex-col gap-2 rounded-md border border-[#DCD6BF] bg-card p-5"
+              href="/seeker/era/history"
+              className="font-mono text-[11px] uppercase tracking-[0.05em] text-moss"
             >
-              <span className="w-fit rounded-full border border-[#C9C3AC] px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.04em] text-[#4A4738]">
-                {r.tag}
-              </span>
-              <h3 className="font-display text-[17px] font-medium text-ink">{r.title}</h3>
-              <p className="font-body text-[13px] text-[#4A4738]">{r.why}</p>
-              <span className="mt-auto pt-2 font-mono text-[11px] text-gold">
-                Retreats &amp; sessions →
-              </span>
+              View past results →
             </Link>
-          ) : (
-            <Link
-              key={i}
-              href={`/seeker/modules/${r.moduleId}/${r.chapterId}`}
-              className="flex flex-col gap-2 rounded-md border border-[#DCD6BF] bg-card p-5"
-            >
-              <span className="w-fit rounded-full border border-[#C9C3AC] px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.04em] text-[#4A4738]">
-                {r.tag}
-              </span>
-              <h3 className="font-display text-[17px] font-medium text-ink">{r.chapterTitle}</h3>
-              <p className="font-body text-[13px] text-[#4A4738]">{r.why}</p>
-              <span className="mt-auto pt-2 font-mono text-[11px] text-gold">
-                {r.moduleCode} · {r.moduleTitle} →
-              </span>
-            </Link>
-          )
-        )}
-      </div>
-
-      <div className="flex flex-wrap gap-2.5">
-        <Link
-          href="/seeker/modules"
-          className="rounded bg-forest px-[18px] py-[11px] font-mono text-[11.5px] uppercase tracking-[0.06em] text-mist"
-        >
-          Explore the full curriculum
-        </Link>
-        <Button type="button" variant="outline" onClick={retake}>
-          Retake the audit
-        </Button>
-      </div>
-    </div>
+          )}
+        </div>
+      }
+    />
   );
 }
