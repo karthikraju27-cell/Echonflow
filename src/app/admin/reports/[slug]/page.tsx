@@ -1,5 +1,6 @@
 import { createServiceClient } from "@/lib/supabase/service";
 import { ERA_SECTIONS } from "@/lib/era-questions";
+import { latestPerEmployee } from "@/lib/company-report";
 
 // Personal-use gate, not a real admin system — a shared secret in
 // ADMIN_REPORT_SECRET, checked against ?key=. Same trust model as
@@ -41,15 +42,27 @@ export default async function CompanyReportPage({
     .select("id", { count: "exact", head: true })
     .eq("company_id", company.id);
 
-  const { data: responses } = await supabase
-    .from("era_responses")
-    .select("score, section_scores")
-    .eq("company_id", company.id);
-
-  const totalResponses = responses?.length ?? 0;
+  // Fetch every page so repeat attempts cannot crowd out other employees.
+  const allResponses = [];
+  const pageSize = 1000;
+  for (let offset = 0; ; offset += pageSize) {
+    const { data, error } = await supabase
+      .from("era_responses")
+      .select("id, seeker_id, created_at, score, section_scores")
+      .eq("company_id", company.id)
+      .order("created_at", { ascending: false })
+      .order("id", { ascending: false })
+      .range(offset, offset + pageSize - 1);
+    if (error) throw new Error("Unable to load the company report.");
+    allResponses.push(...(data ?? []));
+    if (!data || data.length < pageSize) break;
+  }
+  const responses = latestPerEmployee(allResponses);
+  const totalResponses = responses.length;
   const totalSignedUp = totalProfiles ?? 0;
   const completionRate = totalSignedUp > 0 ? Math.round((totalResponses / totalSignedUp) * 100) : 0;
-  const belowThreshold = totalResponses < company.min_report_threshold;
+  const minimumResponses = Math.max(10, company.min_report_threshold);
+  const belowThreshold = totalResponses < minimumResponses;
 
   let avgOverall: number | null = null;
   const avgBySection: Record<string, number> = {};
@@ -84,7 +97,7 @@ export default async function CompanyReportPage({
           </div>
           <div className="rounded-md border border-[#DCD6BF] bg-card p-5">
             <div className="mb-1 font-mono text-[10px] uppercase tracking-[0.06em] text-moss">
-              Audits completed
+              Employees completed
             </div>
             <div className="font-display text-[28px] font-medium text-ink">{totalResponses}</div>
           </div>
@@ -99,7 +112,7 @@ export default async function CompanyReportPage({
         {belowThreshold ? (
           <div className="rounded-md border border-[#DCD6BF] bg-card p-[24px]">
             <p className="font-body text-[14px] text-[#4A4738]">
-              Not enough responses yet for a breakdown.
+              Group scores appear after at least {minimumResponses} employees complete the audit. Each employee counts once.
             </p>
           </div>
         ) : (
@@ -133,7 +146,7 @@ export default async function CompanyReportPage({
         )}
 
         <p className="mt-8 max-w-[64ch] font-body text-[12.5px] text-[#8C8770]">
-          Aggregate only — individual responses are never shown or linked from this page.
+          Aggregate only — individual responses are never shown or linked from this page. Each employee’s latest completed audit contributes once to this report.
         </p>
       </div>
     </div>
