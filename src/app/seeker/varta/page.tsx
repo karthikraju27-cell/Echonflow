@@ -1,5 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
-import { BackToHub } from "@/components/BackToHub";
+
 import { VartaClient } from "@/components/varta/VartaClient";
 import { AddEntryForm } from "@/components/varta/AddEntryForm";
 
@@ -20,11 +20,11 @@ export default async function VartaPage() {
 
   return (
     <div>
-      <BackToHub />
-      <h1 className="mb-1.5 font-display text-[30px] font-medium text-ink">Vārtā — reels &amp; insights</h1>
-      <p className="mb-7 font-body text-[14.5px] text-[#4A4738]">
-        Curated wellness reels and short written takes, categorised.
-      </p>
+      <header className="varta-intro">
+        <h1>Vārtā.</h1>
+        <p>A little perspective goes a long way. Explore wellness reels, fresh insights, and ideas worth sharing.</p>
+      </header>
+      {/* Sponsored placements and affiliate offers require real inventory and clear disclosures before launch. */}
       <AddEntryForm userId={user!.id} defaultCurator={profile?.name ?? "A seeker"} />
       <VartaClient posts={posts ?? []} />
     </div>

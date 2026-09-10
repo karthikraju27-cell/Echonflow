@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { EraFlow } from "@/components/era/EraFlow";
 import { PublicHeader } from "@/components/PublicHeader";
@@ -7,13 +8,7 @@ export const metadata = {
   title: "Energy & Resilience Audit — Echonflow",
 };
 
-// Public entry point — no account required. Anyone can take the audit and
-// see full results; results only persist to the database for signed-in
-// seekers (see EraFlow). Signed-in visitors land here with the same
-// experience, just with their result saved automatically.
-//
-// ?org=<slug> carries a pilot cohort (e.g. Krafton) through: an
-// unrecognized slug is ignored silently rather than erroring the page.
+// Account-first entry; company links survive authentication.
 export default async function PublicEraPage({
   searchParams,
 }: {
@@ -25,6 +20,10 @@ export default async function PublicEraPage({
     data: { user },
   } = await supabase.auth.getUser();
 
+  if (!user) {
+    const next = org ? "/era?org=" + encodeURIComponent(org) : "/era";
+    redirect("/auth/seeker?next=" + encodeURIComponent(next) + (org ? "&org=" + encodeURIComponent(org) : ""));
+  }
   let hubHref: string | undefined;
   let profileCompanyId: string | null = null;
   if (user) {
@@ -33,7 +32,8 @@ export default async function PublicEraPage({
       .select("role, company_id")
       .eq("id", user.id)
       .single();
-    hubHref = profile?.role === "provider" ? "/provider" : "/seeker";
+    if (profile?.role === "provider") redirect("/provider");
+    hubHref = "/seeker";
     profileCompanyId = profile?.company_id ?? null;
   }
 

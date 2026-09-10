@@ -1,3 +1,4 @@
+import { authDestination } from "@/lib/auth-destination";
 import { createClient } from "@/lib/supabase/server";
 import { AuthCard } from "@/components/auth/AuthCard";
 import { AuthForm } from "@/components/auth/AuthForm";
@@ -9,9 +10,9 @@ import { AuthForm } from "@/components/auth/AuthForm";
 export default async function SeekerAuthPage({
   searchParams,
 }: {
-  searchParams: Promise<{ org?: string }>;
+  searchParams: Promise<{ org?: string; next?: string }>;
 }) {
-  const { org } = await searchParams;
+  const { org, next } = await searchParams;
 
   let companyId: string | undefined;
   if (org) {
@@ -26,7 +27,7 @@ export default async function SeekerAuthPage({
 
   return (
     <AuthCard eyebrow="Seeker sign-in" title="Welcome back">
-      <AuthForm role="seeker" companyId={companyId} />
+      <AuthForm role="seeker" companyId={companyId} returnTo={authDestination(next) ?? (companyId && org ? "/era?org=" + encodeURIComponent(org) : undefined)} />
     </AuthCard>
   );
 }

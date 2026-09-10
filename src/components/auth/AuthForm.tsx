@@ -5,12 +5,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import type { UserRole } from "@/lib/database.types";
+import { authDestination } from "@/lib/auth-destination";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 
 type Mode = "sign_in" | "sign_up";
 
-export function AuthForm({ role, companyId }: { role: UserRole; companyId?: string }) {
+export function AuthForm({ role, companyId, returnTo }: { role: UserRole; companyId?: string; returnTo?: string }) {
   const router = useRouter();
   const supabase = createClient();
 
@@ -28,7 +29,7 @@ export function AuthForm({ role, companyId }: { role: UserRole; companyId?: stri
   // Middleware re-routes to the correct hub if this guess is wrong for the
   // signed-in account's actual role, so a static destination per auth page
   // is safe here.
-  const destination = role === "provider" ? "/provider" : "/seeker";
+  const destination = authDestination(returnTo) ?? (role === "provider" ? "/provider" : "/seeker");
 
   function signUpMetadata() {
     return role === "provider"
@@ -54,7 +55,7 @@ export function AuthForm({ role, companyId }: { role: UserRole; companyId?: stri
         password,
         options: {
           data: signUpMetadata(),
-          emailRedirectTo: `${window.location.origin}/auth/callback`,
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(destination)}`,
         },
       });
       setLoading(false);
@@ -98,7 +99,8 @@ export function AuthForm({ role, companyId }: { role: UserRole; companyId?: stri
       email,
       options: {
         data: mode === "sign_up" ? signUpMetadata() : undefined,
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
+        shouldCreateUser: mode === "sign_up",
+        emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(destination)}`,
       },
     });
     setLoading(false);
@@ -134,7 +136,7 @@ export function AuthForm({ role, companyId }: { role: UserRole; companyId?: stri
 
       {mode === "sign_up" && (
         <Input
-          placeholder="Full name"
+          aria-label="Full name" autoComplete="name" placeholder="Full name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -142,14 +144,14 @@ export function AuthForm({ role, companyId }: { role: UserRole; companyId?: stri
       )}
       <Input
         type="email"
-        placeholder="Email"
+        aria-label="Email" autoComplete="email" placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
       />
       <Input
         type="password"
-        placeholder="Password"
+        aria-label="Password" autoComplete={mode === "sign_up" ? "new-password" : "current-password"} placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         required

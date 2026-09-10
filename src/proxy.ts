@@ -1,3 +1,4 @@
+import { authDestination } from "@/lib/auth-destination";
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
@@ -65,9 +66,12 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (isAuthRoute) {
+  if (isAuthRoute && path !== "/auth/callback") {
     const url = request.nextUrl.clone();
-    url.pathname = role === "provider" ? "/provider" : "/seeker";
+    const destination = authDestination(request.nextUrl.searchParams.get("next"));
+    const target = new URL(destination ?? (role === "provider" ? "/provider" : "/seeker"), request.url);
+    url.pathname = target.pathname;
+    url.search = target.search;
     return NextResponse.redirect(url);
   }
 

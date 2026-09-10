@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${newsreader.variable} ${manrope.variable} ${spaceMono.variable}`}>
-      <body className="font-body">{children}</body>
+      <body className="font-body"><a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-card focus:p-3">Skip to content</a>{children}</body>
     </html>
   );
 }
