@@ -23,7 +23,7 @@ export function Shell({ name, role, children }: { name: string; role: UserRole; 
   }
   return (
     <div className="app-shell">
-      <header className="app-header"><Link href={hub} className="wordmark"><BrandMark size={30} />echonflow</Link><div className="account-actions"><span>{name.split(" ")[0]}</span><button onClick={handleLogout}>Log out</button></div></header>
+      <header className="app-header"><Link href="/" className="wordmark" aria-label="Echonflow home"><BrandMark size={30} />echonflow</Link><div className="account-actions"><span>{name.split(" ")[0]}</span><button onClick={handleLogout}>Log out</button></div></header>
       <nav className="app-navigation" aria-label="Your workspace">{links.map((link) => {
         const active = link.href === hub ? path === hub : path.startsWith(link.href) || (link.href === "/varta" && path === "/seeker/varta");
         return <Link key={link.href} href={link.href} aria-current={active ? "page" : undefined}><span className="nav-dot" aria-hidden="true" />{link.label}</Link>;
