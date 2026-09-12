@@ -13,7 +13,7 @@ export function Shell({ name, role, children }: { name: string; role: UserRole; 
   const [error, setError] = useState("");
   const hub = role === "provider" ? "/provider" : "/seeker";
   const links = role === "provider"
-    ? [{ href: hub, label: "My space" }, { href: "/provider/listings", label: "Listings" }, { href: "/provider/leads", label: "Inquiries" }, { href: "/varta", label: "Vārtā" }]
+    ? [{ href: hub, label: "My space" }, { href: "/provider/listings", label: "Listings" }, { href: "/provider/wrs", label: "WRS™" }, { href: "/provider/leads", label: "Inquiries" }, { href: "/varta", label: "Vārtā" }]
     : [{ href: hub, label: "My space" }, { href: "/seeker/era", label: "My energy" }, { href: "/seeker/modules", label: "Learn" }, { href: "/seeker/directory", label: "Providers" }, { href: "/varta", label: "Vārtā" }];
   async function handleLogout() {
     const { error } = await createClient().auth.signOut();

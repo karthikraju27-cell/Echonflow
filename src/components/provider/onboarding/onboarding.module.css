@@ -34,6 +34,7 @@
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .note{background:#EFEBDD;border-radius:8px;padding:20px;font-size:13px;line-height:1.8;color:#42533f;margin:24px 0}
 .note p{margin-top:6px}
+.note a{display:inline-block;margin-top:9px;font-size:12px;font-weight:700;text-decoration:underline;color:#36583e}
 .hint{font-size:12px;font-weight:400;line-height:1.7;color:#4b5d4e}
 .contactTitle{font-family:var(--font-newsreader),serif;font-size:28px;margin:32px 0 8px}
 .actions{border-top:1px solid #d5d5c3;margin-top:32px;padding-top:22px;display:flex;justify-content:flex-end;gap:22px}

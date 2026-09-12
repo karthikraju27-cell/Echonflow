@@ -24,7 +24,7 @@ export default async function ProviderListingsPage() {
         List your practice so seekers can find you in the Echonflow directory.
       </p>
 
-      <Link href="/provider/onboarding" className="flow-button mb-8">Create a guided listing →</Link>
+      <div className="mb-8 flex flex-wrap gap-3"><Link href="/provider/onboarding" className="flow-button">Create a guided listing →</Link><Link href="/provider/wrs" className="flow-button light-button border border-[#BFC5B7]">Open WRS™ →</Link></div>
       <details className="mb-8"><summary className="cursor-pointer text-sm">Quick listing form</summary><ListingForm ownerId={user!.id} /></details>
 
       <div className="mb-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-moss">

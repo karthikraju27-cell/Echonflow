@@ -11,7 +11,7 @@ export function ListingCard({ listing, href }: { listing: Listing; href?: string
         {listing.category === "Resort" && listing.wrs_score != null && (
           <span
             className="font-mono text-[10px] uppercase tracking-[0.08em] text-gold"
-            title="WRS™ scoring uses a placeholder methodology and is not yet final."
+            title="WRS™ beta is a provisional, self-reported property-readiness score."
           >
             WRS™ {listing.wrs_score} · {listing.wrs_tier}{" "}
             <span className="text-[#8C8770]">(beta)</span>

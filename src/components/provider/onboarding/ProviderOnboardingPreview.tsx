@@ -15,14 +15,16 @@ const categories: Record<Track, ProviderCategory[]> = { practice: ["Trainer", "T
 const titles = ["Good care starts with people like you.", "Let people get to know your work.", "Give people a reason to connect.", "Meet your future listing."];
 const notes = ["Tell us how you bring wellbeing into the world. We’ll shape the next steps around you.", "A clear, thoughtful introduction helps seekers understand whether you’re the right fit.", "Start with one offering. You can expand your practice as you grow.", "Read this as a seeker would. Make sure it feels clear, accurate, and true to you."];
 
-export function ProviderOnboardingPreview({ ownerId }: { ownerId?: string }) {
+export function ProviderOnboardingPreview({ ownerId, initialTrack = "practice" }: { ownerId?: string; initialTrack?: Track }) {
   const preview = !ownerId;
   const key = ownerId ? "echonflow-provider-onboarding-v1:" + ownerId : previewKey;
   const requestId = useRef("");
   const publishing = useRef(false);
   const [busy, setBusy] = useState(false);
   const [publishedId, setPublishedId] = useState("");
-  const [draft, setDraft] = useState<Draft>(initial);
+  const [draft, setDraft] = useState<Draft>(() => initialTrack === "property"
+    ? { ...initial, track: "property", category: "Resort" }
+    : initial);
   const [step, setStep] = useState(0);
   const [message, setMessage] = useState("");
   const [done, setDone] = useState(false);
@@ -95,7 +97,7 @@ export function ProviderOnboardingPreview({ ownerId }: { ownerId?: string }) {
                 {(["practice", "property"] as const).map(track => <label className={styles.choice} key={track} data-selected={draft.track === track}><input type="radio" name="track" checked={draft.track === track} onChange={() => { setDraft(d => ({ ...d, track, category: categories[track][0], format: track === "property" ? "In person" : d.format })); setConfirmed(false); }} /><span><strong>{track === "practice" ? "I offer a service" : "I host experiences"}</strong><span>{track === "practice" ? "Coaches, therapists, nutritionists, and studios." : "Resorts and retreat centers with space to reconnect."}</span></span></label>)}
               </fieldset>
               <label className={styles.field}>Which category fits you best?<select value={draft.category} onChange={e => update("category", e.target.value as ProviderCategory)}>{categories[draft.track].map(c => <option key={c}>{c}</option>)}</select></label>
-              <div className={styles.note}>{property ? "Introduce your property first. WRS™ is a separate property-readiness assessment, not the individual Energy & Resilience Audit." : "Create your profile and introduce your first offering. Seekers can then contact you to discuss whether it’s a fit."}</div>
+              <div className={styles.note}>{property ? <><p>Introduce your property first. WRS™ is a separate property-readiness assessment, not the individual Energy &amp; Resilience Audit.</p><Link href="/provider/wrs">Open the WRS™ workspace →</Link></> : "Create your profile and introduce your first offering. Seekers can then contact you to discuss whether it’s a fit."}</div>
             </>}
             {step === 1 && <>
               <div className={styles.fields}><label className={styles.field}>{property ? "Property name" : "Your practice or professional name"}<input required maxLength={120} value={draft.name} onChange={e => update("name", e.target.value)} placeholder={property ? "e.g. The Grove Retreat" : "e.g. Ananya Rao · Movement Coach"} /></label><label className={styles.field}>Where are you based?<input required maxLength={120} value={draft.city} onChange={e => update("city", e.target.value)} placeholder="City, state" /></label></div>
