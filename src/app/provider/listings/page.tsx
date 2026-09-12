@@ -24,7 +24,8 @@ export default async function ProviderListingsPage() {
         List your practice so seekers can find you in the Echonflow directory.
       </p>
 
-      <ListingForm ownerId={user!.id} />
+      <Link href="/provider/onboarding" className="flow-button mb-8">Create a guided listing →</Link>
+      <details className="mb-8"><summary className="cursor-pointer text-sm">Quick listing form</summary><ListingForm ownerId={user!.id} /></details>
 
       <div className="mb-3 font-mono text-[10.5px] uppercase tracking-[0.1em] text-moss">
         Your listings ({listings?.length ?? 0})
@@ -35,7 +36,7 @@ export default async function ProviderListingsPage() {
       <div className="grid grid-cols-[repeat(auto-fill,minmax(260px,1fr))] gap-4">
         {listings?.map((l) => (
           <div key={l.id}>
-            <ListingCard listing={l} href={`/seeker/directory/${l.id}`} />
+            <ListingCard listing={l} href={`/p/provider/${l.id}`} />
             {l.category === "Resort" && (
               <Link
                 href={`/provider/listings/${l.id}/wrs`}

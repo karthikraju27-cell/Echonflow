@@ -4,7 +4,7 @@ import { AuthForm } from "@/components/auth/AuthForm";
 export default function ProviderAuthPage() {
   return (
     <AuthCard eyebrow="Provider sign-in" title="Welcome, practitioner">
-      <AuthForm role="provider" />
+      <AuthForm role="provider" returnTo="/provider/onboarding" />
     </AuthCard>
   );
 }

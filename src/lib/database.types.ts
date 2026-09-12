@@ -14,7 +14,15 @@ export type ProviderCategory =
 
 export type VartaType = "reel" | "insight";
 
-export type LeadStatus = "new" | "contacted" | "booked";
+export type LeadStatus = "new" | "contacted" | "booked" | "closed";
+export type RecruitmentStage =
+  | "prospect"
+  | "contacted"
+  | "interested"
+  | "onboarding"
+  | "live"
+  | "paused"
+  | "declined";
 
 export interface Database {
   public: {
@@ -79,6 +87,10 @@ export interface Database {
         Row: {
           id: string;
           owner_id: string;
+          offering_title: string | null;
+          offering_audience: string | null;
+          delivery_format: string | null;
+          qualifications: string | null;
           business_name: string;
           category: ProviderCategory;
           location: string;
@@ -94,6 +106,10 @@ export interface Database {
         Insert: {
           id?: string;
           owner_id: string;
+          offering_title?: string | null;
+          offering_audience?: string | null;
+          delivery_format?: string | null;
+          qualifications?: string | null;
           business_name: string;
           category: ProviderCategory;
           location: string;
@@ -107,6 +123,10 @@ export interface Database {
           created_at?: string;
         };
         Update: Partial<{
+          offering_title?: string | null;
+          offering_audience?: string | null;
+          delivery_format?: string | null;
+          qualifications?: string | null;
           business_name: string;
           category: ProviderCategory;
           location: string;
@@ -118,6 +138,12 @@ export interface Database {
           wrs_breakdown: Record<string, unknown> | null;
           era_section_tags: string[] | null;
         }>;
+        Relationships: [];
+      };
+      provider_onboarding_contacts: {
+        Row: { listing_id: string; owner_id: string; contact_name: string; email: string; phone: string | null; created_at: string };
+        Insert: { listing_id: string; owner_id: string; contact_name: string; email: string; phone?: string | null; created_at?: string };
+        Update: Partial<{ contact_name: string; email: string; phone: string | null }>;
         Relationships: [];
       };
       varta_posts: {
@@ -215,6 +241,85 @@ export interface Database {
         }>;
         Relationships: [];
       };
+      lead_followups: {
+        Row: {
+          lead_id: string;
+          listing_id: string;
+          owner_id: string;
+          notes: string | null;
+          next_follow_up_at: string | null;
+          last_contact_at: string | null;
+          updated_at: string;
+        };
+        Insert: {
+          lead_id: string;
+          listing_id: string;
+          owner_id: string;
+          notes?: string | null;
+          next_follow_up_at?: string | null;
+          last_contact_at?: string | null;
+          updated_at?: string;
+        };
+        Update: Partial<{
+          notes: string | null;
+          next_follow_up_at: string | null;
+          last_contact_at: string | null;
+          updated_at: string;
+        }>;
+        Relationships: [];
+      };
+      provider_prospects: {
+        Row: {
+          id: string;
+          provider_name: string;
+          category: ProviderCategory;
+          organization: string | null;
+          contact_name: string | null;
+          email: string | null;
+          phone: string | null;
+          city: string | null;
+          source: string | null;
+          stage: RecruitmentStage;
+          last_contact_on: string | null;
+          next_follow_up_on: string | null;
+          notes: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          provider_name: string;
+          category: ProviderCategory;
+          organization?: string | null;
+          contact_name?: string | null;
+          email?: string | null;
+          phone?: string | null;
+          city?: string | null;
+          source?: string | null;
+          stage?: RecruitmentStage;
+          last_contact_on?: string | null;
+          next_follow_up_on?: string | null;
+          notes?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<{
+          provider_name: string;
+          category: ProviderCategory;
+          organization: string | null;
+          contact_name: string | null;
+          email: string | null;
+          phone: string | null;
+          city: string | null;
+          source: string | null;
+          stage: RecruitmentStage;
+          last_contact_on: string | null;
+          next_follow_up_on: string | null;
+          notes: string | null;
+          updated_at: string;
+        }>;
+        Relationships: [];
+      };
       module_quiz_progress: {
         Row: {
           id: string;
@@ -262,7 +367,19 @@ export interface Database {
       };
     };
     Views: Record<string, never>;
-    Functions: Record<string, never>;
+    Functions: {
+      publish_provider_onboarding: { Args: { p_id: string; p_draft: Record<string, string> }; Returns: string };
+      update_provider_lead: {
+        Args: {
+          p_lead_id: string;
+          p_status: string;
+          p_notes: string;
+          p_next_follow_up_at: string | null;
+          p_mark_contacted?: boolean;
+        };
+        Returns: undefined;
+      };
+    };
     Enums: {
       user_role: UserRole;
       provider_category: ProviderCategory;
@@ -278,5 +395,7 @@ export type Listing = Database["public"]["Tables"]["listings"]["Row"];
 export type VartaPost = Database["public"]["Tables"]["varta_posts"]["Row"];
 export type EraResponse = Database["public"]["Tables"]["era_responses"]["Row"];
 export type Lead = Database["public"]["Tables"]["leads"]["Row"];
+export type LeadFollowup = Database["public"]["Tables"]["lead_followups"]["Row"];
+export type ProviderProspect = Database["public"]["Tables"]["provider_prospects"]["Row"];
 export type ModuleQuizProgress = Database["public"]["Tables"]["module_quiz_progress"]["Row"];
 export type Certificate = Database["public"]["Tables"]["certificates"]["Row"];

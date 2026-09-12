@@ -39,7 +39,8 @@ export async function proxy(request: NextRequest) {
   if (!user) {
     if (isProviderRoute || isSeekerRoute) {
       const url = request.nextUrl.clone();
-      url.pathname = "/";
+      url.pathname = isProviderRoute ? "/auth/provider" : "/auth/seeker";
+      url.search = "?next=" + encodeURIComponent(path + request.nextUrl.search);
       return NextResponse.redirect(url);
     }
     return response;
@@ -68,7 +69,7 @@ export async function proxy(request: NextRequest) {
 
   if (isAuthRoute && path !== "/auth/callback") {
     const url = request.nextUrl.clone();
-    const destination = authDestination(request.nextUrl.searchParams.get("next"));
+    const destination = authDestination(request.nextUrl.searchParams.get("next")) ?? (path === "/auth/provider" && role === "provider" ? "/provider/onboarding" : undefined);
     const target = new URL(destination ?? (role === "provider" ? "/provider" : "/seeker"), request.url);
     url.pathname = target.pathname;
     url.search = target.search;

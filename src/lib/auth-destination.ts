@@ -4,6 +4,7 @@ export function authDestination(value?: string | null): string | undefined {
   try {
     const url = new URL(value, "https://echonflow.com");
     if (url.origin !== "https://echonflow.com" || !value.startsWith("/") || value.startsWith("//")) return undefined;
+    if (url.pathname === "/provider/onboarding") return "/provider/onboarding";
     if (url.pathname === "/varta") return "/varta";
     if (url.pathname === "/era") {
       const org = url.searchParams.get("org");

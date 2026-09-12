@@ -36,6 +36,20 @@ export function ListingProfileContent({
           {listing.description}
         </p>
       )}
+      {listing.qualifications && (
+        <section className="my-6 max-w-[560px]">
+          <h2 className="font-display text-xl">Experience, facilities &amp; qualifications</h2>
+          <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed">{listing.qualifications}</p>
+          <p className="mt-2 text-xs text-moss">Provider-reported information; not independently verified.</p>
+        </section>
+      )}
+      {listing.offering_title && (
+        <section className="my-6 max-w-[560px] border-y border-[#DCD6BF] py-5">
+          <h2 className="font-display text-2xl">{listing.offering_title}</h2>
+          <p className="mt-2 text-sm leading-relaxed">{listing.offering_audience}</p>
+          <p className="mt-3 text-xs text-moss">{listing.delivery_format}</p>
+        </section>
+      )}
       {listing.price_range && (
         <p className="mb-7 font-mono text-[12px] text-gold">{listing.price_range}</p>
       )}
