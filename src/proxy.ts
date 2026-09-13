@@ -34,7 +34,7 @@ export async function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const isProviderRoute = path.startsWith("/provider");
   const isSeekerRoute = path.startsWith("/seeker");
-  const isAuthRoute = path.startsWith("/auth");
+  const isRoleAuthRoute = path === "/auth/provider" || path === "/auth/seeker";
 
   if (!user) {
     if (isProviderRoute || isSeekerRoute) {
@@ -67,7 +67,7 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (isAuthRoute && path !== "/auth/callback") {
+  if (isRoleAuthRoute) {
     const url = request.nextUrl.clone();
     const destination = authDestination(request.nextUrl.searchParams.get("next")) ?? (path === "/auth/provider" && role === "provider" ? "/provider/onboarding" : undefined);
     const target = new URL(destination ?? (role === "provider" ? "/provider" : "/seeker"), request.url);
