@@ -24,6 +24,17 @@ export type RecruitmentStage =
   | "paused"
   | "declined";
 
+export type CrmLeadType = "provider" | "community" | "corporate" | "partnership";
+export type CrmLeadStage =
+  | "new"
+  | "contacted"
+  | "qualified"
+  | "proposal"
+  | "won"
+  | "delivery"
+  | "paused"
+  | "lost";
+
 export interface Database {
   public: {
     Tables: {
@@ -320,6 +331,73 @@ export interface Database {
         }>;
         Relationships: [];
       };
+      crm_leads: {
+        Row: {
+          id: string;
+          lead_type: CrmLeadType;
+          lead_name: string;
+          organization: string | null;
+          contact_name: string | null;
+          email: string | null;
+          phone: string | null;
+          city: string | null;
+          source: string | null;
+          provider_category: ProviderCategory | null;
+          offering: string | null;
+          session_package: number | null;
+          estimated_value: number | null;
+          stage: CrmLeadStage;
+          last_contact_on: string | null;
+          next_follow_up_on: string | null;
+          next_action: string | null;
+          notes: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: string;
+          lead_type: CrmLeadType;
+          lead_name: string;
+          organization?: string | null;
+          contact_name?: string | null;
+          email?: string | null;
+          phone?: string | null;
+          city?: string | null;
+          source?: string | null;
+          provider_category?: ProviderCategory | null;
+          offering?: string | null;
+          session_package?: number | null;
+          estimated_value?: number | null;
+          stage?: CrmLeadStage;
+          last_contact_on?: string | null;
+          next_follow_up_on?: string | null;
+          next_action?: string | null;
+          notes?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: Partial<{
+          lead_type: CrmLeadType;
+          lead_name: string;
+          organization: string | null;
+          contact_name: string | null;
+          email: string | null;
+          phone: string | null;
+          city: string | null;
+          source: string | null;
+          provider_category: ProviderCategory | null;
+          offering: string | null;
+          session_package: number | null;
+          estimated_value: number | null;
+          stage: CrmLeadStage;
+          last_contact_on: string | null;
+          next_follow_up_on: string | null;
+          next_action: string | null;
+          notes: string | null;
+          updated_at: string;
+        }>;
+        Relationships: [];
+      };
       module_quiz_progress: {
         Row: {
           id: string;
@@ -397,5 +475,6 @@ export type EraResponse = Database["public"]["Tables"]["era_responses"]["Row"];
 export type Lead = Database["public"]["Tables"]["leads"]["Row"];
 export type LeadFollowup = Database["public"]["Tables"]["lead_followups"]["Row"];
 export type ProviderProspect = Database["public"]["Tables"]["provider_prospects"]["Row"];
+export type CrmLead = Database["public"]["Tables"]["crm_leads"]["Row"];
 export type ModuleQuizProgress = Database["public"]["Tables"]["module_quiz_progress"]["Row"];
 export type Certificate = Database["public"]["Tables"]["certificates"]["Row"];
