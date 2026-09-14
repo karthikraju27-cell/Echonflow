@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/Button";
@@ -58,6 +59,7 @@ export function AdminLoginForm({ returnTo = "/admin/crm" }: { returnTo?: string 
     <form onSubmit={signIn} className="flex flex-col gap-2.5">
       <Input type="email" aria-label="Admin email" autoComplete="email" placeholder="Admin email" value={email} onChange={(event) => setEmail(event.target.value)} required />
       <Input type="password" aria-label="Password" autoComplete="current-password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} required />
+      <Link href="/auth/forgot-password?next=%2Fadmin%2Fcrm" className="self-end font-body text-[12px] text-moss underline underline-offset-4">Forgot password?</Link>
       {error && <p className="font-body text-[12.5px] text-red-700" role="alert">{error}</p>}
       {info && <p className="font-body text-[12.5px] text-moss" role="status">{info}</p>}
       <Button type="submit" disabled={loading} className="mt-1 w-full">{loading ? "Signing in…" : "Open private CRM"}</Button>

@@ -157,6 +157,14 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
         required
         minLength={6}
       />
+      {mode === "sign_in" && (
+        <Link
+          href={`/auth/forgot-password?next=${encodeURIComponent(destination)}`}
+          className="self-end font-body text-[12px] text-moss underline underline-offset-4"
+        >
+          Forgot password?
+        </Link>
+      )}
       {mode === "sign_up" && role === "provider" && (
         <>
           <Input
