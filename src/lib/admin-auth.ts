@@ -1,10 +1,15 @@
 import type { User } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
 
+// Founder access is part of the application configuration, so the private CRM
+// remains reachable even if a deployment is missing the optional ADMIN_EMAILS
+// environment variable. Additional admins should still be added through that
+// server-only variable.
+const foundingAdminEmails = ["karthikraju27@gmail.com"];
+
 function adminEmails() {
   return new Set(
-    (process.env.ADMIN_EMAILS ?? "")
-      .split(",")
+    [...foundingAdminEmails, ...(process.env.ADMIN_EMAILS ?? "").split(",")]
       .map(normalizeEmail)
       .filter(Boolean),
   );
