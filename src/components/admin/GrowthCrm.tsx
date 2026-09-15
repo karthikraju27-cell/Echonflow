@@ -86,7 +86,7 @@ export function GrowthCrm({ leads, adminEmail }: { leads: CrmLead[]; adminEmail:
   const [view, setView] = useState<View>("today");
   const [stage, setStage] = useState<"all" | CrmLeadStage>("all");
   const [query, setQuery] = useState("");
-  const [adding, setAdding] = useState(leads.length === 0);
+  const [adding, setAdding] = useState(false);
 
   const attentionCount = records.filter(needsAttention).length;
   const activeCount = records.filter((lead) => isActive(lead.stage)).length;
@@ -127,10 +127,23 @@ export function GrowthCrm({ leads, adminEmail }: { leads: CrmLead[]; adminEmail:
             <h1>Every relationship,<br /><em>moving forward.</em></h1>
             <p>Your private workspace for providers, communities, corporate pilots and growth partnerships.</p>
           </div>
-          <button type="button" className={styles.primaryAction} onClick={() => setAdding((open) => !open)}>
-            {adding ? "Close new lead" : "Add relationship"}
+          <button
+            type="button"
+            className={styles.primaryAction}
+            onClick={() => setAdding((open) => !open)}
+            aria-expanded={adding}
+            aria-controls="new-crm-lead"
+          >
+            {adding ? "Close form" : "Add lead"}
           </button>
         </section>
+
+        {adding && (
+          <section className={styles.addPanel} id="new-crm-lead">
+            <div><span className={styles.formEyebrow}>New CRM lead</span><h2>Add a lead</h2><p>Start with what you know. You can open the record and add more detail at any time.</p></div>
+            <LeadForm onSaved={(lead) => { setRecords((current) => [lead, ...current]); setAdding(false); setView("all"); }} />
+          </section>
+        )}
 
         <section className={styles.metrics} aria-label="CRM summary">
           <div data-alert={attentionCount > 0}><strong>{attentionCount}</strong><span>need attention</span></div>
@@ -138,13 +151,6 @@ export function GrowthCrm({ leads, adminEmail }: { leads: CrmLead[]; adminEmail:
           <div><strong>{proposalCount}</strong><span>proposals pending</span></div>
           <div><strong>{formatValue(pipelineValue) ?? "₹0"}</strong><span>visible pipeline</span></div>
         </section>
-
-        {adding && (
-          <section className={styles.addPanel}>
-            <div><h2>Start a relationship</h2><p>Add what you know now. The next action and follow-up date make the record useful.</p></div>
-            <LeadForm onSaved={(lead) => { setRecords((current) => [lead, ...current]); setAdding(false); setView("all"); }} />
-          </section>
-        )}
 
         <section className={styles.workspace}>
           <div className={styles.viewBar}>
@@ -164,6 +170,7 @@ export function GrowthCrm({ leads, adminEmail }: { leads: CrmLead[]; adminEmail:
             <div className={styles.empty}>
               <h2>{records.length ? "Your desk is clear here." : "Your first relationship starts here."}</h2>
               <p>{records.length ? "Change the view or stage filter to see another part of the pipeline." : "Add a provider, community, company or partner and give it one next action."}</p>
+              {!records.length && <button type="button" className={styles.emptyAction} onClick={() => setAdding(true)}>Add your first lead</button>}
             </div>
           ) : (
             <div className={styles.pipeline}>
@@ -235,7 +242,7 @@ function LeadForm({ lead, onSaved }: { lead?: CrmLead; onSaved: (lead: CrmLead) 
     <form className={styles.form} onSubmit={save} aria-busy={saving}>
       <fieldset><legend>Relationship</legend><div className={styles.grid}>
         <label>Type<select value={draft.lead_type} onChange={(event) => changeType(event.target.value as CrmLeadType)}>{CRM_LEAD_TYPES.map((type) => <option value={type} key={type}>{TYPE_LABELS[type]}</option>)}</select></label>
-        <label>Name<input required maxLength={140} value={draft.lead_name} onChange={(event) => update("lead_name", event.target.value)} placeholder="Person, practice or community" /></label>
+        <label>Name<input autoFocus={!lead} required maxLength={140} value={draft.lead_name} onChange={(event) => update("lead_name", event.target.value)} placeholder="Person, practice or community" /></label>
         <label>Organisation<input maxLength={140} value={draft.organization ?? ""} onChange={(event) => update("organization", event.target.value || null)} /></label>
         {draft.lead_type === "provider" && <label>Provider category<select value={draft.provider_category ?? "Trainer"} onChange={(event) => update("provider_category", event.target.value as ProviderCategory)}>{PROVIDER_CATEGORIES.map((category) => <option value={category} key={category}>{category}</option>)}</select></label>}
         <label>City<input maxLength={120} value={draft.city ?? ""} onChange={(event) => update("city", event.target.value || null)} /></label>
