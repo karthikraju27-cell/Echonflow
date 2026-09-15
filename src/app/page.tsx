@@ -1,3 +1,4 @@
+import { WordmarkText } from "@/components/WordmarkText";
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
 import { FlowArtwork } from "@/components/FlowArtwork";
@@ -6,7 +7,7 @@ export default function LandingPage() {
   return (
     <div className="landing">
       <header className="landing-nav">
-        <Link href="/" className="wordmark" aria-label="Echonflow home"><BrandMark size={34} />echonflow</Link>
+        <Link href="/" className="wordmark" aria-label="Echonflow home"><BrandMark size={34} /><WordmarkText /></Link>
         <nav aria-label="Main navigation"><a href="#explore" className="desktop-link">Explore Echonflow</a><Link href="/auth/seeker" className="text-link">Sign in <span aria-hidden="true">↗</span></Link></nav>
       </header>
       <main id="main-content">
@@ -32,7 +33,7 @@ export default function LandingPage() {
         </section>
         <section className="journey-section"><h2>Less guessing.<br /><em>More understanding.</em></h2><div className="journey-steps"><div><h3>Understand your energy</h3><p>Explore five dimensions of your wellbeing with the Energy &amp; Resilience Audit.</p></div><div><h3>Find your next step</h3><p>Use your personal results to discover relevant learning and providers.</p></div><div><h3>Build at your own pace</h3><p>Learn, earn certificates, and return to your audit to see how things change.</p></div><Link className="text-link" href="/auth/seeker">Begin with a free account <span aria-hidden="true">↗</span></Link></div></section>
       </main>
-      <footer className="landing-footer"><Link href="/" className="wordmark"><BrandMark size={28} />echonflow</Link><p>Wellness, connected.</p><div><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div></footer>
+      <footer className="landing-footer"><Link href="/" className="wordmark"><BrandMark size={28} /><WordmarkText /></Link><p>Wellness, connected.</p><div><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div></footer>
     </div>
   );
 }

@@ -1,4 +1,6 @@
 "use client";
+import { WordmarkText } from "@/components/WordmarkText";
+
 
 import Link from "next/link";
 import { useRef, useState, type FormEvent } from "react";
@@ -83,7 +85,7 @@ export function ProviderOnboardingPreview({ ownerId, initialTrack = "practice" }
   const property = draft.track === "property";
   const Content = preview ? "main" : "div";
   return <div className={styles.page}>
-    {preview && <header className={styles.header}><Link href="/" className="wordmark"><BrandMark size={34} />echonflow</Link><span>Provider onboarding · Design preview</span></header>}
+    {preview && <header className={styles.header}><Link href="/" className="wordmark"><BrandMark size={34} /><WordmarkText /></Link><span>Provider onboarding · Design preview</span></header>}
     {preview && <div className={styles.preview}>Try the journey with sample details. Nothing here creates an account, submits an application, or publishes a listing.</div>}
     <Content className={styles.layout} id={preview ? "main-content" : undefined}>
       <aside className={styles.sidebar}><p className={styles.sidebarTitle}>A place for<br /><em>what you do best.</em></p><p>Bring your expertise to people looking for their next step in wellbeing.</p><ol aria-label="Onboarding progress">{steps.map((label, i) => <li key={label} aria-current={!done && step === i ? "step" : undefined}><span>{i + 1}</span>{label}{i < step && <small>Complete</small>}</li>)}</ol><div className={styles.promise}><strong>Your work. Your voice.</strong><p>A listing introduces your services. It does not imply clinical endorsement or Echonflow verification.</p></div></aside>

@@ -134,3 +134,5 @@ em{font-weight:400}
 input:not([type=checkbox]):not([type=radio]),textarea,select{font-size:16px!important}
 }
 @media(prefers-reduced-motion:reduce){.flow-orbits,.flow-symbol,.hero-copy{animation:none}.flow-button,.layer-panel{transition:none}.flow-button:hover,.flow-button:active,.layer-panel:hover{transform:none}}
+
+.wordmark-text{white-space:nowrap}.wordmark-n{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;color:#A74624}.auth-story .wordmark-n{color:#F4B183}

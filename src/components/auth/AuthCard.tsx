@@ -1,3 +1,4 @@
+import { WordmarkText } from "@/components/WordmarkText";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BrandMark } from "@/components/BrandMark";
@@ -19,7 +20,7 @@ export function AuthCard({
   return (
     <main id="main-content" className="auth-layout">
       <section className="auth-story">
-        <Link href="/" className="wordmark"><BrandMark size={34} variant="dark" />echonflow</Link>
+        <Link href="/" className="wordmark"><BrandMark size={34} variant="dark" /><WordmarkText /></Link>
         <div>
           <h1>{storyTitle ?? <>Your next chapter<br />starts with <em>you.</em></>}</h1>
           <p>{storyBody ?? "One account. A world of learning, connection, and wellbeing."}</p>
