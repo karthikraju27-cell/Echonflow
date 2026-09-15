@@ -6,12 +6,24 @@ import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import type { UserRole } from "@/lib/database.types";
 import { authDestination } from "@/lib/auth-destination";
+import { accountCreationError, emailAuthError, passwordSignInError } from "@/lib/auth-messages";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
+import { PasswordField } from "@/components/auth/PasswordField";
 
 type Mode = "sign_in" | "sign_up";
 
-export function AuthForm({ role, companyId, returnTo }: { role: UserRole; companyId?: string; returnTo?: string }) {
+export function AuthForm({
+  role,
+  companyId,
+  returnTo,
+  initialError,
+}: {
+  role: UserRole;
+  companyId?: string;
+  returnTo?: string;
+  initialError?: string;
+}) {
   const router = useRouter();
   const supabase = createClient();
 
@@ -23,7 +35,7 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
   const [service, setService] = useState("");
   const [agreed, setAgreed] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(initialError ?? null);
   const [info, setInfo] = useState<string | null>(null);
 
   // Middleware re-routes to the correct hub if this guess is wrong for the
@@ -49,38 +61,42 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
 
     setLoading(true);
 
-    if (mode === "sign_up") {
-      const { data, error: signUpError } = await supabase.auth.signUp({
-        email,
-        password,
-        options: {
-          data: signUpMetadata(),
-          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(destination)}`,
-        },
-      });
-      setLoading(false);
-      if (signUpError) {
-        setError(signUpError.message);
+    try {
+      if (mode === "sign_up") {
+        const { data, error: signUpError } = await supabase.auth.signUp({
+          email: email.trim(),
+          password,
+          options: {
+            data: signUpMetadata(),
+            emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(destination)}`,
+          },
+        });
+        if (signUpError) {
+          setError(accountCreationError(signUpError));
+          return;
+        }
+        if (!data.session) {
+          setInfo("Check your inbox to confirm your email, then return here to sign in.");
+          setMode("sign_in");
+          return;
+        }
+        router.replace(destination);
+        router.refresh();
         return;
       }
-      if (!data.session) {
-        setInfo("Check your inbox to confirm your email, then sign in.");
-        setMode("sign_in");
-        return;
-      }
-      router.push(destination);
-      router.refresh();
-      return;
-    }
 
-    const { error: signInError } = await supabase.auth.signInWithPassword({ email, password });
-    setLoading(false);
-    if (signInError) {
-      setError(signInError.message);
-      return;
+      const { error: signInError } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
+      if (signInError) {
+        setError(passwordSignInError(signInError));
+        return;
+      }
+      router.replace(destination);
+      router.refresh();
+    } catch (authError) {
+      setError(mode === "sign_in" ? passwordSignInError(authError instanceof Error ? authError : {}) : accountCreationError(authError instanceof Error ? authError : {}));
+    } finally {
+      setLoading(false);
     }
-    router.push(destination);
-    router.refresh();
   }
 
   async function handleMagicLink() {
@@ -95,20 +111,25 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
     setError(null);
     setInfo(null);
     setLoading(true);
-    const { error: otpError } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        data: mode === "sign_up" ? signUpMetadata() : undefined,
-        shouldCreateUser: mode === "sign_up",
-        emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(destination)}`,
-      },
-    });
-    setLoading(false);
-    if (otpError) {
-      setError(otpError.message);
-      return;
+    try {
+      const { error: otpError } = await supabase.auth.signInWithOtp({
+        email: email.trim(),
+        options: {
+          data: mode === "sign_up" ? signUpMetadata() : undefined,
+          shouldCreateUser: mode === "sign_up",
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(destination)}`,
+        },
+      });
+      if (otpError) {
+        setError(emailAuthError(otpError));
+        return;
+      }
+      setInfo("Secure sign-in link sent. Open the newest Echonflow email on this device.");
+    } catch (otpError) {
+      setError(emailAuthError(otpError instanceof Error ? otpError : {}));
+    } finally {
+      setLoading(false);
     }
-    setInfo("Magic link sent — check your inbox.");
   }
 
   return (
@@ -116,7 +137,8 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
       <div className="mb-1 flex gap-2">
         <button
           type="button"
-          onClick={() => setMode("sign_in")}
+          aria-pressed={mode === "sign_in"}
+          onClick={() => { setMode("sign_in"); setError(null); setInfo(null); }}
           className={`rounded border px-3 py-1.5 font-mono text-[11px] uppercase tracking-wide ${
             mode === "sign_in" ? "border-forest bg-forest text-mist" : "border-[#C9C3AC] text-[#4A4738]"
           }`}
@@ -125,7 +147,8 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
         </button>
         <button
           type="button"
-          onClick={() => setMode("sign_up")}
+          aria-pressed={mode === "sign_up"}
+          onClick={() => { setMode("sign_up"); setError(null); setInfo(null); }}
           className={`rounded border px-3 py-1.5 font-mono text-[11px] uppercase tracking-wide ${
             mode === "sign_up" ? "border-forest bg-forest text-mist" : "border-[#C9C3AC] text-[#4A4738]"
           }`}
@@ -135,28 +158,16 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
       </div>
 
       {mode === "sign_up" && (
-        <Input
-          aria-label="Full name" autoComplete="name" placeholder="Full name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
+        <label className="auth-field-label">
+          <span>Full name</span>
+          <Input autoComplete="name" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} required />
+        </label>
       )}
-      <Input
-        type="email"
-        aria-label="Email" autoComplete="email" placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <Input
-        type="password"
-        aria-label="Password" autoComplete={mode === "sign_up" ? "new-password" : "current-password"} placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-        minLength={6}
-      />
+      <label className="auth-field-label">
+        <span>Email</span>
+        <Input type="email" autoComplete="email" placeholder="you@example.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
+      </label>
+      <PasswordField label="Password" autoComplete={mode === "sign_up" ? "new-password" : "current-password"} placeholder={mode === "sign_up" ? "At least 8 characters" : "Your password"} value={password} onChange={(e) => setPassword(e.target.value)} required minLength={mode === "sign_up" ? 8 : undefined} />
       {mode === "sign_in" && (
         <Link
           href={`/auth/forgot-password?next=${encodeURIComponent(destination)}`}
@@ -167,17 +178,14 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
       )}
       {mode === "sign_up" && role === "provider" && (
         <>
-          <Input
-            type="tel"
-            placeholder="Phone"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          <Input
-            placeholder="What service do you provide?"
-            value={service}
-            onChange={(e) => setService(e.target.value)}
-          />
+          <label className="auth-field-label">
+            <span>Phone <small>Optional</small></span>
+            <Input type="tel" autoComplete="tel" placeholder="Your phone number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+          </label>
+          <label className="auth-field-label">
+            <span>Practice or service <small>Optional</small></span>
+            <Input placeholder="What do you offer?" value={service} onChange={(e) => setService(e.target.value)} />
+          </label>
         </>
       )}
 
@@ -204,8 +212,8 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
         </label>
       )}
 
-      {error && <p className="font-body text-[12.5px] text-red-700">{error}</p>}
-      {info && <p className="font-body text-[12.5px] text-moss">{info}</p>}
+      {error && <p className="auth-error" role="alert">{error}</p>}
+      {info && <p className="auth-success" role="status">{info}</p>}
 
       <Button
         type="submit"
@@ -215,13 +223,14 @@ export function AuthForm({ role, companyId, returnTo }: { role: UserRole; compan
         {loading ? "Please wait…" : mode === "sign_up" ? "Create account" : "Continue"}
       </Button>
 
+      <div className="auth-divider"><span>or</span></div>
       <button
         type="button"
         onClick={handleMagicLink}
         disabled={loading}
-        className="mt-1 text-center font-mono text-[11px] uppercase tracking-wide text-moss disabled:opacity-40"
+        className="auth-secondary-action"
       >
-        Or email me a magic link
+        Email me a secure sign-in link
       </button>
     </form>
   );

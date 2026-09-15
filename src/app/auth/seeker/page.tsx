@@ -2,6 +2,7 @@ import { authDestination } from "@/lib/auth-destination";
 import { createClient } from "@/lib/supabase/server";
 import { AuthCard } from "@/components/auth/AuthCard";
 import { AuthForm } from "@/components/auth/AuthForm";
+import { authLinkProblem } from "@/lib/auth-messages";
 
 // A pilot onboarding link (e.g. from /era?org=krafton, or shared directly)
 // arrives here as ?org=<slug> so the org survives into account creation.
@@ -10,9 +11,9 @@ import { AuthForm } from "@/components/auth/AuthForm";
 export default async function SeekerAuthPage({
   searchParams,
 }: {
-  searchParams: Promise<{ org?: string; next?: string }>;
+  searchParams: Promise<{ org?: string; next?: string; problem?: string }>;
 }) {
-  const { org, next } = await searchParams;
+  const { org, next, problem } = await searchParams;
 
   let companyId: string | undefined;
   if (org) {
@@ -26,8 +27,18 @@ export default async function SeekerAuthPage({
   }
 
   return (
-    <AuthCard eyebrow="Seeker sign-in" title="Welcome back">
-      <AuthForm role="seeker" companyId={companyId} returnTo={authDestination(next) ?? (companyId && org ? "/era?org=" + encodeURIComponent(org) : undefined)} />
+    <AuthCard
+      eyebrow="Individual account"
+      title="Welcome to your space"
+      storyTitle={<>A little time<br />for <em>you.</em></>}
+      storyBody="Your energy, learning and next wellbeing step—kept together in one calm space."
+    >
+      <AuthForm
+        role="seeker"
+        companyId={companyId}
+        returnTo={authDestination(next) ?? (companyId && org ? "/era?org=" + encodeURIComponent(org) : undefined)}
+        initialError={authLinkProblem(problem)}
+      />
     </AuthCard>
   );
 }

@@ -26,6 +26,14 @@ export async function sendEmail(params: { to: string; subject: string; html: str
   }
 }
 
+function escapeHtml(value: string) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
 function wrapper(bodyHtml: string) {
   return `
   <div style="font-family:-apple-system,'Segoe UI',Arial,sans-serif; background:#EFEBDD; padding:32px 16px;">
@@ -94,5 +102,27 @@ export function reAuditNudgeEmailHtml(params: { daysSince: number; auditUrl: str
     <h1 style="font-family:Georgia,serif; font-size:20px; color:#17251C; margin:0 0 12px;">It's been ${params.daysSince} days</h1>
     <p style="font-size:14px; color:#4A4738; line-height:1.55; margin:0 0 20px;">Energy and resilience shift over a few months, not overnight. Worth a quick re-check to see what's changed.</p>
     <a href="${params.auditUrl}" style="display:inline-block; background:#1B3328; color:#EFEBDD; text-decoration:none; padding:11px 18px; border-radius:4px; font-size:12.5px;">Retake the audit →</a>
+  `);
+}
+
+export function passwordRecoveryEmailHtml(params: { recoveryUrl: string }) {
+  const recoveryUrl = escapeHtml(params.recoveryUrl);
+  return wrapper(`
+    <div style="font-family:'Courier New',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#4F7A5B; margin-bottom:12px;">Secure account recovery</div>
+    <h1 style="font-family:Georgia,serif; font-size:26px; font-weight:400; line-height:1.15; color:#17251C; margin:0 0 14px;">Choose a new password</h1>
+    <p style="font-size:14px; color:#4A4738; line-height:1.65; margin:0 0 22px;">We received a request to reset your Echonflow password. This private link can be used once.</p>
+    <a href="${recoveryUrl}" style="display:inline-block; background:#1B3328; color:#EFEBDD; text-decoration:none; padding:13px 20px; border-radius:5px; font-size:12.5px; font-weight:600;">Reset my password →</a>
+    <p style="font-size:12px; color:#747765; line-height:1.6; margin:24px 0 0;">If you did not request this, you can safely ignore this email. Your current password will remain unchanged.</p>
+  `);
+}
+
+export function secureSignInEmailHtml(params: { signInUrl: string }) {
+  const signInUrl = escapeHtml(params.signInUrl);
+  return wrapper(`
+    <div style="font-family:'Courier New',monospace; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#4F7A5B; margin-bottom:12px;">Private Echonflow workspace</div>
+    <h1 style="font-family:Georgia,serif; font-size:26px; font-weight:400; line-height:1.15; color:#17251C; margin:0 0 14px;">Your secure sign-in link</h1>
+    <p style="font-size:14px; color:#4A4738; line-height:1.65; margin:0 0 22px;">Use this private, one-time link to open Echonflow Growth OS.</p>
+    <a href="${signInUrl}" style="display:inline-block; background:#1B3328; color:#EFEBDD; text-decoration:none; padding:13px 20px; border-radius:5px; font-size:12.5px; font-weight:600;">Open Growth OS →</a>
+    <p style="font-size:12px; color:#747765; line-height:1.6; margin:24px 0 0;">If you did not request this, you can safely ignore this email.</p>
   `);
 }
