@@ -32,8 +32,8 @@ export async function proxy(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const path = request.nextUrl.pathname;
-  const isProviderRoute = path.startsWith("/provider");
-  const isSeekerRoute = path.startsWith("/seeker");
+  const isProviderRoute = path === "/provider" || path.startsWith("/provider/");
+  const isSeekerRoute = path === "/seeker" || path.startsWith("/seeker/");
   const isRoleAuthRoute = path === "/auth/provider" || path === "/auth/seeker";
 
   if (!user) {
@@ -57,17 +57,23 @@ export async function proxy(request: NextRequest) {
 
   if (isProviderRoute && role !== "provider") {
     const url = request.nextUrl.clone();
-    url.pathname = "/seeker";
+    url.pathname = "/auth/provider";
+    url.search = "?next=" + encodeURIComponent(path + request.nextUrl.search);
     return NextResponse.redirect(url);
   }
 
   if (isSeekerRoute && role !== "seeker") {
     const url = request.nextUrl.clone();
-    url.pathname = "/provider";
+    url.pathname = "/auth/seeker";
+    url.search = "?next=" + encodeURIComponent(path + request.nextUrl.search);
     return NextResponse.redirect(url);
   }
 
   if (isRoleAuthRoute) {
+    // Preserve the chosen entrance when a different account is signed in.
+    // The auth page offers an explicit account switch without changing roles.
+    const requestedRole = path === "/auth/provider" ? "provider" : "seeker";
+    if (role !== requestedRole) return response;
     const url = request.nextUrl.clone();
     const destination = authDestination(request.nextUrl.searchParams.get("next")) ?? (path === "/auth/provider" && role === "provider" ? "/provider/onboarding" : undefined);
     const target = new URL(destination ?? (role === "provider" ? "/provider" : "/seeker"), request.url);

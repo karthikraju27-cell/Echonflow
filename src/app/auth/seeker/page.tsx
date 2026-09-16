@@ -1,7 +1,7 @@
 import { authDestination } from "@/lib/auth-destination";
 import { createClient } from "@/lib/supabase/server";
 import { AuthCard } from "@/components/auth/AuthCard";
-import { AuthForm } from "@/components/auth/AuthForm";
+import { RoleAuthForm } from "@/components/auth/RoleAuthForm";
 import { authLinkProblem } from "@/lib/auth-messages";
 
 // A pilot onboarding link (e.g. from /era?org=krafton, or shared directly)
@@ -33,7 +33,7 @@ export default async function SeekerAuthPage({
       storyTitle={<>A little time<br />for <em>you.</em></>}
       storyBody="Your energy, learning and next wellbeing step—kept together in one calm space."
     >
-      <AuthForm
+      <RoleAuthForm
         role="seeker"
         companyId={companyId}
         returnTo={authDestination(next) ?? (companyId && org ? "/era?org=" + encodeURIComponent(org) : undefined)}

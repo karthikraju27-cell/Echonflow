@@ -1,5 +1,5 @@
 import { AuthCard } from "@/components/auth/AuthCard";
-import { AuthForm } from "@/components/auth/AuthForm";
+import { RoleAuthForm } from "@/components/auth/RoleAuthForm";
 import { authDestination } from "@/lib/auth-destination";
 import { authLinkProblem } from "@/lib/auth-messages";
 
@@ -16,7 +16,7 @@ export default async function ProviderAuthPage({
       storyTitle={<>Good work deserves<br /><em>room to grow.</em></>}
       storyBody="One account for your practice, listings, WRS™ assessment and seeker inquiries."
     >
-      <AuthForm
+      <RoleAuthForm
         role="provider"
         returnTo={authDestination(next) ?? "/provider/onboarding"}
         initialError={authLinkProblem(problem)}
