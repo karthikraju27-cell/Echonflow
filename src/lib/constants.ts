@@ -11,13 +11,6 @@ export const PROVIDER_CATEGORIES: ProviderCategory[] = [
 
 export const SEEKER_TILES = [
   {
-    id: "wonderwell",
-    href: "/wonderwell",
-    title: "WonderWell — Children & Families",
-    note: "Explore Feelings Forest: a story, activities and a playful learning check for ages 6–8, with a grown-up.",
-    cta: "Enter Feelings Forest",
-  },
-  {
     id: "modules",
     href: "/seeker/modules",
     title: "Learning Modules",

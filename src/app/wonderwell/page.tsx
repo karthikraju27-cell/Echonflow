@@ -1,6 +1,6 @@
-import { redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 
-// Public sample: linked from Seeker without requiring a child account.
+// Kept in source for the planned school launch, but not publicly available yet.
 export default function WonderWellPage() {
-  redirect("/wonderwell/feelings-forest/index.html");
+  notFound();
 }
